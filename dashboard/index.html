@@ -1,0 +1,405 @@
+<title>Ledger & Loop — Business Dashboard</title>
+<style>
+  :root{
+    --bg: #EEF2F1;
+    --surface: #FFFFFF;
+    --surface-sunken: #E4E9E7;
+    --border: #D6DEDB;
+    --ink: #16211F;
+    --ink-secondary: #445350;
+    --ink-muted: #6E7C79;
+    --accent: #2B5C66;
+    --accent-ink: #FFFFFF;
+    --accent-wash: #DCE9EB;
+    --good: #2F7A54;
+    --good-wash: #E1F1E6;
+    --warn: #B4791F;
+    --warn-wash: #F7EBD7;
+    --crit: #B23A3A;
+    --crit-wash: #F6DEDE;
+    --shadow: 0 1px 2px rgba(22,33,31,0.06), 0 8px 24px -12px rgba(22,33,31,0.18);
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg: #0F1615;
+      --surface: #17201F;
+      --surface-sunken: #101716;
+      --border: #263230;
+      --ink: #E9EFEC;
+      --ink-secondary: #AEBDB9;
+      --ink-muted: #7C8B87;
+      --accent: #6FB3BE;
+      --accent-ink: #0B1716;
+      --accent-wash: #1B3439;
+      --good: #6FCB93;
+      --good-wash: #163425;
+      --warn: #E3AC57;
+      --warn-wash: #3A2C14;
+      --crit: #E38080;
+      --crit-wash: #3A1E1E;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px -12px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #0F1615; --surface: #17201F; --surface-sunken: #101716; --border: #263230;
+    --ink: #E9EFEC; --ink-secondary: #AEBDB9; --ink-muted: #7C8B87;
+    --accent: #6FB3BE; --accent-ink: #0B1716; --accent-wash: #1B3439;
+    --good: #6FCB93; --good-wash: #163425;
+    --warn: #E3AC57; --warn-wash: #3A2C14;
+    --crit: #E38080; --crit-wash: #3A1E1E;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px -12px rgba(0,0,0,0.6);
+  }
+  :root[data-theme="light"]{
+    --bg: #EEF2F1; --surface: #FFFFFF; --surface-sunken: #E4E9E7; --border: #D6DEDB;
+    --ink: #16211F; --ink-secondary: #445350; --ink-muted: #6E7C79;
+    --accent: #2B5C66; --accent-ink: #FFFFFF; --accent-wash: #DCE9EB;
+    --good: #2F7A54; --good-wash: #E1F1E6;
+    --warn: #B4791F; --warn-wash: #F7EBD7;
+    --crit: #B23A3A; --crit-wash: #F6DEDE;
+    --shadow: 0 1px 2px rgba(22,33,31,0.06), 0 8px 24px -12px rgba(22,33,31,0.18);
+  }
+
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a{ color: var(--accent); }
+
+  .wrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 28px 80px;
+  }
+
+  header.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  .brand-mark{ display:flex; align-items:center; gap:14px; }
+  .brand-glyph{
+    width: 42px; height: 42px; border-radius: 10px;
+    background: var(--accent); color: var(--accent-ink);
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--serif); font-weight:700; font-size: 19px;
+    flex-shrink:0;
+  }
+  h1{
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  .brand-sub{ color: var(--ink-muted); font-size: 13px; margin-top: 2px; }
+  .meta-right{ text-align:right; color: var(--ink-muted); font-size: 12.5px; }
+  .meta-right .day{ color: var(--ink-secondary); font-weight:600; }
+
+  .eyebrow{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+    color: var(--ink-muted);
+    margin: 0 0 12px;
+  }
+
+  section{ margin-bottom: 40px; }
+
+  /* stat row */
+  .stats{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .stat{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+  }
+  .stat .label{ font-size: 12px; color: var(--ink-muted); font-weight:600; margin-bottom:8px; }
+  .stat .value{
+    font-family: var(--serif);
+    font-size: 30px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .stat .sub{ font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
+  .pill{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size: 11.5px; font-weight:700; letter-spacing:0.02em;
+    padding: 3px 10px; border-radius: 999px;
+    margin-top: 8px;
+  }
+  .pill.neutral{ background: var(--surface-sunken); color: var(--ink-secondary); }
+  .pill.warn{ background: var(--warn-wash); color: var(--warn); }
+  .pill.good{ background: var(--good-wash); color: var(--good); }
+  .pill.crit{ background: var(--crit-wash); color: var(--crit); }
+  .pill::before{ content:""; width:6px; height:6px; border-radius:50%; background: currentColor; }
+
+  /* action queue */
+  .req-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--warn);
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .req-card.low{ border-left-color: var(--ink-muted); }
+  .req-card .req-main{ flex: 1; min-width: 0; }
+  .req-title-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px; }
+  .req-title{ font-weight: 700; font-size: 15px; }
+  .req-id{ font-family: var(--serif); font-size: 11.5px; color: var(--ink-muted); }
+  .req-detail{ color: var(--ink-secondary); font-size: 13.5px; line-height:1.55; }
+  .req-blocks{ font-size: 12px; color: var(--ink-muted); margin-top: 8px; }
+  .req-blocks b{ color: var(--ink-secondary); font-weight:600; }
+  .req-priority{ flex-shrink:0; align-self:flex-start; }
+
+  /* generic panel/table */
+  .panel{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  table{ width:100%; border-collapse: collapse; }
+  th{
+    text-align:left; font-size: 11.5px; text-transform:uppercase; letter-spacing:0.06em;
+    color: var(--ink-muted); font-weight:700;
+    padding: 12px 18px; border-bottom: 1px solid var(--border);
+    background: var(--surface-sunken);
+  }
+  td{
+    padding: 14px 18px; border-bottom: 1px solid var(--border);
+    font-size: 13.5px; vertical-align: top;
+  }
+  tr:last-child td{ border-bottom: none; }
+  td.num{ font-variant-numeric: tabular-nums; text-align:right; }
+  .prod-name{ font-weight: 700; margin-bottom: 3px; }
+  .prod-files{ color: var(--ink-muted); font-size: 12px; }
+
+  .table-scroll{ overflow-x: auto; }
+
+  .empty-state{
+    padding: 28px 18px; text-align:center; color: var(--ink-muted); font-size: 13.5px;
+  }
+
+  /* two column layout */
+  .cols{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 860px){
+    .cols{ grid-template-columns: 1fr; }
+    .stats{ grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* activity timeline */
+  .timeline{ list-style:none; margin:0; padding: 4px 18px 4px; }
+  .timeline li{
+    position: relative;
+    padding: 12px 0 12px 22px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+  }
+  .timeline li:last-child{ border-bottom:none; }
+  .timeline li::before{
+    content:""; position:absolute; left:2px; top: 19px;
+    width:8px; height:8px; border-radius:50%; background: var(--accent);
+  }
+  .timeline .t-date{ color: var(--ink-muted); font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; display:block; margin-bottom:2px; }
+
+  .note{
+    font-size: 12.5px; color: var(--ink-muted); line-height:1.6; padding: 14px 18px;
+    border-top: 1px solid var(--border); background: var(--surface-sunken);
+  }
+
+  footer{
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--ink-muted); font-size: 12px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand-mark">
+      <div class="brand-glyph">L&amp;L</div>
+      <div>
+        <h1>Ledger &amp; Loop Digital</h1>
+        <div class="brand-sub">Digital products studio — operating name, pending final decision (REQ-002)</div>
+      </div>
+    </div>
+    <div class="meta-right">
+      <div>Last updated <span class="day">20 Jul 2026</span></div>
+      <div>Day <span class="day">1</span> of operation</div>
+    </div>
+  </header>
+
+  <section>
+    <p class="eyebrow">Overview</p>
+    <div class="stats">
+      <div class="stat">
+        <div class="label">Cash balance</div>
+        <div class="value">$0.00</div>
+        <span class="pill neutral">Pre-revenue</span>
+      </div>
+      <div class="stat">
+        <div class="label">Products ready to sell</div>
+        <div class="value">1</div>
+        <div class="sub">3 more in the idea queue</div>
+      </div>
+      <div class="stat">
+        <div class="label">Open requests for you</div>
+        <div class="value">2</div>
+        <span class="pill warn">1 blocking launch</span>
+      </div>
+      <div class="stat">
+        <div class="label">Money spent</div>
+        <div class="value">$0.00</div>
+        <div class="sub">of $50 approved budget</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Needs your action</p>
+
+    <div class="req-card">
+      <div class="req-main">
+        <div class="req-title-row">
+          <span class="req-title">Create a free Gumroad seller account</span>
+          <span class="req-id">REQ-001</span>
+        </div>
+        <div class="req-detail">
+          Sign up at gumroad.com with divinxxii@gmail.com (or another email you
+          want the store to trade under) — no cost to create. Once it's made,
+          tell me the store name/URL so I can hand you the finished listing
+          (title, description, price, files, cover image) to paste in and publish.
+        </div>
+        <div class="req-blocks"><b>Blocks:</b> listing &amp; selling Product 1 — the AI Prompt Playbook is fully built and waiting.</div>
+      </div>
+      <span class="pill warn req-priority">High</span>
+    </div>
+
+    <div class="req-card low">
+      <div class="req-main">
+        <div class="req-title-row">
+          <span class="req-title">Decide on a permanent business/store name</span>
+          <span class="req-id">REQ-002</span>
+        </div>
+        <div class="req-detail">
+          "Ledger &amp; Loop Digital" is a placeholder I used so the first product
+          could ship without waiting. Keep it, or tell me a direction and I'll
+          propose a shortlist.
+        </div>
+        <div class="req-blocks"><b>Blocks:</b> nothing urgent — cosmetic on the listing and cover art only.</div>
+      </div>
+      <span class="pill neutral req-priority">Low</span>
+    </div>
+  </section>
+
+  <div class="cols">
+    <section>
+      <p class="eyebrow">Product pipeline</p>
+      <div class="panel table-scroll">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Category</th><th>Price</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="prod-name">Small Business AI Prompt Playbook</div>
+                <div class="prod-files">PDF (13pg) + Excel ROI tracker + cover art</div>
+              </td>
+              <td>AI Prompts &amp; Ops</td>
+              <td class="num">$17</td>
+              <td><span class="pill good">Ready to list</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="prod-name">Prompt Playbook — Vol. 2 (Ops automation)</div>
+                <div class="prod-files">Next in queue once Vol. 1 gets first sales signal</div>
+              </td>
+              <td>AI Prompts &amp; Ops</td>
+              <td class="num">—</td>
+              <td><span class="pill neutral">Idea</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="prod-name">Niche financial tracker template</div>
+                <div class="prod-files">Excel/Sheets template for a specific business type (freelancer, landlord, etc.)</div>
+              </td>
+              <td>Spreadsheet tools</td>
+              <td class="num">—</td>
+              <td><span class="pill neutral">Idea</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Recent activity</p>
+      <div class="panel">
+        <ul class="timeline">
+          <li><span class="t-date">20 Jul 2026</span>Dashboard built and published.</li>
+          <li><span class="t-date">20 Jul 2026</span>Product 1 completed: PDF playbook, Excel tracker, and cover art all generated.</li>
+          <li><span class="t-date">20 Jul 2026</span>Gumroad account request queued (REQ-001) — blocks launch.</li>
+          <li><span class="t-date">20 Jul 2026</span>Business model selected: digital products via Gumroad, $0 fixed cost.</li>
+          <li><span class="t-date">20 Jul 2026</span>Business plan and file structure created.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <p class="eyebrow">Ledger</p>
+    <div class="panel">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th></tr>
+          </thead>
+        </table>
+        <div class="empty-state">No transactions yet — balance updates here the moment a real sale or expense happens.</div>
+      </div>
+      <div class="note">
+        Balance reflects only confirmed real-world money — nothing projected or
+        hypothetical. Full history: <code>finances/ledger.json</code>.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Ledger &amp; Loop Digital — internal dashboard, not shared publicly.</span>
+    <span>Source of truth: business_plan.md, requests/open_requests.json, finances/ledger.json</span>
+  </footer>
+
+</div>

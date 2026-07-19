@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "id": "REQ-001",
+      "created": "2026-07-20",
+      "status": "open",
+      "priority": "high",
+      "title": "Create a free Gumroad seller account",
+      "detail": "Sign up at gumroad.com with divinxxii@gmail.com (or whichever email/name you want the store to trade under). No cost to create. Once made, tell me the store name/URL so I can prep the first product listing (title, description, price, files) for you to paste in and publish. I cannot create this account myself since it registers a real identity/payout destination.",
+      "blocks": "Listing and selling Product 1.1 (AI Prompt Playbook)"
+    },
+    {
+      "id": "REQ-002",
+      "created": "2026-07-20",
+      "status": "open",
+      "priority": "low",
+      "title": "Decide on a business/store name",
+      "detail": "Need a public-facing name for the Gumroad store and product branding. I can propose a shortlist if you want suggestions — just say so.",
+      "blocks": "Finalizing product listing copy and cover design"
+    }
+  ]
+}
