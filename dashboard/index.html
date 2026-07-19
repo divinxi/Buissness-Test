@@ -245,161 +245,234 @@
   }
 </style>
 
-<div class="wrap">
+<div class="wrap" id="app"></div>
 
-  <header class="top">
-    <div class="brand-mark">
-      <div class="brand-glyph">L&amp;L</div>
-      <div>
-        <h1>Ledger &amp; Loop Digital</h1>
-        <div class="brand-sub">Digital products studio — operating name, pending final decision (REQ-002)</div>
-      </div>
-    </div>
-    <div class="meta-right">
-      <div>Last updated <span class="day">20 Jul 2026</span></div>
-      <div>Day <span class="day">1</span> of operation</div>
-    </div>
-  </header>
+<script>
+/*
+ * All page content is generated from DATA below. To update the dashboard,
+ * edit only this object (or regenerate it from business_plan.md,
+ * requests/open_requests.json, finances/ledger.json, and the products/
+ * folder) — never hand-edit the rendered markup. Then republish this file
+ * as the Artifact with the same URL to keep the link stable.
+ */
+const DATA = {
+  meta: {
+    name: "Ledger & Loop Digital",
+    tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
+    lastUpdated: "20 Jul 2026",
+    day: 1,
+  },
+  stats: {
+    balance: 0.00,
+    balancePill: { text: "Pre-revenue", tone: "neutral" },
+    productsReady: 1,
+    productsSub: "3 more in the idea queue",
+    openRequests: 2,
+    requestsPill: { text: "1 blocking launch", tone: "warn" },
+    spent: 0.00,
+    budget: 50,
+  },
+  requests: [
+    {
+      id: "REQ-001",
+      title: "Create a free Gumroad seller account",
+      detail: "Sign up at gumroad.com with divinxxii@gmail.com (or another email you want the store to trade under) — no cost to create. Once it's made, tell me the store name/URL so I can hand you the finished listing (title, description, price, files, cover image) to paste in and publish.",
+      blocks: "listing &amp; selling Product 1 — the AI Prompt Playbook is fully built and waiting.",
+      priority: "high",
+    },
+    {
+      id: "REQ-002",
+      title: "Decide on a permanent business/store name",
+      detail: "\"Ledger &amp; Loop Digital\" is a placeholder I used so the first product could ship without waiting. Keep it, or tell me a direction and I'll propose a shortlist.",
+      blocks: "nothing urgent — cosmetic on the listing and cover art only.",
+      priority: "low",
+    },
+  ],
+  products: [
+    {
+      name: "Small Business AI Prompt Playbook",
+      files: "PDF (13pg) + Excel ROI tracker + cover art",
+      category: "AI Prompts &amp; Ops",
+      price: "$17",
+      status: { text: "Ready to list", tone: "good" },
+    },
+    {
+      name: "Prompt Playbook — Vol. 2 (Ops automation)",
+      files: "Next in queue once Vol. 1 gets first sales signal",
+      category: "AI Prompts &amp; Ops",
+      price: "—",
+      status: { text: "Idea", tone: "neutral" },
+    },
+    {
+      name: "Niche financial tracker template",
+      files: "Excel/Sheets template for a specific business type (freelancer, landlord, etc.)",
+      category: "Spreadsheet tools",
+      price: "—",
+      status: { text: "Idea", tone: "neutral" },
+    },
+  ],
+  activity: [
+    { date: "20 Jul 2026", text: "Dashboard rebuilt as a data-driven page for reliable automated updates." },
+    { date: "20 Jul 2026", text: "Dashboard built and published." },
+    { date: "20 Jul 2026", text: "Product 1 completed: PDF playbook, Excel tracker, and cover art all generated." },
+    { date: "20 Jul 2026", text: "Gumroad account request queued (REQ-001) — blocks launch." },
+    { date: "20 Jul 2026", text: "Business model selected: digital products via Gumroad, $0 fixed cost." },
+    { date: "20 Jul 2026", text: "Business plan and file structure created." },
+  ],
+  ledger: {
+    transactions: [], // {date, description, type, amount}
+    note: "Balance reflects only confirmed real-world money — nothing projected or hypothetical. Full history: <code>finances/ledger.json</code>.",
+  },
+};
 
-  <section>
-    <p class="eyebrow">Overview</p>
-    <div class="stats">
-      <div class="stat">
-        <div class="label">Cash balance</div>
-        <div class="value">$0.00</div>
-        <span class="pill neutral">Pre-revenue</span>
-      </div>
-      <div class="stat">
-        <div class="label">Products ready to sell</div>
-        <div class="value">1</div>
-        <div class="sub">3 more in the idea queue</div>
-      </div>
-      <div class="stat">
-        <div class="label">Open requests for you</div>
-        <div class="value">2</div>
-        <span class="pill warn">1 blocking launch</span>
-      </div>
-      <div class="stat">
-        <div class="label">Money spent</div>
-        <div class="value">$0.00</div>
-        <div class="sub">of $50 approved budget</div>
-      </div>
-    </div>
-  </section>
+function fmtUSD(n) {
+  return "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
 
-  <section>
-    <p class="eyebrow">Needs your action</p>
+function pill(p) {
+  return `<span class="pill ${p.tone}">${p.text}</span>`;
+}
 
-    <div class="req-card">
+function renderHeader(d) {
+  return `
+    <header class="top">
+      <div class="brand-mark">
+        <div class="brand-glyph">${d.meta.name.split(" ").map(w => w[0]).slice(0,2).join("")}</div>
+        <div>
+          <h1>${d.meta.name}</h1>
+          <div class="brand-sub">${d.meta.tagline}</div>
+        </div>
+      </div>
+      <div class="meta-right">
+        <div>Last updated <span class="day">${d.meta.lastUpdated}</span></div>
+        <div>Day <span class="day">${d.meta.day}</span> of operation</div>
+      </div>
+    </header>`;
+}
+
+function renderStats(s) {
+  return `
+    <section>
+      <p class="eyebrow">Overview</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Cash balance</div>
+          <div class="value">${fmtUSD(s.balance)}</div>
+          ${pill(s.balancePill)}
+        </div>
+        <div class="stat">
+          <div class="label">Products ready to sell</div>
+          <div class="value">${s.productsReady}</div>
+          <div class="sub">${s.productsSub}</div>
+        </div>
+        <div class="stat">
+          <div class="label">Open requests for you</div>
+          <div class="value">${s.openRequests}</div>
+          ${pill(s.requestsPill)}
+        </div>
+        <div class="stat">
+          <div class="label">Money spent</div>
+          <div class="value">${fmtUSD(s.spent)}</div>
+          <div class="sub">of ${fmtUSD(s.budget)} approved budget</div>
+        </div>
+      </div>
+    </section>`;
+}
+
+function renderRequests(reqs) {
+  if (!reqs.length) {
+    return `
+    <section>
+      <p class="eyebrow">Needs your action</p>
+      <div class="panel"><div class="empty-state">Nothing needs you right now.</div></div>
+    </section>`;
+  }
+  const cards = reqs.map(r => `
+    <div class="req-card ${r.priority === "low" ? "low" : ""}">
       <div class="req-main">
         <div class="req-title-row">
-          <span class="req-title">Create a free Gumroad seller account</span>
-          <span class="req-id">REQ-001</span>
+          <span class="req-title">${r.title}</span>
+          <span class="req-id">${r.id}</span>
         </div>
-        <div class="req-detail">
-          Sign up at gumroad.com with divinxxii@gmail.com (or another email you
-          want the store to trade under) — no cost to create. Once it's made,
-          tell me the store name/URL so I can hand you the finished listing
-          (title, description, price, files, cover image) to paste in and publish.
-        </div>
-        <div class="req-blocks"><b>Blocks:</b> listing &amp; selling Product 1 — the AI Prompt Playbook is fully built and waiting.</div>
+        <div class="req-detail">${r.detail}</div>
+        <div class="req-blocks"><b>Blocks:</b> ${r.blocks}</div>
       </div>
-      <span class="pill warn req-priority">High</span>
-    </div>
+      <span class="pill ${r.priority === "high" ? "warn" : "neutral"} req-priority">${r.priority === "high" ? "High" : "Low"}</span>
+    </div>`).join("");
+  return `
+    <section>
+      <p class="eyebrow">Needs your action</p>
+      ${cards}
+    </section>`;
+}
 
-    <div class="req-card low">
-      <div class="req-main">
-        <div class="req-title-row">
-          <span class="req-title">Decide on a permanent business/store name</span>
-          <span class="req-id">REQ-002</span>
-        </div>
-        <div class="req-detail">
-          "Ledger &amp; Loop Digital" is a placeholder I used so the first product
-          could ship without waiting. Keep it, or tell me a direction and I'll
-          propose a shortlist.
-        </div>
-        <div class="req-blocks"><b>Blocks:</b> nothing urgent — cosmetic on the listing and cover art only.</div>
-      </div>
-      <span class="pill neutral req-priority">Low</span>
-    </div>
-  </section>
-
-  <div class="cols">
+function renderProducts(products) {
+  const rows = products.map(p => `
+    <tr>
+      <td>
+        <div class="prod-name">${p.name}</div>
+        <div class="prod-files">${p.files}</div>
+      </td>
+      <td>${p.category}</td>
+      <td class="num">${p.price}</td>
+      <td>${pill(p.status)}</td>
+    </tr>`).join("");
+  return `
     <section>
       <p class="eyebrow">Product pipeline</p>
       <div class="panel table-scroll">
         <table>
-          <thead>
-            <tr><th>Product</th><th>Category</th><th>Price</th><th>Status</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="prod-name">Small Business AI Prompt Playbook</div>
-                <div class="prod-files">PDF (13pg) + Excel ROI tracker + cover art</div>
-              </td>
-              <td>AI Prompts &amp; Ops</td>
-              <td class="num">$17</td>
-              <td><span class="pill good">Ready to list</span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="prod-name">Prompt Playbook — Vol. 2 (Ops automation)</div>
-                <div class="prod-files">Next in queue once Vol. 1 gets first sales signal</div>
-              </td>
-              <td>AI Prompts &amp; Ops</td>
-              <td class="num">—</td>
-              <td><span class="pill neutral">Idea</span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="prod-name">Niche financial tracker template</div>
-                <div class="prod-files">Excel/Sheets template for a specific business type (freelancer, landlord, etc.)</div>
-              </td>
-              <td>Spreadsheet tools</td>
-              <td class="num">—</td>
-              <td><span class="pill neutral">Idea</span></td>
-            </tr>
-          </tbody>
+          <thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
         </table>
       </div>
-    </section>
+    </section>`;
+}
 
+function renderActivity(items) {
+  const lis = items.map(a => `<li><span class="t-date">${a.date}</span>${a.text}</li>`).join("");
+  return `
     <section>
       <p class="eyebrow">Recent activity</p>
+      <div class="panel"><ul class="timeline">${lis}</ul></div>
+    </section>`;
+}
+
+function renderLedger(ledger) {
+  const body = ledger.transactions.length
+    ? `<table>
+         <thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th></tr></thead>
+         <tbody>${ledger.transactions.map(t => `
+           <tr><td>${t.date}</td><td>${t.description}</td><td>${t.type}</td><td class="num">${fmtUSD(t.amount)}</td></tr>`).join("")}
+         </tbody>
+       </table>`
+    : `<table><thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th></tr></thead></table>
+       <div class="empty-state">No transactions yet — balance updates here the moment a real sale or expense happens.</div>`;
+  return `
+    <section>
+      <p class="eyebrow">Ledger</p>
       <div class="panel">
-        <ul class="timeline">
-          <li><span class="t-date">20 Jul 2026</span>Dashboard built and published.</li>
-          <li><span class="t-date">20 Jul 2026</span>Product 1 completed: PDF playbook, Excel tracker, and cover art all generated.</li>
-          <li><span class="t-date">20 Jul 2026</span>Gumroad account request queued (REQ-001) — blocks launch.</li>
-          <li><span class="t-date">20 Jul 2026</span>Business model selected: digital products via Gumroad, $0 fixed cost.</li>
-          <li><span class="t-date">20 Jul 2026</span>Business plan and file structure created.</li>
-        </ul>
+        <div class="table-scroll">${body}</div>
+        <div class="note">${ledger.note}</div>
       </div>
-    </section>
-  </div>
+    </section>`;
+}
 
-  <section>
-    <p class="eyebrow">Ledger</p>
-    <div class="panel">
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr><th>Date</th><th>Description</th><th>Type</th><th>Amount</th></tr>
-          </thead>
-        </table>
-        <div class="empty-state">No transactions yet — balance updates here the moment a real sale or expense happens.</div>
-      </div>
-      <div class="note">
-        Balance reflects only confirmed real-world money — nothing projected or
-        hypothetical. Full history: <code>finances/ledger.json</code>.
-      </div>
+function render(d) {
+  document.getElementById("app").innerHTML = `
+    ${renderHeader(d)}
+    ${renderStats(d.stats)}
+    ${renderRequests(d.requests)}
+    <div class="cols">
+      ${renderProducts(d.products)}
+      ${renderActivity(d.activity)}
     </div>
-  </section>
+    ${renderLedger(d.ledger)}
+    <footer>
+      <span>${d.meta.name} — internal dashboard, not shared publicly.</span>
+      <span>Source of truth: business_plan.md, requests/open_requests.json, finances/ledger.json</span>
+    </footer>`;
+}
 
-  <footer>
-    <span>Ledger &amp; Loop Digital — internal dashboard, not shared publicly.</span>
-    <span>Source of truth: business_plan.md, requests/open_requests.json, finances/ledger.json</span>
-  </footer>
-
-</div>
+render(DATA);
+</script>
