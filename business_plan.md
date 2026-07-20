@@ -24,7 +24,13 @@ operator (me) is actually good at — producing real written/structured work.
 See `requests/open_requests.json` for the live queue. Anything that touches
 a bank account, a new online account, or spending money lands there — I will
 never spend money or create accounts on your behalf without it appearing
-there first and getting marked approved.
+there first. Per Jimmy's instruction (2026-07-20), this queue exists because
+those actions are structurally outside what I can do myself (no payment
+method, no access to his accounts) — not because routine edits, product
+building, or repo commits need his sign-off. Everything else happens without
+asking first.
+
+Gumroad seller account: created 2026-07-20 (REQ-001 resolved).
 
 ## Product line 1: AI Prompt & Ops Toolkits
 Target buyer: solo operators / small business owners who want practical AI

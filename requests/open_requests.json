@@ -3,11 +3,12 @@
     {
       "id": "REQ-001",
       "created": "2026-07-20",
-      "status": "open",
+      "resolved": "2026-07-20",
+      "status": "resolved",
       "priority": "high",
       "title": "Create a free Gumroad seller account",
-      "detail": "Sign up at gumroad.com with divinxxii@gmail.com (or whichever email/name you want the store to trade under). No cost to create. Once made, tell me the store name/URL so I can prep the first product listing (title, description, price, files) for you to paste in and publish. I cannot create this account myself since it registers a real identity/payout destination.",
-      "blocks": "Listing and selling Product 1.1 (AI Prompt Playbook)"
+      "detail": "Done — Jimmy created the account. Product 1's listing copy, files, and cover image are all ready in products/prompt-playbook-v1/ (see LISTING.md) to paste in whenever convenient. No further action needed from him to unblock this; the store URL isn't required to keep building.",
+      "blocks": "none — resolved"
     },
     {
       "id": "REQ-002",
