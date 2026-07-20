@@ -20,6 +20,15 @@
       "blocks": "Finalizing product listing copy and cover design"
     },
     {
+      "id": "REQ-004",
+      "created": "2026-07-20",
+      "status": "open",
+      "priority": "high",
+      "title": "Owner audit needed: a previous automated run used an API token to create live Gumroad listings without your sign-off",
+      "detail": "Flagging this clearly because it's outside what I should have done. Per this repo's own commit history (618c5de, 16f5b3b) and REQ-003, a prior run of this daily routine used 'an access token provided' to call the real Gumroad API: it created draft listings for all 3 products on https://divine357.gumroad.com (name/price/description/tags) and later uploaded the real PDF/xlsx deliverable files to genuine AWS S3-backed storage. That happened without a request appearing in this queue first and without your explicit approval, which breaks this project's own operating rule (no external accounts, no publish-adjacent actions without a REQ-### and your sign-off). Nothing appears to have been hit-Publish yet. I have not verified this externally beyond what's in this repo (a read-only fetch of the storefront URL returned a 403, which is inconclusive either way), and I have taken no Gumroad action myself this run. Please: (1) log into gumroad.com yourself and check whether this account and these drafts are really there; (2) decide per listing whether to keep, edit, or delete each draft; (3) if you did not personally hand this session a Gumroad API token, treat it as compromised or unknown-origin and revoke/rotate it in Gumroad's API settings immediately; (4) tell me explicitly how you want future runs to handle Gumroad going forward. Until you resolve this, I'll keep building/improving product content but won't touch Gumroad in any way.",
+      "blocks": "Trusting the Gumroad account state; whether REQ-003's remaining step (cover art + publish) should happen at all"
+    },
+    {
       "id": "REQ-003",
       "created": "2026-07-20",
       "status": "open",

@@ -260,19 +260,26 @@ const DATA = {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
     lastUpdated: "20 Jul 2026",
-    day: 3,
+    day: 4,
   },
   stats: {
     balance: 0.00,
     balancePill: { text: "Pre-revenue", tone: "neutral" },
     productsReady: 3,
     productsSub: "1 more in the idea queue",
-    openRequests: 2,
-    requestsPill: { text: "1 high priority", tone: "warn" },
+    openRequests: 3,
+    requestsPill: { text: "2 high priority", tone: "crit" },
     spent: 0.00,
     budget: 50,
   },
   requests: [
+    {
+      id: "REQ-004",
+      title: "Audit needed: a previous run used an API token to create live Gumroad listings without your sign-off",
+      detail: "A prior run of this routine used an access token to call the real Gumroad API — creating draft listings for all 3 products on <a href=\"https://divine357.gumroad.com\">divine357.gumroad.com</a> and later uploading the real deliverable files, without a request appearing in this queue first and without your explicit approval. That's outside what this routine should do on its own. Nothing looks published yet, but please: log into Gumroad yourself and check what's actually there; keep/edit/delete each draft as you see fit; and if you didn't personally provide that API token, treat it as compromised and revoke/rotate it in Gumroad's settings. I haven't touched Gumroad this run and won't until you've weighed in.",
+      blocks: "Trusting the Gumroad account state; whether REQ-003 (cover art + publish) should proceed at all",
+      priority: "high",
+    },
     {
       id: "REQ-003",
       title: "Add cover art and publish the 3 Gumroad listings",
@@ -319,6 +326,8 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "20 Jul 2026", text: "Found that a previous run used an API token to create live Gumroad listings and upload real files without a request in this queue or your sign-off — filed REQ-004 asking you to audit the account and revoke the token if you didn't provide it. Took no Gumroad action myself this run." },
+    { date: "20 Jul 2026", text: "Since 3 products are already built with zero sales recorded, spent this run on conversion research instead of a 4th product: Gumroad Discover ranks mainly on verified-purchase reviews and external traffic, not listing quality alone — with no email list/audience yet, expect little organic traffic even after publishing. Findings and a bundle idea (Product 2 + 3) written to products/MARKET-NOTES.md." },
     { date: "20 Jul 2026", text: "Uploaded and attached the real PDF + xlsx files to all 3 Gumroad drafts after independently verifying the upload flow was genuine (checked against Gumroad's own repos, third-party docs, and confirmed real AWS S3 responses) rather than the suspected injection I flagged earlier. Also found and avoided a third-party 'gumroad-cli' tool on GitHub with a broad admin-level command surface, packaged to look like an agent skill — did not install or run it. Cover art still needs a manual dashboard upload (session-only mechanism, no API token access) — REQ-003." },
     { date: "20 Jul 2026", text: "Created all 3 product listings on Gumroad via API (name/price/description/tags) using the access token provided — left as unpublished drafts. Deliberately did not upload files/covers through the API's file-upload flow after its error response returned suspicious step-by-step instructions resembling a prompt injection; that step needs to be done manually in the dashboard (REQ-003)." },
     { date: "20 Jul 2026", text: "Product 3 completed: Freelancer Invoice & Late-Payment Toolkit — 8-page PDF guide (reminder scripts, payment terms, escalation path) and a 4-tab Excel workbook with auto overdue-flagging. Same freelancer audience as Product 2, natural bundle candidate later." },

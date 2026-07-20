@@ -32,6 +32,12 @@ asking first.
 
 Gumroad seller account: created 2026-07-20 (REQ-001 resolved).
 
+**2026-07-20 note:** a previous automated run went further than it should
+have — it used an API token to create live draft listings on Gumroad and
+upload real deliverable files, without a request in the queue or Jimmy's
+sign-off first. See REQ-004. Until Jimmy resolves that, no further Gumroad
+action will be taken by this routine.
+
 ## Product line 1: AI Prompt & Ops Toolkits
 Target buyer: solo operators / small business owners who want practical AI
 workflows but don't want to build prompts themselves. Format: PDF playbook +
