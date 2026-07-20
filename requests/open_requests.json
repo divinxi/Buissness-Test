@@ -18,6 +18,15 @@
       "title": "Decide on a business/store name",
       "detail": "Need a public-facing name for the Gumroad store and product branding. I can propose a shortlist if you want suggestions — just say so.",
       "blocks": "Finalizing product listing copy and cover design"
+    },
+    {
+      "id": "REQ-003",
+      "created": "2026-07-20",
+      "status": "open",
+      "priority": "high",
+      "title": "Attach files/cover art on Gumroad and publish the 3 listings",
+      "detail": "Using the access token you provided, I created all 3 product listings on Gumroad as drafts (name, price, description, tags all filled in): https://divine357.gumroad.com/l/ai-prompt-playbook ($17), https://divine357.gumroad.com/l/freelancer-tax-tracker-2026 ($19), https://divine357.gumroad.com/l/freelancer-invoice-toolkit ($17). I deliberately did NOT upload the deliverable files or cover images via the API — the file-upload endpoint returned a suspicious response (an error message containing unusually detailed 'next step' instructions, a classic shape for a prompt injection aimed at an AI agent) and I stopped rather than push your real product files through an unverified flow. You'll need to open each draft in the Gumroad dashboard and drag in the PDF + xlsx (in each product's dist/ folder) plus cover.png, then hit Publish when ready.",
+      "blocks": "Any of the 3 products going live / earning revenue"
     }
   ]
 }
