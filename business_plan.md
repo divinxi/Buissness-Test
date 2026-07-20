@@ -42,7 +42,22 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 - PDF: ~25 categorized, ready-to-use prompts (marketing, customer service,
   finance/ops, hiring, sales) with instructions on how to adapt each one.
 - Companion .xlsx: prompt usage tracker + simple time-saved / ROI calculator.
-- Status: in production. See products/prompt-playbook-v1/.
+- Status: built and ready to list, $17. See products/prompt-playbook-v1/.
+
+## Product line 2: Spreadsheet Tools
+
+### Product 2.1: "Freelancer Quarterly Tax & Expense Tracker (2026 Edition)"
+- PDF guide (8pg): 2026 quarterly estimated tax deadlines, a worked
+  self-employment tax calculation, all 17 real IRS Schedule C expense
+  categories with freelancer-specific notes, home office deduction, and
+  audit-risk patterns. Figures verified against IRS.gov/SSA.gov July 2026.
+- Companion .xlsx: Income Log, Expense Log (auto-applies the 50% meals
+  deduction rule), a Quarterly Tax Estimator that computes exact SE tax from
+  the user's own numbers, and a live Dashboard. All formulas independently
+  re-verified to match the guide's worked example.
+- Status: built and ready to list, $19. See products/freelancer-tax-tracker-v1/.
+- Note: dated by design (2026 tax-year figures) — plan a low-effort annual
+  refresh once next year's numbers are published.
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
