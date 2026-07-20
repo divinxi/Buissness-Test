@@ -59,6 +59,21 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 - Note: dated by design (2026 tax-year figures) — plan a low-effort annual
   refresh once next year's numbers are published.
 
+### Product 2.2: "Freelancer Invoice & Late-Payment Toolkit"
+- PDF guide (8pg): the 8 things every invoice needs, choosing payment terms
+  (Due on Receipt/Net 15/Net 30/deposits) by client risk, a ready-to-copy
+  4-stage reminder email sequence, how to set up an enforceable late fee,
+  scope-creep/change-order handling, and a level-headed non-payment
+  escalation path (stop work, formal demand, small claims, collections).
+- Companion .xlsx: Invoice Log (auto-flags Paid/Overdue/Upcoming and counts
+  days overdue), a Reminder Dashboard (shows how many invoices need which
+  reminder stage today), and a fill-in Invoice Template with auto-calculated
+  subtotal/tax/total.
+- Status: built and ready to list, $17. See products/freelancer-invoice-toolkit-v1/.
+- Same target buyer as Product 2.1 (freelancers) — natural bundle candidate
+  once both have a sales signal. Not dependent on Product 1 getting sales
+  first since it's a different line, not a sequel.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
