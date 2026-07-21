@@ -61,3 +61,26 @@ Sources:
 - https://medium.com/@andreiya/the-best-way-to-get-sales-from-gumroad-discover-b35c7ba06592
 - https://insightraider.com/en/answers/what-digital-products-sell-best-on-gumroad
 - https://conversionproplus.com/blog/gumroad-trends-2026-what-s-selling-right-now
+
+## 2026-07-21 update: bundle listing prepared
+REQ-002, REQ-003, and REQ-004 are all still open — no owner action recorded
+since the notes above were written, so the situation hasn't changed:
+0 sales, Gumroad trust unresolved, no external traffic source yet. Repeating
+the same market research would add nothing.
+
+Acted on this run's own recommendation instead: built the bundle idea from
+the "Pricing check" section above into an actual ready-to-publish asset —
+see products/freelancer-bundle-v1/LISTING.md and dist/cover.png. It's "The
+Freelancer Money Bundle" (Product 2 + Product 3 together, $29 vs. $36
+separately). No new PDF/xlsx content was written — it repackages the
+existing 4 files from those two products, which is exactly the low-effort
+move this file already identified as the next lever. This does NOT touch
+Gumroad in any way (no API call, no draft created) — it's just copy and a
+cover image sitting in the repo, ready for a five-minute manual paste-in
+once REQ-003/REQ-004 are resolved.
+
+Deliberately did not draft outbound traffic content (subreddit/forum posts,
+etc.) this run — the "single highest leverage next step" identified above
+depends on the products actually being live and trustworthy first, which
+they aren't yet pending REQ-003/004. Drafting outreach copy for listings
+that might still change felt premature; revisit once publish status moves.

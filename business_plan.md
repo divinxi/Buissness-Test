@@ -1,6 +1,6 @@
 # Business Plan — [Name TBD] Digital Products Co.
 
-Status date: 2026-07-20
+Status date: 2026-07-21
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -79,6 +79,16 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 - Same target buyer as Product 2.1 (freelancers) — natural bundle candidate
   once both have a sales signal. Not dependent on Product 1 getting sales
   first since it's a different line, not a sequel.
+
+### Product 2.3: "The Freelancer Money Bundle" (2.1 + 2.2 combined)
+- No new content — repackages the existing tax tracker and invoice toolkit
+  PDFs/xlsx into one $29 listing (vs. $36 buying both separately).
+- Status: listing copy and cover written and ready to publish, see
+  products/freelancer-bundle-v1/LISTING.md. Built 2026-07-21 in response to
+  the bundling recommendation in products/MARKET-NOTES.md, since 3 products
+  were already built with zero sales and market research had already been
+  done the prior run. Same publish blocker as everything else (REQ-003/004)
+  — nothing uploaded to Gumroad.
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
