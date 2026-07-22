@@ -84,3 +84,43 @@ etc.) this run — the "single highest leverage next step" identified above
 depends on the products actually being live and trustworthy first, which
 they aren't yet pending REQ-003/004. Drafting outreach copy for listings
 that might still change felt premature; revisit once publish status moves.
+
+## 2026-07-22 update: cover art was the one conversion lever nobody had
+actually assessed
+REQ-002/003/004 are still all open, ledger is still $0.00 — no owner action
+recorded since the last run, so another repeat of the Discover-ranking /
+pricing / copy research would add nothing new (already concluded above that
+copy and pricing aren't the bottleneck).
+
+Looked at what *was* still unexamined: all 4 existing covers (Products 1,
+2, 3, and the bundle) turned out to be the exact same template with only
+the words swapped — dark card, two lines of title, a subtitle, a row of
+tag-chip pills. Functional, on-brand, legible — but literally text-only,
+with no visual hook. On a Discover grid sitting next to other sellers'
+thumbnails, four visually-identical-looking cards (differing only in which
+words are on them) don't help a browsing buyer tell at a glance "PDF +
+spreadsheet bundle" vs. just another text graphic, and give the whole
+catalog a slightly generic/AI-generated look.
+
+Fix: added a small drawn mockup (pure Pillow shapes — a rounded "PDF page"
+with a colored header bar and text lines, overlapped by a "spreadsheet"
+card with an actual grid and one highlighted cell in the brand accent
+color) to the top-right of all 4 covers. No external images/assets, so it
+regenerates deterministically like everything else in these scripts. This
+directly visualizes what's actually in the box (a PDF guide + an Excel
+workbook) rather than just decorating — same reasoning as the existing tag
+chips, just visual instead of text.
+
+Had to retune the Invoice Toolkit's tag-chip sizing (font 28→26, pad 22→18,
+gap 16→12) since its 4-chip row (including the long "INVOICE TEMPLATE"
+label) originally ran into the new mockup's left edge at full size — caught
+this by rendering and visually inspecting the actual PNG, not just running
+the script. All 4 dist/cover.png files regenerated from their updated
+scripts/build_cover.py and re-inspected; no other collisions.
+
+This is the same category of prep as the bundle listing from 2026-07-21:
+doesn't touch Gumroad, ships as an update to files already sitting in the
+repo, ready the moment REQ-003/004 clear. Genuinely new inventory (a 5th
+product) was deliberately not built this run per the operating playbook's
+"3+ products built, 0 sales → improve conversion, don't manufacture more"
+rule.
