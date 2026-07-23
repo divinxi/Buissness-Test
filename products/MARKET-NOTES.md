@@ -124,3 +124,40 @@ repo, ready the moment REQ-003/004 clear. Genuinely new inventory (a 5th
 product) was deliberately not built this run per the operating playbook's
 "3+ products built, 0 sales → improve conversion, don't manufacture more"
 rule.
+
+## 2026-07-23 update: independent QA pass on the actual deliverable content
+REQ-002/003/004 are all still open, ledger still $0.00 — no owner action
+recorded since yesterday. Discover-ranking research, pricing, copy, and
+cover art have all already been covered in the entries above and repeating
+any of them would add nothing new. What hadn't been done since each
+product's original build was an independent re-check of the actual shipped
+files — every prior "sanity check" happened once, at creation time, by the
+same run that wrote the content. So this run extracted and read the full
+text of all 3 PDFs (installed pypdf/reportlab/openpyxl/Pillow fresh, no
+lorem-ipsum/placeholder/TBD scan, page counts re-verified against the
+figures quoted in business_plan.md and each LISTING.md: 13pg / 8pg / 8pg,
+all correct) and audited every formula-bearing cell in all 3 xlsx files for
+correct column/range references (spot-checked full fill-down ranges, not
+just row 2).
+
+Found one real bug: page 6 of the Invoice & Late-Payment Toolkit guide
+(the 14-30-days-late reminder email) had a leftover editorial artifact —
+"a late fee of [LATE FEE %] applies to overdue balances[/ will begin
+accruing after this date]." That bracket was never meant to ship; it reads
+as broken/half-finished text next to the guide's other placeholders (which
+are all clean single fill-in tokens like [INVOICE #]). Fixed in
+scripts/content.py to a single clean sentence ("...now applies to the
+overdue balance.") and regenerated dist/*.pdf — page count unchanged at
+8pg, rest of the page unaffected. This is exactly the kind of thing that
+would look sloppy or trigger a refund request if it shipped to a paying
+customer, so worth catching before REQ-003/004 clear rather than after.
+
+No other issues found: the Tax Tracker guide's bracket-pattern scan came
+back clean, the Prompt Playbook's flagged brackets were all legitimate
+fill-in tokens (e.g. [PRODUCT/SERVICE], [WON/LOST]), and every xlsx formula
+checked (Invoice Log status/overdue logic, Reminder Dashboard rollups, the
+Quarterly Tax Estimator's SE-tax math, Expense Log's meals-50%-rule,
+ROI Summary's SUMIFs) references the correct source column and range with
+no off-by-one or stale references. Net conclusion: with the one fix above,
+all 4 products' actual file content is genuinely sale-ready, independent of
+the copy/pricing/cover work already done in prior entries.
