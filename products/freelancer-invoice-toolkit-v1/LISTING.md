@@ -44,6 +44,26 @@ went quiet.
 
 No subscription. No account needed. One-time download, yours forever.
 
+**Refund policy:** 30-day, no-questions-asked money-back guarantee — message
+through Gumroad and it's refunded, no hoops.
+
+**FAQ:**
+- **Does the late fee / small claims guidance apply in my state or
+  country?** Rules vary by jurisdiction, so the guide flags this explicitly
+  rather than guessing — it teaches you the framework and what to check
+  locally, it isn't legal advice for your specific jurisdiction.
+- **Do I need Excel, or does Google Sheets work?** Either — it's a
+  standard .xlsx file; the auto-flagging and day-count formulas work the
+  same in Google Sheets.
+- **Does this integrate with QuickBooks/FreshBooks/my invoicing software?**
+  No — it's a standalone system (guide + spreadsheet), not a plugin or
+  integration. It works alongside whatever you already invoice with.
+- **Will the reminder email scripts sound robotic or aggressive?** No —
+  they're written to sound like a real person (friendly → firm → final
+  notice), not a form-letter collections agency.
+- **What if it doesn't fit how I invoice?** Full refund within 30 days, no
+  explanation needed — see refund policy above.
+
 **Tags:** freelancer invoicing, get paid, late payment, invoice template,
 freelance business, client management, small business finance, excel template
 

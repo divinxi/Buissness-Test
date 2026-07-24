@@ -36,6 +36,28 @@ is worth about as much as the generic list you didn't buy.
 
 No subscription. No account needed. One-time download, yours forever.
 
+**Refund policy:** 30-day, no-questions-asked money-back guarantee — message
+through Gumroad and it's refunded, no hoops. (Research-backed: a clear
+money-back guarantee is one of the biggest conversion levers for a
+zero-review listing, since it removes the buyer's only real risk on a
+$17 purchase.)
+
+**FAQ:**
+- **Does this work with ChatGPT, Gemini, or Copilot, or only Claude?** Any
+  AI chat assistant — the prompts are plain text, not tied to one tool.
+- **Do I need to know how to code or "prompt engineer"?** No. Every prompt
+  is copy-paste ready, with a plain-English note on how to adapt it.
+- **Is the tracker Excel-only, or does it work in Google Sheets?** Both —
+  it's a standard .xlsx file; upload it to Google Sheets and it works the
+  same, formulas included.
+- **Will these prompts stop working as AI models change?** Unlikely — they're
+  built around the task and the wording that gets a useful answer, not a
+  specific model version, so they hold up across model updates.
+- **Is this a subscription or does it expire?** Neither. One-time payment,
+  yours forever, no account or login required.
+- **What if it's not useful for my business?** Full refund within 30 days,
+  no explanation needed — see refund policy above.
+
 **Tags:** ai prompts, small business, productivity, chatgpt, templates, prompt engineering, business tools
 
 **Files to upload:** Small-Business-AI-Prompt-Playbook.pdf, AI-Ops-Tracker.xlsx

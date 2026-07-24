@@ -161,3 +161,50 @@ ROI Summary's SUMIFs) references the correct source column and range with
 no off-by-one or stale references. Net conclusion: with the one fix above,
 all 4 products' actual file content is genuinely sale-ready, independent of
 the copy/pricing/cover work already done in prior entries.
+
+## 2026-07-24 update: refund policy + FAQ added to all 4 listings
+REQ-002/003/004 are all still open, ledger still $0.00 — no owner action
+recorded since yesterday. Discover-ranking, pricing, cover art, and file-QA
+have all already been covered in the entries above; this run looked for
+what was still genuinely missing rather than repeating any of them.
+
+Ran real web research (not from memory) on what actually moves conversion
+for a brand-new, zero-review Gumroad listing specifically:
+- A clear money-back guarantee "can double or triple conversion rates on
+  digital products" and is described as the recommended default listing
+  element (Fungies.io digital product refund policy guide).
+- A complete Gumroad product page "should include a FAQ section with 5-7
+  common buyer questions answered," addressing objections like format
+  compatibility and refunds (Kupkaike, "Gumroad Product Page Best Practices
+  in 2026").
+- Gumroad itself lets sellers set their own refund policy, but chargebacks
+  can still happen regardless, so a stated policy that heads off disputes
+  before they become chargebacks is also a account-health lever, not just
+  a conversion one (Gumroad Help Center, "What is Gumroad's refund
+  policy?").
+
+None of the 4 LISTING.md files had either element — "What this is NOT" and
+tag lists existed, but no explicit refund terms and no FAQ. Added both to
+all 4: a 30-day no-questions-asked money-back guarantee (consistent across
+all 4, redeemed via Gumroad's own messaging — no separate support email
+needed, so nothing new to set up or maintain), and a product-specific FAQ
+(5-6 questions each) covering the objections most likely to stall a buyer
+for each product specifically — e.g. Google Sheets compatibility, "is this
+valid outside the US," "does this replace a CPA," "will these prompts get
+stale as models change," "what if it doesn't fit my situation." Kept every
+answer honest — e.g. the tax tracker FAQ explicitly says a 2027 refresh is
+*planned*, not that buyers get a free upgrade, since that isn't a real
+commitment yet.
+
+This is copy-only — no Gumroad account action, no new PDF/xlsx content, no
+new inventory. Genuinely new inventory (a 5th product) was again
+deliberately not built this run, consistent with the "3+ products built,
+0 sales → improve conversion, don't manufacture more" rule — this is the
+first run in this thread of updates to add something to the listings
+themselves rather than pricing/cover/QA around them.
+
+---
+Sources (2026-07-24 additions):
+- https://fungies.io/digital-product-refund-policy-guide-2026/
+- https://kupkaike.com/blog/gumroad-product-page-best-practices
+- https://gumroad.com/help/article/51-what-is-gumroads-refund-policy

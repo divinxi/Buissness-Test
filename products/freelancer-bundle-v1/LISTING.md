@@ -38,6 +38,21 @@ organizing layer for the money admin every freelancer has to do anyway.
 
 No subscription. No account needed. One-time download, yours forever.
 
+**Refund policy:** 30-day, no-questions-asked money-back guarantee — message
+through Gumroad and it's refunded, no hoops.
+
+**FAQ:**
+- **Can I just buy one toolkit instead of the bundle?** Yes — both are
+  sold individually ($19 tax tracker, $17 invoice toolkit). The bundle is
+  only worth it if you want both.
+- **Is this valid outside the US?** The tax tracker half is U.S. federal
+  only; the invoice toolkit half is jurisdiction-agnostic (it flags where
+  rules vary by state/country rather than assuming U.S. law).
+- **Do I need Excel, or does Google Sheets work?** Either — both workbooks
+  are standard .xlsx files that work the same in Google Sheets.
+- **What if it doesn't fit my situation?** Full refund within 30 days, no
+  explanation needed — see refund policy above.
+
 **Tags:** freelancer bundle, freelancer taxes, invoice template, late
 payment, quarterly taxes, self employment tax, small business finance,
 excel template

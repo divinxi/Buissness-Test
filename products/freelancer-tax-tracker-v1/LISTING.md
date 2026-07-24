@@ -42,6 +42,31 @@ into tax season already knowing your numbers.
 
 No subscription. No account needed. One-time download, yours forever.
 
+**Refund policy:** 30-day, no-questions-asked money-back guarantee — message
+through Gumroad and it's refunded, no hoops. (Research-backed: a 30-day
+guarantee measurably lifts conversion on digital products by removing the
+buyer's risk, and matters more here than on Product 1 since $19 for an
+unreviewed seller is a bigger ask than $17.)
+
+**FAQ:**
+- **Is this valid outside the US?** No — it's built specifically around
+  U.S. federal self-employment tax and IRS Schedule C. Not applicable if
+  you file taxes in another country.
+- **Does this replace a CPA or tax software?** No — see "What this is NOT"
+  above. It's the organizing layer so you walk into tax season already
+  knowing your numbers, not a filing tool.
+- **Do I need Excel, or does Google Sheets work?** Either — it's a
+  standard .xlsx file that opens and calculates correctly in Google Sheets.
+- **What happens when 2027 tax numbers come out — do I get a free update?**
+  Not automatically today; a "2027 Edition" refresh is planned once new
+  IRS/SSA figures publish, but this listing doesn't currently promise
+  existing buyers a free upgrade. Buy this edition for 2026 figures.
+- **How do I know the numbers are actually right?** Every figure (SE tax
+  rate, Social Security wage base, quarterly deadlines) is cited against
+  IRS.gov/SSA.gov as of July 2026 — see the Accuracy note below.
+- **What if this doesn't fit my situation?** Full refund within 30 days,
+  no explanation needed — see refund policy above.
+
 **Tags:** freelancer taxes, quarterly taxes, self employment tax, schedule c,
 1099, tax tracker, small business finance, excel template
 
