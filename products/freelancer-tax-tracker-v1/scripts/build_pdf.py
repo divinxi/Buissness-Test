@@ -245,6 +245,33 @@ def build():
         "automatically so you always know, in real time, roughly what you'd owe if this quarter "
         "ended today.",
         styles["Body"]))
+    story.append(PageBreak())
+
+    # Cross-sell
+    story.append(Paragraph("More From Ledger &amp; Loop Digital", styles["CatHeader"]))
+    story.append(Paragraph(
+        "If this guide was useful, two more toolkits solve the other side of freelance money admin. "
+        "Look for these on the same store page you downloaded this from.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Freelancer Invoice &amp; Late-Payment Toolkit — $17", styles["SubHeader"]))
+    story.append(Paragraph(
+        "Covers the other half of freelance money admin: what clients owe you. A ready-to-copy "
+        "4-stage reminder email sequence, how to choose payment terms and set an enforceable late "
+        "fee, and a spreadsheet that auto-flags overdue invoices.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Small Business AI Prompt Playbook — $17", styles["SubHeader"]))
+    story.append(Paragraph(
+        "25 ready-to-use AI prompts for marketing, support, finance, hiring, and sales, plus a "
+        "spreadsheet ROI tracker. For the day-to-day operating tasks this tax guide doesn't cover.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(warn_box(
+        "Get this guide and the Invoice & Late-Payment Toolkit together as The Freelancer Money "
+        "Bundle for $29 instead of $36 separately, if it's still available as a bundle listing.",
+        label="Bundle tip",
+    ))
 
     doc.build(story)
     print(f"Wrote {OUT}")

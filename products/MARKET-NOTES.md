@@ -208,3 +208,41 @@ Sources (2026-07-24 additions):
 - https://fungies.io/digital-product-refund-policy-guide-2026/
 - https://kupkaike.com/blog/gumroad-product-page-best-practices
 - https://gumroad.com/help/article/51-what-is-gumroads-refund-policy
+
+## 2026-07-26 update: added a cross-sell page to all 3 individual PDFs
+REQ-002/003/004 are all still open, ledger still $0.00 — no owner action
+recorded in 6 days now. Discover-ranking, pricing, cover art, file-QA, and
+refund/FAQ copy have all been covered in the entries above; outreach copy
+was drafted 2026-07-25 (see OUTREACH-KIT.md). What hadn't been touched yet:
+the actual deliverable content never mentioned the other 3 products. A
+buyer of just the Tax Tracker had zero way of learning the Invoice Toolkit,
+Prompt Playbook, or Bundle existed unless they happened to browse the same
+Gumroad storefront — a real gap given the bundle's whole rationale is that
+Products 2 and 3 share a buyer.
+
+Fix: added a "More From Ledger & Loop Digital" closing page to each of the
+3 individual product PDFs (Tax Tracker, Invoice Toolkit, Prompt Playbook),
+cross-promoting the other 2 products by name/price/one-line pitch, plus a
+"Bundle tip" box on the two freelancer products pointing at the $29 bundle.
+Deliberately did NOT hardcode a Gumroad URL (nothing is live yet, and a
+dead/wrong link would look worse than no link) — the page instead says
+"look for these on the same store page you downloaded this from," which
+stays accurate however the storefront ends up organized. The bundle PDF
+itself doesn't need this page since it already contains both toolkits.
+
+This changed each guide's page count: Tax Tracker 8pg→9pg, Invoice Toolkit
+8pg→9pg, Prompt Playbook 13pg→14pg. Regenerated all 3 PDFs, re-verified
+page counts match the new figures, and re-ran the same bracket-artifact
+scan from the 2026-07-23 QA pass on the regenerated files — clean (the one
+match was the legitimate [WON/LOST] fill-in token, not a leftover
+artifact). Updated the page counts in each product's LISTING.md,
+business_plan.md, and the bundle's LISTING.md (which describes both
+toolkits' contents). This is a real, permanent improvement to the
+deliverable files themselves, not just listing copy — it survives however
+the products eventually get sold (Gumroad, bundle, direct link, etc.) and
+costs nothing to maintain going forward, unlike the outreach kit which
+needs Jimmy to actually send it.
+
+No new product built (5th idea, "Prompt Playbook Vol. 2," stays queued) —
+consistent with "3+ products built, 0 sales → improve conversion, don't
+manufacture more."

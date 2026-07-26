@@ -110,6 +110,29 @@ def build():
         "want a custom set built specifically around your business, your voice, and your actual "
         "recurring tasks, reach out — contact details are on the product page you downloaded this from.",
         styles["PromptBody"]))
+    story.append(PageBreak())
+
+    # Cross-sell
+    story.append(Paragraph("More From Ledger &amp; Loop Digital", styles["CatHeader"]))
+    story.append(Paragraph(
+        "If this playbook was useful, two more toolkits solve specific freelance money-admin "
+        "problems these general prompts don't. Look for these on the same store page you "
+        "downloaded this from.",
+        styles["PromptBody"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Freelancer Quarterly Tax & Expense Tracker (2026 Edition) — $19", styles["MetaLabel"]))
+    story.append(Spacer(1, 2))
+    story.append(Paragraph(
+        "2026 quarterly deadlines, a self-employment tax calculator with a worked example, all 17 "
+        "Schedule C expense categories, and a live tax-estimator spreadsheet.",
+        styles["PromptBody"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Freelancer Invoice & Late-Payment Toolkit — $17", styles["MetaLabel"]))
+    story.append(Spacer(1, 2))
+    story.append(Paragraph(
+        "A ready-to-copy 4-stage reminder email sequence, how to choose payment terms and set an "
+        "enforceable late fee, and a spreadsheet that auto-flags overdue invoices.",
+        styles["PromptBody"]))
 
     doc.build(story)
     print(f"Wrote {OUT}")

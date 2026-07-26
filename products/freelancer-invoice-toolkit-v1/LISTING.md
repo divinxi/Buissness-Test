@@ -22,14 +22,15 @@ This toolkit fixes that with a repeatable system instead of one-off
 scrambling:
 
 **What's inside:**
-- **A guide covering:** the 8 things every invoice needs to get paid faster,
-  how to choose payment terms (Due on Receipt vs. Net 15/30 vs. deposits)
-  based on the client relationship, why a deposit is the single biggest lever
-  for reducing non-payment risk, a ready-to-copy 4-stage reminder email
-  sequence (friendly → firm → final notice), how to set up a late fee that's
-  actually enforceable, how to handle scope creep before it becomes unpaid
-  work, and a clear, level-headed escalation path for when a client genuinely
-  won't pay.
+- **A 9-page guide covering:** the 8 things every invoice needs to get paid
+  faster, how to choose payment terms (Due on Receipt vs. Net 15/30 vs.
+  deposits) based on the client relationship, why a deposit is the single
+  biggest lever for reducing non-payment risk, a ready-to-copy 4-stage
+  reminder email sequence (friendly → firm → final notice), how to set up a
+  late fee that's actually enforceable, how to handle scope creep before it
+  becomes unpaid work, a clear, level-headed escalation path for when a
+  client genuinely won't pay, and a closing page pointing to the other
+  Ledger &amp; Loop toolkits.
 - **A 4-tab Excel/Sheets workbook** (Invoice-Payment-Tracker.xlsx): an
   Invoice Log that auto-flags each invoice as Paid / Overdue / Upcoming and
   counts exact days overdue, a Reminder Dashboard that tells you at a glance

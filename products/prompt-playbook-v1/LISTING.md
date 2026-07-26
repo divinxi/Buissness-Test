@@ -30,7 +30,7 @@ it to your business** — because a prompt you copy-paste without customizing
 is worth about as much as the generic list you didn't buy.
 
 **What you get:**
-- A 13-page PDF playbook, organized and ready to copy-paste
+- A 14-page PDF playbook, organized and ready to copy-paste (includes a closing page pointing to the other Ledger &amp; Loop toolkits)
 - A companion Excel/Google Sheets tracker with a built-in ROI calculator — log the prompts you use and see the actual hours (and dollars) saved
 - Works with Claude, ChatGPT, Gemini, or any AI chat assistant you already use
 

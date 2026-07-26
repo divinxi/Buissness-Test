@@ -19,12 +19,12 @@ admin for you. This bundles the two toolkits that fix both halves of that —
 what you owe, and what you're owed.
 
 **What's inside (4 files, both toolkits in full):**
-- **The Freelancer Quarterly Tax & Expense Tracker (2026 Edition)** — 8-page
+- **The Freelancer Quarterly Tax & Expense Tracker (2026 Edition)** — 9-page
   PDF guide (2026 quarterly deadlines, a worked self-employment tax
   calculation, all 17 Schedule C expense categories, home office deduction,
   audit-risk patterns) plus a 5-tab Excel workbook with a live tax
   estimator and dashboard.
-- **The Freelancer Invoice & Late-Payment Toolkit** — 8-page PDF guide
+- **The Freelancer Invoice & Late-Payment Toolkit** — 9-page PDF guide
   (invoice essentials, payment terms by client risk, a 4-stage reminder
   email sequence, enforceable late fees, non-payment escalation path) plus
   a 4-tab Excel workbook that auto-flags overdue invoices and tracks

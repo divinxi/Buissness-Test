@@ -53,10 +53,11 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 ## Product line 2: Spreadsheet Tools
 
 ### Product 2.1: "Freelancer Quarterly Tax & Expense Tracker (2026 Edition)"
-- PDF guide (8pg): 2026 quarterly estimated tax deadlines, a worked
+- PDF guide (9pg): 2026 quarterly estimated tax deadlines, a worked
   self-employment tax calculation, all 17 real IRS Schedule C expense
-  categories with freelancer-specific notes, home office deduction, and
-  audit-risk patterns. Figures verified against IRS.gov/SSA.gov July 2026.
+  categories with freelancer-specific notes, home office deduction,
+  audit-risk patterns, and a closing cross-sell page pointing to the other
+  toolkits. Figures verified against IRS.gov/SSA.gov July 2026.
 - Companion .xlsx: Income Log, Expense Log (auto-applies the 50% meals
   deduction rule), a Quarterly Tax Estimator that computes exact SE tax from
   the user's own numbers, and a live Dashboard. All formulas independently
@@ -66,11 +67,12 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
   refresh once next year's numbers are published.
 
 ### Product 2.2: "Freelancer Invoice & Late-Payment Toolkit"
-- PDF guide (8pg): the 8 things every invoice needs, choosing payment terms
+- PDF guide (9pg): the 8 things every invoice needs, choosing payment terms
   (Due on Receipt/Net 15/Net 30/deposits) by client risk, a ready-to-copy
   4-stage reminder email sequence, how to set up an enforceable late fee,
-  scope-creep/change-order handling, and a level-headed non-payment
-  escalation path (stop work, formal demand, small claims, collections).
+  scope-creep/change-order handling, a level-headed non-payment escalation
+  path (stop work, formal demand, small claims, collections), and a closing
+  cross-sell page pointing to the other toolkits.
 - Companion .xlsx: Invoice Log (auto-flags Paid/Overdue/Upcoming and counts
   days overdue), a Reminder Dashboard (shows how many invoices need which
   reminder stage today), and a fill-in Invoice Template with auto-calculated

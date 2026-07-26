@@ -222,6 +222,33 @@ def build():
         "flags exactly which invoices are overdue and which reminder stage they're due for — no "
         "mental math, no missed follow-ups.",
         styles["Body"]))
+    story.append(PageBreak())
+
+    # Cross-sell
+    story.append(Paragraph("More From Ledger &amp; Loop Digital", styles["CatHeader"]))
+    story.append(Paragraph(
+        "If this toolkit was useful, two more cover the other side of running a freelance business. "
+        "Look for these on the same store page you downloaded this from.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Freelancer Quarterly Tax &amp; Expense Tracker (2026 Edition) — $19", styles["SubHeader"]))
+    story.append(Paragraph(
+        "Covers the other side of freelance money admin: what you owe, not just what you're owed. "
+        "2026 quarterly deadlines, a self-employment tax calculator with a worked example, all 17 "
+        "Schedule C expense categories, and a live tax-estimator spreadsheet.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("The Small Business AI Prompt Playbook — $17", styles["SubHeader"]))
+    story.append(Paragraph(
+        "25 ready-to-use AI prompts for marketing, support, finance, hiring, and sales, plus a "
+        "spreadsheet ROI tracker. For the day-to-day operating tasks this toolkit doesn't cover.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(warn_box(
+        "Get this toolkit and the Quarterly Tax &amp; Expense Tracker together as The Freelancer "
+        "Money Bundle for $29 instead of $36 separately, if it's still available as a bundle listing.",
+        label="Bundle tip",
+    ))
 
     doc.build(story)
     print(f"Wrote {OUT}")

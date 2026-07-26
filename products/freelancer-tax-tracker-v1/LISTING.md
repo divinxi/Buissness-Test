@@ -21,12 +21,13 @@ guide plus a working spreadsheet, built around the actual 2026 U.S. federal
 numbers (not last year's, not rounded estimates).
 
 **What's inside:**
-- **An 8-page PDF guide** covering: the four 2026 quarterly estimated tax
+- **A 9-page PDF guide** covering: the four 2026 quarterly estimated tax
   deadlines, exactly how self-employment tax is calculated (with a full
   worked example, not just a formula), all 17 real IRS Schedule C expense
   categories explained in plain English with freelancer-specific notes, the
-  home office deduction (simplified vs. regular method), and five real
-  audit-risk patterns to avoid.
+  home office deduction (simplified vs. regular method), five real
+  audit-risk patterns to avoid, and a closing page pointing to the other
+  Ledger &amp; Loop toolkits.
 - **A 5-tab Excel/Sheets workbook** (Freelancer-Tax-Tracker.xlsx): Income
   Log, Expense Log (with a category dropdown mapped straight to Schedule C —
   meals auto-calculate at the correct 50% deductible rate), a Quarterly Tax
