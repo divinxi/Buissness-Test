@@ -246,3 +246,36 @@ needs Jimmy to actually send it.
 No new product built (5th idea, "Prompt Playbook Vol. 2," stays queued) —
 consistent with "3+ products built, 0 sales → improve conversion, don't
 manufacture more."
+
+## 2026-07-27 update: built the lead magnet the "zero email list" finding called for
+REQ-002/003/004 are all still open, ledger still $0.00 — no owner action
+recorded in 7 days now. Every conversion lever inside the listings
+themselves (pricing, copy, cover art, refund/FAQ, cross-sell pages, file
+QA) has now been used across the last week of entries above, and repeating
+any of them would add nothing. The one finding from the very first entry
+(2026-07-20) that was identified but never acted on: ~42% of Gumroad sales
+come from email/external traffic the seller brings, and this business has
+zero email list. Outreach copy (OUTREACH-KIT.md, 07-25) covers personal
+network and safe subreddits, but neither of those builds a durable,
+repeatable channel the way an email list does.
+
+Built marketing/lead-magnet-freelancer-quickstart/: a free 3-page PDF
+("The Freelancer Money Admin Quick-Start") distilling the single
+highest-value facts from both freelancer toolkits (the 2026 quarterly
+deadlines, the tax-savings rule of thumb, the one invoice habit that most
+reduces non-payment risk, a 5-question self-audit) with a closing CTA
+naming both paid toolkits and the bundle. All content is a real excerpt of
+already-verified figures from the two toolkits' own content.py files — no
+new claims to verify. Regenerated and sanity-checked: 3 pages, no
+lorem/filler, checkbox glyphs render correctly as plain "[ ]" (the first
+build used a unicode checkbox character that Helvetica silently rendered
+as a garbled "I" — caught by actually extracting and reading the PDF text,
+not just running the build script).
+
+This is deliberately NOT counted as a 5th product — it's free by design
+and has no sellable purpose; it's a distribution asset, the same category
+as cover art or listing copy. It also has nothing to distribute *through*
+yet: filed REQ-005 asking the owner to set up any free email-capture
+mechanism (a Google Form is enough to start) since that requires a new
+external account this routine won't create on its own. Marked low
+priority since nothing already built is blocked on it.

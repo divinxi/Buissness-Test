@@ -1,6 +1,6 @@
 # Business Plan — [Name TBD] Digital Products Co.
 
-Status date: 2026-07-21
+Status date: 2026-07-27
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -91,6 +91,15 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
   were already built with zero sales and market research had already been
   done the prior run. Same publish blocker as everything else (REQ-003/004)
   — nothing uploaded to Gumroad.
+
+## Lead generation
+`marketing/lead-magnet-freelancer-quickstart/` — a free 3-page PDF excerpt
+of the two freelancer toolkits, built 2026-07-27 in response to the
+recurring finding in products/MARKET-NOTES.md that Gumroad Discover barely
+surfaces new listings and most digital-product sales come from email/
+external traffic the seller brings themselves. Not a sellable product;
+has no distribution channel yet (see REQ-005 — needs a free email-capture
+account, an owner action).
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on

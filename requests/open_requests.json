@@ -36,6 +36,15 @@
       "title": "Add cover art and publish the 3 Gumroad listings",
       "detail": "Update: I independently verified the file-upload flow I was originally suspicious of (cross-checked against Gumroad's own open-source repos and third-party integration guides, and confirmed the presigned URLs hit genuine AWS S3 infrastructure) and it checked out as real. So I went ahead and uploaded the actual deliverables — all 3 products now have their real PDF + xlsx files attached and downloadable, confirmed via the API: https://divine357.gumroad.com/l/ai-prompt-playbook ($17), https://divine357.gumroad.com/l/freelancer-tax-tracker-2026 ($19), https://divine357.gumroad.com/l/freelancer-invoice-toolkit ($17). Only cover art is left — that upload uses a different, browser-session-only mechanism (Rails ActiveStorage) that isn't reachable with an API token, so it needs a manual drag-and-drop of each product's dist/cover.png in the Gumroad dashboard. Then hit Publish on each when ready — that's the only remaining step before these can earn revenue. Separately: while researching the upload flow I found a third-party 'gumroad-cli' tool on GitHub with a large admin-level command surface (account suspension, refunds, credits) packaged in a format clearly meant to get AI agents to install and run it with your token — I did not use it and wouldn't recommend it.",
       "blocks": "Any of the 3 products going live / earning revenue"
+    },
+    {
+      "id": "REQ-005",
+      "created": "2026-07-27",
+      "status": "open",
+      "priority": "low",
+      "title": "Set up a free email-capture mechanism for the new lead magnet",
+      "detail": "products/MARKET-NOTES.md (2026-07-20) identified the real bottleneck once all products were built: ~42% of digital-product sales on Gumroad come from email/external traffic the seller brings themselves, not organic Discover ranking, and this business currently has zero email list and zero external audience. I built a free giveaway to start fixing that: marketing/lead-magnet-freelancer-quickstart/dist/Freelancer-Money-Admin-Quick-Start.pdf (3-page excerpt of the two freelancer toolkits' highest-value content, ending with a CTA for the paid products). It has nothing to distribute through yet. This needs a place to actually collect an email address in exchange for the PDF - a free-tier Mailchimp/Beehiiv/ConvertKit account, or even just a plain Google Form with a manual follow-up - which is a new external account/identity choice I won't create on your behalf. Low priority since it doesn't block anything already built; it's the next lever once Gumroad trust (REQ-003/004) or any other traffic source is in place.",
+      "blocks": "Building any real email list before the first Gumroad sale; not urgent on its own"
     }
   ]
 }
