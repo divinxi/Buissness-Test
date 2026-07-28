@@ -279,3 +279,52 @@ yet: filed REQ-005 asking the owner to set up any free email-capture
 mechanism (a Google Form is enough to start) since that requires a new
 external account this routine won't create on its own. Marked low
 priority since nothing already built is blocked on it.
+
+## 2026-07-28 update: built the next queued product instead of another
+conversion pass
+REQ-002/003/004/005 are all still open, ledger still $0.00 — no owner
+action recorded in 8 days now on REQ-003/004 (the oldest, highest-priority
+blockers). Every conversion lever inside the existing listings has now been
+used at least once across the past 8 daily runs: pricing check, bundle
+packaging, cover art (twice — including a mockup graphic), refund policy +
+FAQ on all 4 listings, cross-sell pages in all 3 individual PDFs, an
+independent file-content QA pass, a draft outreach kit, and a free lead
+magnet. Repeating any of these today would mean writing a new paragraph
+that reaches the same "nothing changed, still blocked" conclusion, not real
+work.
+
+So this run switched to the other applicable rule: with everything publish-
+related blocked purely on owner action, and no fresh conversion lever left
+to pull, the highest-value use of the run is making sure there's more ready
+to go the moment REQ-003/004 clear. Built the next item in the idea queue
+end-to-end: **AI Prompt Playbook Vol. 2: Systems & Automation** — see
+products/prompt-playbook-vol2-v1/. Deliberately scoped to NOT overlap with
+Vol. 1's one-off-task categories (Marketing, Support, Finance, HR, Sales):
+Vol. 2 covers building persistent AI systems, customer lifecycle
+automation, competitive intelligence, ops reporting, and delegation —
+recurring habits rather than one-off asks. Same 25-prompts/5-categories/
+14-page format as Vol. 1 for brand consistency, same $17 price point (no
+data yet to justify pricing it differently), and the companion tracker
+(Automation-ROI-Tracker.xlsx) is genuinely different from Vol. 1's — it
+converts logged workflows into monthly/annual value based on how often they
+actually recur (Daily/Weekly/Monthly/Quarterly), which is the right
+calculation for prompts meant to be reused on a schedule rather than a flat
+per-use time log.
+
+QA'd the same way the 2026-07-23 pass did: extracted and read the full PDF
+text (14 pages, confirmed against the LISTING.md and business_plan.md
+figures), scanned for lorem/filler/leftover-editorial-bracket artifacts
+(none — all 46 bracket tokens are legitimate fill-in placeholders),
+verified all 5 category headers render on their own pages, and checked
+every ROI Summary formula (SUMIF category breakdown, VLOOKUP frequency
+multiplier, SUM/COUNTA totals) references the correct sheet and range. Cover
+art needed one fix after actually rendering and viewing it: the 5-chip tag
+row ran off the right edge of the canvas at the original font size —
+switched to a two-row chip layout rather than just shrinking text further,
+caught by looking at the PNG, not by re-running the script and assuming it
+was fine.
+
+This is real new inventory, which the last 8 entries all deliberately
+avoided building — that was the right call while conversion levers still
+existed to pull; it stopped being the right call once they ran out. Product
+count is now 5 (4 individual + the bundle), still 0 sales.

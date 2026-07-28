@@ -50,6 +50,28 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 - Companion .xlsx: prompt usage tracker + simple time-saved / ROI calculator.
 - Status: built and ready to list, $17. See products/prompt-playbook-v1/.
 
+### Product 1.2: "AI Prompt Playbook Vol. 2: Systems & Automation"
+- PDF (14pg): 25 prompts for turning AI into repeatable systems rather than
+  one-off tasks — Build Your AI Systems, Customer Lifecycle Automation,
+  Competitive & Market Intelligence, Reporting & Ops Rhythm, and Delegation
+  & Team Enablement (5 categories x 5 prompts). Deliberately non-overlapping
+  with Vol. 1's one-off-task categories. Includes a closing cross-sell page
+  covering all 4 other products.
+- Companion .xlsx (Automation-ROI-Tracker.xlsx): logs recurring workflows by
+  frequency (Daily/Weekly/Monthly/Quarterly) and converts to monthly/annual
+  time and dollar value via a frequency-multiplier lookup — a different,
+  more relevant calculation than Vol. 1's flat per-use time tracker, since
+  these prompts are meant to be reused on a schedule.
+- Status: built 2026-07-28 and ready to list, $17. See
+  products/prompt-playbook-vol2-v1/. Built as the next queued product since
+  every conversion lever on the first 4 products (pricing, copy, cover art,
+  refund/FAQ, cross-sell pages, file QA, lead magnet, outreach kit) had
+  already been used across 8 straight days with zero owner action recorded
+  on REQ-002/003/004/005 — manufacturing more research findings would have
+  added nothing, so this run built real new inventory instead, per the
+  "everything blocked on owner action → build the next product in the
+  queue" rule.
+
 ## Product line 2: Spreadsheet Tools
 
 ### Product 2.1: "Freelancer Quarterly Tax & Expense Tracker (2026 Edition)"
