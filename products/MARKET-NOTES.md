@@ -328,3 +328,39 @@ This is real new inventory, which the last 8 entries all deliberately
 avoided building — that was the right call while conversion levers still
 existed to pull; it stopped being the right call once they ran out. Product
 count is now 5 (4 individual + the bundle), still 0 sales.
+
+## 2026-07-29 update: fixed a stale cross-sell gap Vol. 2 created
+
+REQ-002/003/004/005 are all still open, ledger still $0.00 — no owner
+action recorded in 9 days now on REQ-003/004. Per the operating rule (3+
+products built, 0 sales → improve conversion, don't manufacture a 6th
+product), looked for what was genuinely unexamined rather than repeating
+any prior entry.
+
+Found one: building AI Prompt Playbook Vol. 2 yesterday (2026-07-28) quietly
+broke a promise the other 3 individual PDFs make. Vol. 2's own cross-sell
+page correctly lists all 4 other products, but the "More From Ledger & Loop
+Digital" closing pages in the Prompt Playbook v1, Tax Tracker, and Invoice
+Toolkit PDFs still said "two more toolkits" and only named each other —
+Vol. 2 didn't exist when those pages were written (2026-07-26), so it was
+invisible to a buyer of any of the 3 older products. Given the bundle's own
+rationale is cross-product awareness, this was a real, live gap, not a
+hypothetical one.
+
+Fix: added a Vol. 2 entry (title, price, one-line pitch) to all 3 older
+products' cross-sell pages and updated "two more toolkits/cover" → "three
+more toolkits/cover the other sides" to match. Regenerated all 3 PDFs.
+Page counts unchanged (14pg / 9pg / 9pg — the new paragraph fit on the
+existing cross-sell page in all 3 cases, confirmed by re-extracting and
+counting pages, not assumed). Re-ran the same bracket/lorem artifact scan
+used since 2026-07-23: all bracket matches in all 3 files are legitimate
+fill-in tokens ([BUSINESS NAME], [INVOICE #], [WON/LOST], etc.), no
+lorem/filler, and all 3 files now contain "Vol. 2" in their extracted text
+where they previously didn't. No LISTING.md or business_plan.md changes
+needed — page counts didn't move.
+
+Did not touch pricing, cover art, refund/FAQ copy, or the bundle listing
+this run (all already covered by prior entries and none were stale). Did
+not build a 6th product — the gap above was the higher-leverage, more
+overdue fix, and per the "quality over volume" operating principle a real
+consistency bug beats new inventory nobody can buy yet anyway.

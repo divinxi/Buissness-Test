@@ -227,8 +227,8 @@ def build():
     # Cross-sell
     story.append(Paragraph("More From Ledger &amp; Loop Digital", styles["CatHeader"]))
     story.append(Paragraph(
-        "If this toolkit was useful, two more cover the other side of running a freelance business. "
-        "Look for these on the same store page you downloaded this from.",
+        "If this toolkit was useful, three more cover the other sides of running a freelance "
+        "business. Look for these on the same store page you downloaded this from.",
         styles["Body"]))
     story.append(Spacer(1, 14))
     story.append(Paragraph("The Freelancer Quarterly Tax &amp; Expense Tracker (2026 Edition) — $19", styles["SubHeader"]))
@@ -242,6 +242,13 @@ def build():
     story.append(Paragraph(
         "25 ready-to-use AI prompts for marketing, support, finance, hiring, and sales, plus a "
         "spreadsheet ROI tracker. For the day-to-day operating tasks this toolkit doesn't cover.",
+        styles["Body"]))
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $17", styles["SubHeader"]))
+    story.append(Paragraph(
+        "25 more prompts for turning AI into repeatable systems: automation, customer lifecycle, "
+        "competitive intelligence, ops reporting, and delegation, plus a recurring-workflow ROI "
+        "tracker.",
         styles["Body"]))
     story.append(Spacer(1, 14))
     story.append(warn_box(
