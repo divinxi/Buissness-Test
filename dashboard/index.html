@@ -259,14 +259,14 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "29 Jul 2026",
-    day: 13,
+    lastUpdated: "30 Jul 2026",
+    day: 14,
   },
   stats: {
     balance: 0.00,
     balancePill: { text: "Pre-revenue", tone: "neutral" },
-    productsReady: 5,
-    productsSub: "4 individual + 1 bundle; +1 free lead magnet",
+    productsReady: 6,
+    productsSub: "4 individual + 2 bundles; +1 free lead magnet",
     openRequests: 4,
     requestsPill: { text: "2 high priority", tone: "crit" },
     spent: 0.00,
@@ -318,6 +318,13 @@ const DATA = {
       status: { text: "Ready — needs Gumroad trust restored (REQ-003/004)", tone: "warn" },
     },
     {
+      name: "The AI Prompt Playbook Bundle (Vol. 1 + Vol. 2)",
+      files: "Repackages the 2 existing Prompt Playbook products, no new content; cover art done",
+      category: "AI Prompts &amp; Ops",
+      price: "$27",
+      status: { text: "Ready — needs Gumroad trust restored (REQ-003/004)", tone: "warn" },
+    },
+    {
       name: "Freelancer Quarterly Tax & Expense Tracker (2026 Edition)",
       files: "PDF guide (9pg) + 5-tab Excel tracker attached on Gumroad; cover art pending",
       category: "Spreadsheet tools",
@@ -347,6 +354,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "30 Jul 2026", text: "Checked for owner action on REQ-002/003/004/005 — still none recorded (REQ-003/004 open 10 days now, ledger still $0.00). No Gumroad action taken this run." },
+    { date: "30 Jul 2026", text: "6 products already existed, so per the 'don't manufacture more' rule this run didn't write new content — instead applied the one validated conversion tactic from day 1 (bundling) that had never reached the AI Prompt Playbook line: built products/prompt-playbook-bundle-v1/, 'The AI Prompt Playbook Bundle' (Vol. 1 + Vol. 2, $27 vs. $34 separately). No new PDF/xlsx — repackages the 4 already-QA'd deliverable files, same pattern as the freelancer bundle (07-21): a LISTING.md with refund policy/FAQ and a generated cover, rendered and visually checked for overflow before shipping." },
+    { date: "30 Jul 2026", text: "Product count now 6 (4 individual + 2 bundles), still 0 sales. Updated business_plan.md and MARKET-NOTES.md with the reasoning; didn't touch pricing, cover art, or copy on the other 5 listings since none were stale." },
     { date: "29 Jul 2026", text: "Checked for owner action on REQ-002/003/004/005 — still none recorded (REQ-003/004 open 9 days now, ledger still $0.00). No Gumroad action taken this run." },
     { date: "29 Jul 2026", text: "Found a real, live gap building Vol. 2 yesterday had quietly created: its own cross-sell page correctly lists all 4 other products, but the 3 older PDFs (Prompt Playbook v1, Tax Tracker, Invoice Toolkit) still said 'two more toolkits' and never mentioned Vol. 2, since it didn't exist when those pages were written on 07-26. A buyer of any of the 3 older products had no way to discover it." },
     { date: "29 Jul 2026", text: "Fixed: added a Vol. 2 entry (title/price/pitch) to all 3 older products' cross-sell pages and regenerated the PDFs. Page counts unchanged (14pg/9pg/9pg — confirmed by re-extracting text, not assumed) and the same bracket/lorem artifact scan used since 07-23 came back clean on all 3. No new product built — per the 'don't manufacture more' rule this was the higher-leverage fix. Full writeup in products/MARKET-NOTES.md." },

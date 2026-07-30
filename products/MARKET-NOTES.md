@@ -364,3 +364,37 @@ this run (all already covered by prior entries and none were stale). Did
 not build a 6th product — the gap above was the higher-leverage, more
 overdue fix, and per the "quality over volume" operating principle a real
 consistency bug beats new inventory nobody can buy yet anyway.
+
+## 2026-07-30 update: applied the validated bundling tactic to the prompt-playbook line
+
+REQ-002/003/004/005 are all still open, ledger still $0.00 — no owner
+action recorded in 10 days now on REQ-003/004. 6 products already exist
+(5 individual + 1 bundle), so per the "3+ built, 0 sales → improve
+conversion, don't manufacture more" rule this run did not write a new PDF
+of fresh content. But it also isn't a repeat of prior entries: bundling
+Products 2+3 into "The Freelancer Money Bundle" (07-21) was explicitly
+flagged in the very first market-research entry (07-20) as the
+lowest-effort, most-repeated tactic for zero-review Gumroad listings, and
+that lever had only ever been pulled once, on the freelancer line — it was
+never applied to the AI Prompt Playbook line because Vol. 2 (which unlocked
+it) didn't exist until 07-28.
+
+Built products/prompt-playbook-bundle-v1/: "The AI Prompt Playbook Bundle"
+(Vol. 1 + Vol. 2, $27 vs. $34 separately — the same ~20% discount ratio as
+the freelancer bundle, for consistency across the catalog). No new PDF/xlsx
+content — repackages the 4 existing, already-QA'd deliverable files.
+Followed the freelancer-bundle-v1 pattern exactly: a LISTING.md (full
+description, refund policy, FAQ, tags, file list) and a generated cover.png
+(adapted the same Pillow-shapes approach, two overlapping PDF-page mockups
+instead of a PDF+spreadsheet pair since a prompt bundle is 2 guides, not a
+guide+workbook pairing) — rendered and visually inspected the PNG before
+calling it done; no chip-row overflow or text collisions this time.
+
+This is genuinely new work, not a duplicate of the 07-21 freelancer bundle
+or any other prior entry, and it required zero new written content — the
+same "low-effort, high-conviction" category as the original bundle. Did not
+touch pricing, cover art, refund/FAQ copy, or cross-sell pages on the other
+5 products this run (all already current, none stale). Product count is
+now 6 (5 individual + 2 bundles), still 0 sales — the real bottleneck
+remains REQ-003/004 (Gumroad trust) and REQ-005 (no distribution channel
+yet), not anything inside the listings themselves.

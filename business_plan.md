@@ -72,6 +72,15 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
   "everything blocked on owner action → build the next product in the
   queue" rule.
 
+### Product 1.3: "The AI Prompt Playbook Bundle" (1.1 + 1.2 combined)
+- No new content — repackages the existing Vol. 1 and Vol. 2 PDFs/xlsx into
+  one $27 listing (vs. $34 buying both separately).
+- Status: listing copy and cover written and ready to publish, see
+  products/prompt-playbook-bundle-v1/LISTING.md. Built 2026-07-30, applying
+  the same bundling tactic already validated for the freelancer line
+  (Product 2.3) now that Vol. 2 exists to bundle with Vol. 1. Same publish
+  blocker as everything else (REQ-003/004) — nothing uploaded to Gumroad.
+
 ## Product line 2: Spreadsheet Tools
 
 ### Product 2.1: "Freelancer Quarterly Tax & Expense Tracker (2026 Edition)"
