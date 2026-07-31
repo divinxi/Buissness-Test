@@ -64,8 +64,9 @@ through Gumroad and it's refunded, no hoops.
 - **What if it doesn't fit my situation?** Full refund within 30 days, no
   explanation needed — see refund policy above.
 
-**Tags:** ai prompts, automation, business systems, chatgpt, productivity,
-templates, prompt engineering, business tools, bundle
+**Tags:** ai prompts for small business, business systems automation, ai
+workflow templates, chatgpt prompts for business owners, productivity
+systems, business tools, bundle
 
 **Files to upload:** the same 4 deliverables already built and listed
 individually — no new files to generate:

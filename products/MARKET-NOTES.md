@@ -398,3 +398,62 @@ touch pricing, cover art, refund/FAQ copy, or cross-sell pages on the other
 now 6 (5 individual + 2 bundles), still 0 sales — the real bottleneck
 remains REQ-003/004 (Gumroad trust) and REQ-005 (no distribution channel
 yet), not anything inside the listings themselves.
+
+## 2026-07-31 update: is the niche/positioning still right? (fresh research, not from memory)
+REQ-002/003/004/005 are all still open with no owner action recorded in 11
+days — ledger still $0.00. 6 products now exist (4 individual + 2 bundles)
+plus a free lead magnet, and every prior entry in this file already covers
+Discover ranking, pricing, copy, cover art, file QA, refund/FAQ, and
+cross-sell pages. What hadn't been checked yet, per the operating
+playbook's explicit instruction for "3+ built, 0 sold," was the harder
+question underneath all of that: is "AI prompt playbook" / "freelancer
+toolkit" still a sound niche to be selling into in 2026 at all, or has the
+market moved past it while this business built inventory?
+
+Ran real web searches (not from memory) on 2026 Gumroad/digital-product
+market conditions:
+- Generic "500 ChatGPT prompts" packs are explicitly called out as
+  saturated and rated poorly in 2026; genuinely niche, outcome-driven
+  prompt bundles for specific business workflows are still selling, and
+  coding/developer-focused prompt packs are a growing, less-saturated
+  subcategory commanding $20-99 (not our audience or angle).
+- Broader Gumroad trend data: AI-integrated resources and productivity
+  systems are a currently-strong category; "Writing & Publishing" has the
+  highest revenue-per-product of any category with the least competition.
+- Niche-saturation research specifically calls out "freelancer finance
+  planners" and "freelancer business kits" as validated, still-open 2026
+  niches — i.e. Products 2.1/2.2/2.3 (tax tracker, invoice toolkit,
+  freelancer bundle) sit squarely in a niche independent research says is
+  still good, not something I talked myself into.
+
+**Honest assessment:** re-reading our own 3 AI Prompt Playbook listings
+against the "generic vs. specific" line these sources draw, the actual
+*content* already avoids the saturated bucket — prompts are organized by
+concrete business function (Marketing, Support, Finance, Hiring, Sales /
+Systems, Lifecycle, Intel, Reporting, Delegation), not a flat "500 prompts"
+dump. But the **tags** on all 3 listings (ai prompts, chatgpt, templates,
+prompt engineering) were generic enough to risk Gumroad/search grouping us
+with the saturated, poorly-rated generic-pack bucket regardless of what's
+actually inside. Fixed: retagged all 3 AI Prompt Playbook listings (v1,
+Vol. 2, bundle) to specific-audience phrases (e.g. "ai prompts for small
+business," "chatgpt prompts for business owners," "ai workflow templates")
+instead of single generic buzzwords, so search/category placement matches
+the actual positioning instead of undercutting it. No pricing change — our
+$17-$29 range already sits inside the 2026-recommended $15-30 floor for
+this format, and nothing in this research suggests our current prices are
+the problem.
+
+**Net conclusion:** no niche pivot needed, no new product line warranted.
+The freelancer line's positioning is independently validated as strong; the
+AI-prompt line's content was already fine but its tags were quietly
+undercutting it, now fixed. This is real repositioning work grounded in
+today's search results, not a repeat of the Discover-algorithm/pricing/copy
+conclusions already reached in the entries above.
+
+Sources:
+- https://trustly-ai.com/blog/best-practices-selling-ai-prompt-packs-gumroad-2026
+- https://greyjournal.net/hustle/how-to-sell-ai-prompts-2026/
+- https://insightraider.com/en/answers/what-digital-products-sell-best-on-gumroad
+- https://www.accio.com/business/gumroad-trends
+- https://kupkaike.com/blog/7-untapped-digital-product-niches
+- https://resellready.co/blogs/news/low-competition-digital-products-to-sell-2026-guide

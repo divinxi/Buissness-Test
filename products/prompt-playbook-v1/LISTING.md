@@ -58,7 +58,7 @@ $17 purchase.)
 - **What if it's not useful for my business?** Full refund within 30 days,
   no explanation needed — see refund policy above.
 
-**Tags:** ai prompts, small business, productivity, chatgpt, templates, prompt engineering, business tools
+**Tags:** ai prompts for small business, small business ai toolkit, chatgpt prompts for business owners, business prompt templates, ai for small business, productivity, business tools
 
 **Files to upload:** Small-Business-AI-Prompt-Playbook.pdf, AI-Ops-Tracker.xlsx
 (both in products/prompt-playbook-v1/dist/)

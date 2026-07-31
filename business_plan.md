@@ -1,6 +1,6 @@
 # Business Plan — [Name TBD] Digital Products Co.
 
-Status date: 2026-07-27
+Status date: 2026-07-31
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -131,6 +131,21 @@ surfaces new listings and most digital-product sales come from email/
 external traffic the seller brings themselves. Not a sellable product;
 has no distribution channel yet (see REQ-005 — needs a free email-capture
 account, an owner action).
+
+## Niche/positioning check (2026-07-31)
+With 6 products built and still $0.00 in sales, ran fresh 2026 market
+research (see products/MARKET-NOTES.md for sources) to check whether the
+niche itself is still sound rather than just tweaking listing mechanics
+again. Finding: generic "500 ChatGPT prompts" packs are now saturated and
+rated poorly, but our content was never that — it's organized by concrete
+business function, not a flat dump. The freelancer line (tax tracker,
+invoice toolkit, bundle) sits in a niche independent research explicitly
+calls out as still strong ("freelancer finance planners," "freelancer
+business kits"). The one real gap found: the AI Prompt Playbook line's
+Gumroad tags were generic enough to risk being grouped with the saturated
+bucket regardless of content quality — retagged all 3 listings to
+specific-audience phrases. No pricing change; $17-$29 already sits inside
+the 2026-recommended range. No niche pivot warranted.
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
