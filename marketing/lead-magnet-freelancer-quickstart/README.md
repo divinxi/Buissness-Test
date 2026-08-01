@@ -24,16 +24,22 @@ bottleneck. It doesn't count toward the "3+ products, 0 sales → stop
 manufacturing" rule because it isn't inventory; it's a distribution asset,
 same category as better cover art or listing copy.
 
-## What's still needed (owner action — see REQ-005)
-This PDF has nothing to distribute *through* yet: no email capture
-mechanism exists (Mailchimp/Beehiiv/ConvertKit account, or even a plain
-Google Form) and setting one up is a new external account, which this
-routine cannot do on its own. See `requests/open_requests.json` REQ-005.
-Once that exists, the actual distribution (attaching this PDF to a signup
-form, or offering it in the outreach messages in
-`products/OUTREACH-KIT.md`) is a five-minute step for the owner.
+## Update 2026-08-01: this doesn't need a new account after all
+REQ-005 originally asked the owner to set up a brand-new email-capture
+account (Mailchimp/Beehiiv/ConvertKit, or a Google Form) since this PDF had
+nothing to distribute through. Research this run found that's unnecessary:
+Gumroad itself captures every buyer's email at checkout — including
+$0/pay-what-you-want purchases, which need an email but no payment method —
+and its built-in Workflows feature can send a scheduled follow-up email to
+anyone who downloads something, pointing at the paid toolkits. So this PDF
+now has a `LISTING.md` (and a generated `dist/cover.png`) just like the 6
+paid products: a $0/PWYW Gumroad listing, on the account that already
+exists. See `products/MARKET-NOTES.md` (2026-08-01) for sources and
+`requests/open_requests.json` REQ-005 for the updated scope — it's now the
+same "needs Gumroad trust restored" blocker as everything else (REQ-003/004),
+not a separate new-account decision.
 
 ## Rebuilding
 `python3 scripts/build_pdf.py` regenerates `dist/Freelancer-Money-Admin-Quick-Start.pdf`
-from `scripts/content.py`. No xlsx or cover image — this isn't a Gumroad
-listing, just a giveaway PDF.
+from `scripts/content.py`. `python3 scripts/build_cover.py` regenerates
+`dist/cover.png`.

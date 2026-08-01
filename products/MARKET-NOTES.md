@@ -457,3 +457,57 @@ Sources:
 - https://www.accio.com/business/gumroad-trends
 - https://kupkaike.com/blog/7-untapped-digital-product-niches
 - https://resellready.co/blogs/news/low-competition-digital-products-to-sell-2026-guide
+
+## 2026-08-01 update: REQ-005's "new account" premise was wrong — and an independent QA re-check on Vol. 2 + both bundles
+REQ-002/003/004/005 are all still open with no owner action recorded in 12
+days — ledger still $0.00, 6 products (4 individual + 2 bundles) plus the
+free lead magnet all still sitting unpublished. Every listing-level
+conversion lever (pricing, bundling, cover art, refund/FAQ, cross-sell,
+tags/niche) has been covered in the entries above; this run looked for
+what genuinely hadn't been touched.
+
+**Part 1 — independent QA on the two products never independently re-
+checked.** The 2026-07-23 QA pass (extract PDF text, scan for filler/
+leftover-bracket artifacts, verify every xlsx formula) only covered the 3
+products that existed then. Vol. 2 (built 07-28) was only ever checked by
+the same run that wrote it, and the two bundles (07-21, 07-30) were never
+independently checked at all. Re-did the same pass today, from scratch:
+extracted Vol. 2's full PDF text (confirmed 14 pages, all 26 bracket
+matches are legitimate fill-in tokens, one is the guide's own "replace
+anything in [BRACKETS]" explainer — not a leftover artifact), audited
+every formula in Automation-ROI-Tracker.xlsx (VLOOKUP range G4:H8 and the
+SUMIF category list both match the Workflow Log's data-validation dropdowns
+exactly, no off-by-one), verified both bundle LISTING.md "files to upload"
+paths still point at real files, and visually re-inspected all 3 covers
+(Vol. 2 bundle, Freelancer bundle, Vol. 2 itself) for the overflow/collision
+bugs caught in earlier entries. **Found nothing wrong** — this is a real,
+independent confirmation, not just repeating the 07-23 write-up, but it's
+also an honest "no news" finding: nothing needed fixing.
+
+**Part 2 — the actual finding: REQ-005 doesn't need a new account.**
+REQ-005 (open since 07-27) asked the owner to set up a brand-new email tool
+(Mailchimp/Beehiiv/ConvertKit, or a Google Form) to distribute the free
+lead-magnet PDF, since it had "nothing to distribute through yet." Never
+independently checked whether that premise was even true. Ran real 2026 web
+research on Gumroad's own features and found it isn't: Gumroad captures
+every buyer's email at checkout automatically, including $0/pay-what-you-
+want purchases (no payment method required, just an email), and its
+built-in Workflows feature can send scheduled follow-up emails to anyone
+who downloads something. In other words, a $0/PWYW Gumroad listing for the
+lead magnet, on the account that already exists, *is* the email-capture
+mechanism REQ-005 was asking for — no new external account needed at all.
+
+Acted on this: wrote marketing/lead-magnet-freelancer-quickstart/LISTING.md
+and generated dist/cover.png (same Pillow-mockup pattern as the other 6
+covers, single-PDF variant since there's no companion xlsx), so the lead
+magnet is now packaged exactly like the paid products — ready to list at
+$0/PWYW the moment REQ-003/004 clear, alongside the other 6. Updated
+REQ-005's scope in requests/open_requests.json to reflect this: it no
+longer needs its own owner decision, it just rides along with REQ-003/004.
+This directly shrinks what's being asked of the owner rather than adding to
+the pile — the opposite of manufacturing more busywork.
+
+Sources (2026-08-01):
+- https://insightraider.com/en/answers/does-gumroad-let-you-offer-pay-what-you-want
+- https://dodopayments.com/blogs/gumroad-review
+- https://tekpon.com/software/gumroad/reviews/
