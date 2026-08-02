@@ -38,6 +38,14 @@ it's incomplete.
 **Cover image:** dist/cover.png (in this folder) — generated and ready to
 upload as the product thumbnail.
 
+**Preview images (upload as additional Gumroad listing images, optional):**
+this PDF is a 3-page excerpt of the two paid freelancer toolkits, so their
+existing preview images are a reasonable stand-in if Gumroad's free-listing
+flow supports extra images — not essential for a $0 listing the way it is
+for the paid ones:
+- products/freelancer-tax-tracker-v1/dist/preview-1-inside-guide.png
+- products/freelancer-invoice-toolkit-v1/dist/preview-1-inside-guide.png
+
 **Tags:** free freelancer guide, freelancer taxes, invoice tips, small
 business finance, freelance money management
 

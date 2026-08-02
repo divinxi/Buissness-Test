@@ -75,6 +75,13 @@ products/freelancer-invoice-toolkit-v1/dist/)
 **Cover image:** cover.png (in dist/) — generated and ready to upload as the
 product thumbnail.
 
+**Preview images (upload as additional Gumroad listing images, after the
+cover):** preview-1-inside-guide.png, preview-2-inside-tracker.png (both in
+dist/) — real excerpted content, not another branded graphic: the actual
+payment-terms-by-risk table from the guide, and the real Invoice Log columns
+showing the auto Paid/Overdue/Upcoming flag with sample rows. Added
+2026-08-02; see products/MARKET-NOTES.md for why.
+
 **Pairs well with:** Product 2 (Freelancer Quarterly Tax & Expense Tracker) —
 same audience, same "get your freelance money admin under control" angle.
 Worth bundling as a 2-pack once both have some sales signal.

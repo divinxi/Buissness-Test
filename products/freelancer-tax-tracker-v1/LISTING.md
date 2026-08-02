@@ -77,6 +77,13 @@ Freelancer-Tax-Tracker.xlsx (both in products/freelancer-tax-tracker-v1/dist/)
 **Cover image:** cover.png (in dist/) — generated and ready to upload as the
 product thumbnail.
 
+**Preview images (upload as additional Gumroad listing images, after the
+cover):** preview-1-inside-guide.png, preview-2-inside-tracker.png (both in
+dist/) — real excerpted content, not another branded graphic: the actual
+2026 quarterly deadline table + 3 real Schedule C category entries from the
+guide, and the real Expense Log columns showing the auto 50%-meals-rule with
+sample rows. Added 2026-08-02; see products/MARKET-NOTES.md for why.
+
 **Accuracy note:** All figures (2026 Social Security wage base of $184,500,
 SE tax rate of 15.3%, quarterly deadlines) were verified against IRS.gov and
 SSA.gov as of July 2026. This is a dated product by design — the deadlines

@@ -78,6 +78,14 @@ individually — no new files to generate:
 **Cover image:** dist/cover.png (in this folder) — generated and ready to
 upload as the product thumbnail.
 
+**Preview images (upload as additional Gumroad listing images):** reuse the
+4 preview images already built for the two component products — no new
+graphics needed, same "no new content" logic as the file list above:
+- products/prompt-playbook-v1/dist/preview-1-inside-guide.png
+- products/prompt-playbook-v1/dist/preview-2-inside-tracker.png
+- products/prompt-playbook-vol2-v1/dist/preview-1-inside-guide.png
+- products/prompt-playbook-vol2-v1/dist/preview-2-inside-tracker.png
+
 **Sequencing note:** this is a new Gumroad listing, so it needs the same
 owner sign-off/publish action as the other 5 listings (REQ-003), and per
 REQ-004 no Gumroad action will be taken on this bundle until that audit is

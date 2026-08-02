@@ -511,3 +511,73 @@ Sources (2026-08-01):
 - https://insightraider.com/en/answers/does-gumroad-let-you-offer-pay-what-you-want
 - https://dodopayments.com/blogs/gumroad-review
 - https://tekpon.com/software/gumroad/reviews/
+
+## 2026-08-02 update: built real "look inside" preview images — a genuinely
+untouched lever after 13 days of listing-level work
+REQ-002/003/004/005 are all still open with no owner action recorded in 13
+days — ledger still $0.00, 6 products (4 individual + 2 bundles) plus the
+free lead magnet all still unpublished. Every previous entry in this file
+covers Discover ranking, pricing, bundling, cover art, file QA, refund/FAQ,
+cross-sell pages, and niche/positioning — repeating any of them would add
+nothing. Looked specifically for what had never been touched.
+
+Found one: every one of the 7 listings only has a single image — the
+branded cover (title + subtitle + tag chips + an abstract PDF/spreadsheet
+icon mockup). None show any actual content. Ran real 2026 web research (not
+from memory) and confirmed this is a real, named gap: Gumroad supports 4-6
+additional listing images beyond the cover, and product-page best-practice
+guides (including Kupkaike's checklist, already a source in this file)
+specifically recommend showing the real product — not just another graphic
+— because professional preview images "convert measurably better than
+amateur or generic covers." A buyer currently has zero way to see what's
+actually in a $17-29 PDF+spreadsheet bundle before paying.
+
+**Built it for all 4 individual products** (the bundles/lead magnet
+deliberately reuse these rather than getting new art — see below): for each
+product, `scripts/build_preview.py` generates 2 new PNGs into `dist/`:
+1. `preview-1-inside-guide.png` — a real page from the guide: actual
+   category/table headers and real body text pulled directly from that
+   product's own `content.py` (prompt titles/snippets for the two Prompt
+   Playbooks, the real 2026 quarterly deadline table + 3 Schedule C entries
+   for the Tax Tracker, the real payment-terms-by-risk table for the
+   Invoice Toolkit) — not another abstract mockup, and it can't drift out of
+   sync with the PDF since it imports the same `content.py`.
+2. `preview-2-inside-tracker.png` — a mockup of the real companion
+   spreadsheet's actual column headers with realistic sample rows,
+   highlighting each product's real auto-calculation hook (Tax Tracker's
+   50%-meals-deduction auto-rule, Invoice Toolkit's auto Paid/Overdue/
+   Upcoming flag) since that automation is the actual reason to buy the
+   spreadsheet over a blank template.
+
+Caught and fixed 3 real rendering bugs by actually rendering and viewing
+every PNG, not just running the scripts and assuming they were fine (same
+discipline as the 2026-07-22 and 07-28 cover-art entries): a trailing
+category list ran off the canvas on the flagship Playbook's page image; the
+first version of every spreadsheet mockup had column headers too wide for
+their columns, causing "Time Saved (min)" and "Notes / Result" to visually
+overlap; and the Invoice Toolkit's "50% Upfront / 50% on Delivery" term
+label (unwrapped) overlapped the adjacent column's text. All fixed by
+wrapping every text element to its actual column/box width instead of
+assuming single-line fit, then re-rendered and re-inspected each of the 8
+final PNGs individually.
+
+Updated all 4 products' LISTING.md with a new "Preview images" section
+(what to upload, in order, after the cover). The 2 bundles and the lead
+magnet were deliberately **not** given their own new preview art — per the
+same "no new content, repackage what exists" logic already used for their
+file lists, their LISTING.md now just point at the relevant component
+product's existing preview images (e.g. the Freelancer Bundle reuses all 4
+Tax Tracker + Invoice Toolkit previews). This is real, permanent listing
+material — like the cross-sell pages, it survives however the storefront
+ends up organized and costs nothing to maintain, ready the moment
+REQ-003/004 clear.
+
+Did not touch pricing, bundling, refund/FAQ copy, cross-sell pages, or
+niche/positioning this run — all already current per prior entries. Did not
+build a new product — 6 products (4 individual + 2 bundles) plus the lead
+magnet is already well past the "3+ built" threshold with 0 sales, so this
+stayed a conversion-lever run per the operating rule.
+
+Sources (2026-08-02):
+- https://kupkaike.com/blog/gumroad-product-page-best-practices
+- https://help.gumroad.com/article/149-adding-a-product

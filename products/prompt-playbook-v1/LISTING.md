@@ -65,3 +65,11 @@ $17 purchase.)
 
 **Cover image:** cover.png (in dist/) — generated and ready to upload as the
 product thumbnail.
+
+**Preview images (upload as additional Gumroad listing images, after the
+cover):** preview-1-inside-guide.png, preview-2-inside-tracker.png (both in
+dist/) — real excerpted content, not another branded graphic: an actual
+category page from the guide (real prompt titles/text) and the real AI Ops
+Tracker columns with sample rows. Added 2026-08-02; see
+products/MARKET-NOTES.md for why (Gumroad supports 4-6 listing images and
+none of our 7 listings used this before).
