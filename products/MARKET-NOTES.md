@@ -581,3 +581,61 @@ stayed a conversion-lever run per the operating rule.
 Sources (2026-08-02):
 - https://kupkaike.com/blog/gumroad-product-page-best-practices
 - https://help.gumroad.com/article/149-adding-a-product
+
+## 2026-08-03 update: expanded the outreach kit to 2 channels never covered — Indie Hackers and LinkedIn
+REQ-002/003/004/005 are all still open with no owner action recorded in 14
+days — ledger still $0.00, 6 products + the lead magnet all still
+unpublished. Every listing-level lever (pricing, copy, cover art, refund/
+FAQ, cross-sell, retagging, preview images) has been used at least once;
+repeating any of them would add nothing. products/OUTREACH-KIT.md itself
+had also gone untouched since 2026-07-25 (day 5) and only covered 2
+channels: a personal-network message and Reddit. Looked for real,
+previously-untouched distribution channels rather than repeating the
+listing-polish pattern again.
+
+Ran fresh 2026 research (not from memory) on two candidates:
+- **Indie Hackers** turns out to be two different things people conflate.
+  The subreddit (r/indiehackers) permits one Show IH-flaired post per
+  product, explicitly framed as a feedback ask (not an ad) — same
+  low-friction shape as r/IMadeThis/r/shamelessplug already in the kit, and
+  its no-fake-MRR-claims rule costs us nothing since the honest number is
+  $0.00 anyway. The actual indiehackers.com site is a different, higher-
+  friction channel — it expects an established, contributing member with a
+  real founder story, not a same-day drop-a-link post, so no draft was
+  written for it; flagged honestly as a time-investment decision for Jimmy,
+  not something pre-buildable.
+- **LinkedIn** operates on a documented 4-1-1 rule (4 value posts per 1
+  self-promotional post) and ranks problem-first posts (lead with the pain
+  point, reveal the product second) better than product-first ones. Also
+  found and applied a platform-specific detail: LinkedIn's algorithm
+  downranks posts with an outbound link in the body text, so the draft
+  puts the Gumroad link in "comments/DM" instead, unlike the Reddit/IH
+  drafts where an inline link is normal and expected.
+
+Added both as new sections in products/OUTREACH-KIT.md with ready-to-send
+drafts (Show IH post, LinkedIn post) — same posture as everything else in
+that file: **drafts only**, nothing posted or sent, Jimmy sends them
+himself from his own accounts whenever he chooses, independent of when
+REQ-003/004 clear (these don't need the Gumroad link to be live first,
+unlike the personal-network message).
+
+Also spot-checked all 7 "Product name" fields against this week's Gumroad-
+title-SEO research (recommended format: benefit + product type + niche,
+e.g. "Instagram Post Templates for Bakers") before deciding whether to
+rewrite them. They already comply — e.g. "The Freelancer Invoice &
+Late-Payment Toolkit" = niche (freelancer) + benefit (invoice & late-
+payment) + type (toolkit) — so left them as-is rather than making a
+cosmetic change with no real gap behind it.
+
+Did not build a new product or touch pricing/cover art/refund copy — same
+"3+ built, 0 sales → improve conversion/distribution, don't manufacture
+more" rule as every run since 2026-07-24.
+
+Sources (2026-08-03):
+- https://www.indiehackers.com/post/hacking-reddit-how-to-self-promote-without-getting-banned-753396554b
+- https://gofindevo.com/subreddits/indiehackers
+- https://www.indiehackers.com/post/any-requirements-for-posting-a108d65954
+- https://lagrowthmachine.com/linkedin-marketing-strategy-2026/
+- https://blog.annabyang.com/make-linkedin-less-cringe/
+- https://postiv.ai/blog/best-practices-for-posting-on-linkedin
+- https://www.seotakeoff.com/blog/gumroad-seo-guide

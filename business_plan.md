@@ -137,6 +137,16 @@ external traffic the seller brings themselves.
   moment REQ-003/004 clear. REQ-005 updated accordingly; it no longer needs
   its own owner decision. See products/MARKET-NOTES.md (2026-08-01).
 
+## Outreach kit expansion (2026-08-03)
+`products/OUTREACH-KIT.md` had only 2 channels (personal message, Reddit)
+since 2026-07-25. Added 2 more after real research: a Show IH post for
+r/indiehackers (one-time per product, feedback-framed, no MRR claims
+needed since revenue is honestly $0) and a LinkedIn post (problem-first,
+link in comments not body per that platform's algorithm). indiehackers.com
+itself (distinct from the subreddit) needs established community
+membership first — flagged as a time-investment decision, not drafted.
+All drafts only; nothing posted. See products/MARKET-NOTES.md (2026-08-03).
+
 ## Niche/positioning check (2026-07-31)
 With 6 products built and still $0.00 in sales, ran fresh 2026 market
 research (see products/MARKET-NOTES.md for sources) to check whether the

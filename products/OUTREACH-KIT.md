@@ -98,6 +98,81 @@ just asking for purchases.
   criteria for the request queue. It's simply sitting here ready when he
   wants it.
 
+## 3. Indie Hackers — two different things, only one is low-friction (2026-08-03 research)
+"Indie Hackers" is actually two separate channels people conflate, so checked
+both rather than assuming one covers the other:
+
+- **r/indiehackers (the subreddit)** — genuinely low-friction, similar to
+  r/IMadeThis/r/shamelessplug above: it permits **one Show IH-flaired post
+  per product**, explicitly framed as an ask for feedback/critique, not an
+  announcement or ad. Reposting the same product, or any post that claims
+  MRR/revenue numbers without proof, gets removed — which actually works in
+  our favor here since the honest number is $0.00 and the draft below
+  doesn't claim otherwise.
+- **indiehackers.com (the actual site/community)** — higher friction, not a
+  quick win: posting/submitting a product page there generally expects
+  you're already an established, contributing member, and a "just dropped a
+  link" post without a real founder story tends to get ignored or removed.
+  This is a genuine-participation channel like r/smallbusiness above, not a
+  same-day option — no draft written for it; it's a time-investment decision
+  for Jimmy, not something to pre-build.
+
+### Draft post — r/indiehackers (Show IH, one-time only per product)
+> **Title:** [Show IH] Built two toolkits for freelancers who dread money
+> admin — looking for feedback
+>
+> Built these after hearing the same two complaints from freelancer friends
+> over and over: "I never know what to set aside for taxes" and "chasing
+> late invoices is the worst part of the job." Two toolkits so far — a 2026
+> quarterly-tax guide + spreadsheet that computes your own self-employment
+> tax, and an invoice/late-payment kit with a 4-stage reminder sequence and
+> an auto-flagging tracker. $17-19 each, $29 for both, 30-day refund. No
+> sales yet — genuinely want to know if this solves a real problem for you
+> or if I'm missing something obvious. [Gumroad URL]
+
+Post this once per product line (not once per SKU — one post covering the
+freelancer pair, a separate one later for the AI Prompt Playbook line, if
+Jimmy wants both) to stay inside the one-post rule.
+
+## 4. LinkedIn — a same-network channel Jimmy may already have, unlike Reddit/IH
+Different shape than Reddit/IH: LinkedIn self-promotion research (2026)
+recommends a **4-1-1 rule** (4 value/educational posts and 1 curated share
+for every 1 self-promotional post) and says a product post lands best when
+it leads with the problem/result the reader already recognizes, not the
+product itself — the reveal comes second. This only applies if Jimmy
+already has a LinkedIn presence to post from; it is **not** a new account
+to create (that would need a request in the queue).
+
+### Draft post — LinkedIn (problem-first, single post)
+> Every freelancer I know has the same two money-admin headaches: they
+> don't know what to actually set aside for quarterly taxes, and they lose
+> real money chasing invoices that go quiet.
+>
+> I built two small toolkits to fix exactly those two things — a 2026
+> quarterly-tax guide with a spreadsheet that computes your own
+> self-employment tax, and an invoice toolkit with a ready-to-send 4-stage
+> reminder sequence plus a tracker that auto-flags what's overdue.
+>
+> $17-19 each, one-time download, 30-day refund if it's not useful. Link in
+> the comments (or DM me) — and if you've got a freelancer money-admin
+> headache these don't cover, I'd genuinely like to hear it.
+
+Kept the link out of the post body itself and into "comments/DM" per the
+same research — LinkedIn's algorithm downranks posts with an outbound link
+in the main body, a detail specific to this platform that doesn't apply to
+Reddit/IH.
+
+## What this does NOT do
+- Does not post anything, anywhere, on any platform. All four drafts
+  (personal message, Reddit x2, Show IH, LinkedIn) are Jimmy's to review,
+  edit, and send/post himself, from his own accounts.
+- Does not create a LinkedIn, Indie Hackers, or any other account — the
+  LinkedIn draft only applies if Jimmy already has a presence there.
+- Does not add a new request to open_requests.json — same reasoning as
+  before: sending a message or posting to a community the owner already
+  has access to needs his own judgment/account, not money or a new external
+  account, so it doesn't meet the request-queue bar.
+
 ---
 Sources:
 - https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit
@@ -105,3 +180,9 @@ Sources:
 - https://karmaguy.io/en/blog/reddit-self-promotion-rules
 - https://oneup.today/blogs/reddit-selfpromo-rules-study-2026
 - https://www.mediafa.st/best-subreddits-to-promote-your-business
+- https://www.indiehackers.com/post/hacking-reddit-how-to-self-promote-without-getting-banned-753396554b
+- https://gofindevo.com/subreddits/indiehackers
+- https://www.indiehackers.com/post/any-requirements-for-posting-a108d65954
+- https://lagrowthmachine.com/linkedin-marketing-strategy-2026/
+- https://blog.annabyang.com/make-linkedin-less-cringe/
+- https://postiv.ai/blog/best-practices-for-posting-on-linkedin
