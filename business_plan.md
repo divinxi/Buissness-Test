@@ -162,6 +162,21 @@ bucket regardless of content quality — retagged all 3 listings to
 specific-audience phrases. No pricing change; $17-$29 already sits inside
 the 2026-recommended range. No niche pivot warranted.
 
+## Launch discount / first-reviews plan (2026-08-04)
+Gumroad's Discover ranking leans heavily on verified-purchase reviews and
+early momentum — with 0 products live there are 0 reviews to rank on, a
+classic cold-start problem the outreach kit alone doesn't solve (it drives
+visits, not reviews). Plan: a one-time `LAUNCH25` code (25% off, capped at
+10 redemptions per listing via Gumroad's own discount settings) paired with
+the personal-network message in products/OUTREACH-KIT.md, asking known
+contacts to buy at a discount and leave an honest review — not an
+incentivized-review scheme, the review itself stays unprompted. Deliberately
+not paired with the Reddit/Show IH/LinkedIn drafts, which are cold,
+feedback-framed posts where a discount hook would read as incentivized
+promotion. Added as a note on REQ-003 so it happens in the same sitting as
+cover art + publish. Full reasoning and sources: products/MARKET-NOTES.md
+(2026-08-04).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

@@ -33,13 +33,21 @@ first only because it links to the live Gumroad page.
 > quarterly-tax guide + spreadsheet that calculates your self-employment
 > tax for you, and an invoice/late-payment toolkit with ready-to-send
 > reminder emails and an auto-flagging tracker. $17-19 each, or $29 for
-> both. No subscription, just a download. If either sounds useful (or you
-> know a freelancer who'd want one) here's the link: [Gumroad URL]. Happy
-> to hear if anything's confusing or missing, too.
+> both. No subscription, just a download. Use code `LAUNCH25` for 25% off
+> as an early-access thing — genuinely just want a few real people to try
+> these and tell me straight if something's missing or off. If you do grab
+> one and it's useful, an honest review on the page would mean a lot too.
+> Here's the link: [Gumroad URL].
 
 Notes for Jimmy: swap in the real store URL once live; send to maybe 5-10
 people who are actually freelancers/small-biz owners, not a mass blast —
-this is meant to read as a real recommendation, not spam.
+this is meant to read as a real recommendation, not spam. `LAUNCH25` (25%
+off, cap it at 10 redemptions per listing in Gumroad's discount settings)
+is a one-time launch code to seed the first few honest reviews — see
+products/MARKET-NOTES.md (2026-08-04) for why. Deliberately only used here,
+not in the Reddit/Show IH/LinkedIn drafts below — a discount hook fits a
+direct ask to people you know, not a cold post to strangers framed as
+asking for feedback.
 
 ## 2. Reddit — real research on where this is actually safe to post
 Searched specifically for this (not from memory) because "just post it on a

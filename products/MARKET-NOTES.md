@@ -639,3 +639,67 @@ Sources (2026-08-03):
 - https://blog.annabyang.com/make-linkedin-less-cringe/
 - https://postiv.ai/blog/best-practices-for-posting-on-linkedin
 - https://www.seotakeoff.com/blog/gumroad-seo-guide
+
+## 2026-08-04 update: a concrete launch-discount / first-reviews plan — the
+one piece the day-1 finding never turned into an actual artifact
+REQ-002/003/004/005 are all still open with no owner action recorded in 15
+days — ledger still $0.00, 7 products (6 built + the lead magnet) all still
+unpublished. Every listing-level lever (pricing, copy, cover art, refund/
+FAQ, cross-sell, retagging, preview images) and two rounds of outreach-kit
+channels (personal message, Reddit x2, Show IH, LinkedIn) have already been
+covered. Went back to the very first entry in this file (2026-07-20) for
+something identified but never finished: Gumroad Discover ranks mainly on
+**verified-purchase reviews** and **momentum**, and with 0 products live
+there are 0 reviews to rank on — a classic cold-start problem. Nothing in
+the 15 days since has actually built a plan to solve that specific problem;
+the outreach kit gets people to the listing, but nobody had planned what
+happens to convert that first trickle of visits into reviews.
+
+Ran fresh 2026 research (not from memory) specifically on this:
+- Multiple sources agree: launch-day/limited pricing is a standard lever
+  sellers use to drive initial sales, and getting the first ~10 reviews "at
+  any cost" (via discounts and direct personal asks, not fake reviews) is
+  recommended specifically to beat the cold-start problem — Gumroad
+  "promotes products with momentum," so early reviews/sales are what let the
+  algorithm start surfacing a listing organically.
+- This is the same mechanism as a referral-style discount, not an
+  incentivized-review scheme: the ask is "buy at a discount," the review
+  itself stays unprompted and honest — no source suggested or implied paying
+  for a positive review, and that's a hard line this plan keeps too (see
+  below).
+
+**Concrete plan (copy-ready, not yet actioned — still just prep like every
+other artifact in this repo):**
+- A single, memorable launch code — **`LAUNCH25`**, 25% off — recommended on
+  all 7 listings for consistency (one code Jimmy can mention once rather
+  than 7 different ones).
+- Capped at **10 redemptions per listing** (Gumroad supports a max-uses
+  limit per discount code) rather than a time window — this naturally
+  expires the offer once its job (seeding the first ~10 reviews per
+  listing) is done, with no date to remember to revoke.
+- Paired with the *existing* personal-network message (OUTREACH-KIT.md #1)
+  — updated below to mention the code and make an explicit, honest ask to
+  leave a review after trying it. Not paired with the Reddit/Show IH/
+  LinkedIn drafts: those are feedback-framed posts to strangers, and
+  attaching a "buy at a discount" hook to a cold audience reads as
+  incentivized promotion in a way it doesn't when it's Jimmy's own contacts
+  he already has a relationship with — kept the two channels separate on
+  purpose.
+
+This is internal guidance for when Jimmy sets up each listing, not a change
+to any public-facing LISTING.md copy — added a note to REQ-003 in
+requests/open_requests.json so it rides along with the cover-art/publish
+step rather than becoming a new request (setting a discount code needs no
+new account or money, same bucket as the cover-art upload already in that
+request).
+
+Did not touch pricing, cover art, refund/FAQ copy, cross-sell pages, or
+build a new product this run — 7 products (6 + lead magnet) is already well
+past the "3+ built, 0 sales" threshold, and this is real, previously-unbuilt
+distribution/conversion work, not a repeat of any prior entry.
+
+Sources (2026-08-04):
+- https://insightraider.com/en/blog/how-to-sell-digital-products-gumroad
+- https://medium.com/write-a-catalyst/5-ways-to-find-your-audience-on-gumroad-without-bringing-your-own-traffic-2dd5fcb3e07d
+- https://www.quora.com/How-do-I-get-the-first-sale-on-Gumroad
+- https://www.stephanochmann.de/en/blog/gumroad-discounts/
