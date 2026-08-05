@@ -48,7 +48,9 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 - PDF: ~25 categorized, ready-to-use prompts (marketing, customer service,
   finance/ops, hiring, sales) with instructions on how to adapt each one.
 - Companion .xlsx: prompt usage tracker + simple time-saved / ROI calculator.
-- Status: built and ready to list, $17. See products/prompt-playbook-v1/.
+- Status: built and ready to list, $19 (raised from $17 on 2026-08-05 after
+  real-comparable pricing research — see products/MARKET-NOTES.md). See
+  products/prompt-playbook-v1/.
 
 ### Product 1.2: "AI Prompt Playbook Vol. 2: Systems & Automation"
 - PDF (14pg): 25 prompts for turning AI into repeatable systems rather than
@@ -62,7 +64,8 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
   time and dollar value via a frequency-multiplier lookup — a different,
   more relevant calculation than Vol. 1's flat per-use time tracker, since
   these prompts are meant to be reused on a schedule.
-- Status: built 2026-07-28 and ready to list, $17. See
+- Status: built 2026-07-28 and ready to list, $19 (raised from $17 on
+  2026-08-05, see products/MARKET-NOTES.md). See
   products/prompt-playbook-vol2-v1/. Built as the next queued product since
   every conversion lever on the first 4 products (pricing, copy, cover art,
   refund/FAQ, cross-sell pages, file QA, lead magnet, outreach kit) had
@@ -74,7 +77,8 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
 
 ### Product 1.3: "The AI Prompt Playbook Bundle" (1.1 + 1.2 combined)
 - No new content — repackages the existing Vol. 1 and Vol. 2 PDFs/xlsx into
-  one $27 listing (vs. $34 buying both separately).
+  one $29 listing (vs. $38 buying both separately at their new $19 price
+  each — see the 2026-08-05 pricing update below).
 - Status: listing copy and cover written and ready to publish, see
   products/prompt-playbook-bundle-v1/LISTING.md. Built 2026-07-30, applying
   the same bundling tactic already validated for the freelancer line
@@ -108,14 +112,17 @@ companion Excel/Sheets tracker, sold as a bundle, ~$15-19 price point
   days overdue), a Reminder Dashboard (shows how many invoices need which
   reminder stage today), and a fill-in Invoice Template with auto-calculated
   subtotal/tax/total.
-- Status: built and ready to list, $17. See products/freelancer-invoice-toolkit-v1/.
+- Status: built and ready to list, $19 (raised from $17 on 2026-08-05 after
+  real-comparable pricing research — see products/MARKET-NOTES.md). See
+  products/freelancer-invoice-toolkit-v1/.
 - Same target buyer as Product 2.1 (freelancers) — natural bundle candidate
   once both have a sales signal. Not dependent on Product 1 getting sales
   first since it's a different line, not a sequel.
 
 ### Product 2.3: "The Freelancer Money Bundle" (2.1 + 2.2 combined)
 - No new content — repackages the existing tax tracker and invoice toolkit
-  PDFs/xlsx into one $29 listing (vs. $36 buying both separately).
+  PDFs/xlsx into one $29 listing (vs. $38 buying both separately at Product
+  2.2's new $19 price — see the 2026-08-05 pricing update below).
 - Status: listing copy and cover written and ready to publish, see
   products/freelancer-bundle-v1/LISTING.md. Built 2026-07-21 in response to
   the bundling recommendation in products/MARKET-NOTES.md, since 3 products
@@ -176,6 +183,22 @@ feedback-framed posts where a discount hook would read as incentivized
 promotion. Added as a note on REQ-003 so it happens in the same sitting as
 cover art + publish. Full reasoning and sources: products/MARKET-NOTES.md
 (2026-08-04).
+
+## Pricing update from real comparables (2026-08-05)
+16 days into REQ-003/004 being open with $0.00 in sales, ran fresh research
+that — for the first time — looked at actual comparable Gumroad listings
+(real prices, real feature sets) instead of generic market-condition blog
+posts. Finding: specific, function-organized business AI-prompt packs sell
+for $27-47 on Gumroad, and a bare-bones "Invoice Reminder Pro" (reminders
+only, no guide) sells for $29 — both above what Products 1.1, 1.2, and 2.2
+were charging ($17 each). Raised those three to $19 (matching Product 2.1's
+existing tier) and raised both bundles to $29 (from $27/$29) so the discount
+math still holds at the new singles price. Product 2.1 (tax tracker) stayed
+at $19 — no comparable evidence it was underpriced. All prices are now $19
+per individual product, $29 per bundle — simpler to state in outreach copy
+too. Regenerated all 4 affected PDFs (cross-sell pages), both bundle covers,
+and the lead magnet's PDF (cross-sell mention), all page counts unchanged.
+Full reasoning and sources: products/MARKET-NOTES.md (2026-08-05).
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on

@@ -2,9 +2,13 @@
 
 **Product name:** The Freelancer Invoice & Late-Payment Toolkit
 
-**Price:** $17 (same impulse-buy tier as Product 1 — this solves a recurring
-annoyance, not a high-stakes once-a-year problem like Product 2's tax tracker,
-so it's priced accordingly rather than at the $19 tier.)
+**Price:** $19 (raised from $17 on 2026-08-05 to match Product 2's tier —
+real comparable Gumroad listings changed the reasoning here: a Google
+Sheets-only "Invoice Reminder Pro" with just reminder emails sells for $29
+on its own, and this toolkit includes a full 9-page guide plus a 4-tab
+tracker for less than that. The old "recurring annoyance vs. once-a-year
+problem" distinction wasn't actually reflected in what comparable products
+charge, so it no longer justifies a lower tier. See products/MARKET-NOTES.md.)
 
 **Category:** Business & Money → Templates (or "Freelancing")
 

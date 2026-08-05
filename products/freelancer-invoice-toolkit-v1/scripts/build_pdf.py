@@ -238,13 +238,13 @@ def build():
         "Schedule C expense categories, and a live tax-estimator spreadsheet.",
         styles["Body"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Small Business AI Prompt Playbook — $17", styles["SubHeader"]))
+    story.append(Paragraph("The Small Business AI Prompt Playbook — $19", styles["SubHeader"]))
     story.append(Paragraph(
         "25 ready-to-use AI prompts for marketing, support, finance, hiring, and sales, plus a "
         "spreadsheet ROI tracker. For the day-to-day operating tasks this toolkit doesn't cover.",
         styles["Body"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $17", styles["SubHeader"]))
+    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $19", styles["SubHeader"]))
     story.append(Paragraph(
         "25 more prompts for turning AI into repeatable systems: automation, customer lifecycle, "
         "competitive intelligence, ops reporting, and delegation, plus a recurring-workflow ROI "
@@ -253,7 +253,7 @@ def build():
     story.append(Spacer(1, 14))
     story.append(warn_box(
         "Get this toolkit and the Quarterly Tax &amp; Expense Tracker together as The Freelancer "
-        "Money Bundle for $29 instead of $36 separately, if it's still available as a bundle listing.",
+        "Money Bundle for $29 instead of $38 separately, if it's still available as a bundle listing.",
         label="Bundle tip",
     ))
 

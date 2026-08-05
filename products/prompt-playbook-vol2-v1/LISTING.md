@@ -2,9 +2,10 @@
 
 **Product name:** AI Prompt Playbook Vol. 2: Systems & Automation
 
-**Price:** $17 (same price point as Vol. 1 — same format, same impulse-buy
-range; no reason to price a companion volume differently until there's a
-sales signal either way)
+**Price:** $19 (raised from $17 on 2026-08-05, same price point as Vol. 1's
+new price — see products/MARKET-NOTES.md for the real-comparable research
+behind the increase. Still no reason to price a companion volume
+differently from Vol. 1 until there's a sales signal either way.)
 
 **Category:** Business & Money → Business templates (or "Education")
 

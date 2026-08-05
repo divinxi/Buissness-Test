@@ -2,8 +2,12 @@
 
 **Product name:** The Small Business AI Prompt Playbook
 
-**Price:** $17 (Gumroad suggests testing $15-19 for this format; $17 avoids the
-"$X.99" feel while staying impulse-buy range)
+**Price:** $19 (raised from $17 on 2026-08-05 after checking real comparable
+Gumroad listings, not just generic "recommended range" advice — see
+products/MARKET-NOTES.md. Specific, function-organized business prompt packs
+on Gumroad run $27-47; ours is priced below that band on purpose since we
+have zero reviews, but $17 was leaving money on the table against genuine
+comparables, not just sitting in a safe "impulse" zone.)
 
 **Category:** Business & Money → Business templates (or "Education")
 
@@ -40,7 +44,7 @@ No subscription. No account needed. One-time download, yours forever.
 through Gumroad and it's refunded, no hoops. (Research-backed: a clear
 money-back guarantee is one of the biggest conversion levers for a
 zero-review listing, since it removes the buyer's only real risk on a
-$17 purchase.)
+$19 purchase.)
 
 **FAQ:**
 - **Does this work with ChatGPT, Gemini, or Copilot, or only Claude?** Any

@@ -2,10 +2,11 @@
 
 **Product name:** The Freelancer Money Bundle
 
-**Price:** $29 (vs. $36 buying Product 2 and Product 3 separately — a genuine
-~19% discount, not a fake-anchor markup. Bundling is the lowest-effort
-conversion lever available right now: no new content, same 4 files, priced
-to make the bundle the obviously better deal.)
+**Price:** $29 (unchanged 2026-08-05, but now vs. $38 buying Product 2 and
+Product 3 separately at Product 3's new $19 price — a genuine ~24% discount,
+up from ~19% before. Kept the bundle price flat rather than raising it, so
+it gets more attractive relative to the two singles rather than less — see
+products/MARKET-NOTES.md.)
 
 **Category:** Business & Money → Templates (or "Freelancing")
 
@@ -30,7 +31,7 @@ what you owe, and what you're owed.
   a 4-tab Excel workbook that auto-flags overdue invoices and tracks
   reminder stages.
 
-Buy them separately for $19 + $17 = $36, or get both for $29.
+Buy them separately for $19 + $19 = $38, or get both for $29.
 
 **What this is NOT:** personalized tax or legal advice, filing software, or
 a replacement for a CPA/attorney when the stakes are high. It's the
@@ -43,8 +44,7 @@ through Gumroad and it's refunded, no hoops.
 
 **FAQ:**
 - **Can I just buy one toolkit instead of the bundle?** Yes — both are
-  sold individually ($19 tax tracker, $17 invoice toolkit). The bundle is
-  only worth it if you want both.
+  sold individually ($19 each). The bundle is only worth it if you want both.
 - **Is this valid outside the US?** The tax tracker half is U.S. federal
   only; the invoice toolkit half is jurisdiction-agnostic (it flags where
   rules vary by state/country rather than assuming U.S. law).

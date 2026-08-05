@@ -119,7 +119,7 @@ def build():
         "prompts don't. Look for these on the same store page you downloaded this from.",
         styles["PromptBody"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $17", styles["MetaLabel"]))
+    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $19", styles["MetaLabel"]))
     story.append(Spacer(1, 2))
     story.append(Paragraph(
         "25 more prompts, but for building repeatable systems instead of one-off tasks: AI systems, "
@@ -134,7 +134,7 @@ def build():
         "Schedule C expense categories, and a live tax-estimator spreadsheet.",
         styles["PromptBody"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Freelancer Invoice & Late-Payment Toolkit — $17", styles["MetaLabel"]))
+    story.append(Paragraph("The Freelancer Invoice & Late-Payment Toolkit — $19", styles["MetaLabel"]))
     story.append(Spacer(1, 2))
     story.append(Paragraph(
         "A ready-to-copy 4-stage reminder email sequence, how to choose payment terms and set an "

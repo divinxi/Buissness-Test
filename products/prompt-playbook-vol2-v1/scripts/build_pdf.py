@@ -122,7 +122,7 @@ def build():
         "Look for these on the same store page you downloaded this from.",
         styles["PromptBody"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Small Business AI Prompt Playbook (Vol. 1) — $17", styles["MetaLabel"]))
+    story.append(Paragraph("The Small Business AI Prompt Playbook (Vol. 1) — $19", styles["MetaLabel"]))
     story.append(Spacer(1, 2))
     story.append(Paragraph(
         "25 ready-to-use, one-off prompts for marketing, support, finance, hiring &amp; sales, plus "
@@ -136,7 +136,7 @@ def build():
         "Schedule C expense categories, and a live tax-estimator spreadsheet.",
         styles["PromptBody"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Freelancer Invoice &amp; Late-Payment Toolkit — $17", styles["MetaLabel"]))
+    story.append(Paragraph("The Freelancer Invoice &amp; Late-Payment Toolkit — $19", styles["MetaLabel"]))
     story.append(Spacer(1, 2))
     story.append(Paragraph(
         "A ready-to-copy 4-stage reminder email sequence, how to choose payment terms and set an "

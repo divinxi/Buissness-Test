@@ -116,7 +116,7 @@ def build():
     story.append(Spacer(1, 14))
     story.append(Paragraph(
         "The Freelancer Quarterly Tax &amp; Expense Tracker (2026 Edition) &mdash; $19 &bull; "
-        "The Freelancer Invoice &amp; Late-Payment Toolkit &mdash; $17 &bull; both together as "
+        "The Freelancer Invoice &amp; Late-Payment Toolkit &mdash; $19 &bull; both together as "
         "The Freelancer Money Bundle &mdash; $29.",
         styles["Body"]))
 

@@ -2,10 +2,12 @@
 
 **Product name:** The AI Prompt Playbook Bundle
 
-**Price:** $27 (vs. $34 buying Vol. 1 and Vol. 2 separately — a genuine ~21%
-discount, not a fake-anchor markup. Same bundling tactic already validated
-for the freelancer line: no new content, same 4 files, priced to make the
-bundle the obviously better deal.)
+**Price:** $29 (vs. $38 buying Vol. 1 and Vol. 2 separately at their new $19
+each — a genuine ~24% discount, not a fake-anchor markup. Raised from $27 on
+2026-08-05 in step with the two component volumes' price increase — see
+products/MARKET-NOTES.md for the real-comparable research behind it. Kept
+the bundle's discount larger than before ($9 saved vs. the old $7) so it
+stays the obviously better deal even at the higher price.)
 
 **Category:** Business & Money → Business templates (or "Education")
 
@@ -33,7 +35,7 @@ a time.
   logged recurring workflows (Daily/Weekly/Monthly/Quarterly) into
   monthly/annual time and dollar value.
 
-Buy them separately for $17 + $17 = $34, or get both for $27.
+Buy them separately for $19 + $19 = $38, or get both for $29.
 
 **What this is NOT:** a replacement for actually wiring these into real
 automation tools (Zapier, Make, a Custom GPT) — Vol. 2's prompts are the
@@ -48,10 +50,10 @@ through Gumroad and it's refunded, no hoops.
 
 **FAQ:**
 - **Can I just buy one volume instead of the bundle?** Yes — both are sold
-  individually ($17 each). The bundle is only worth it if you want both.
+  individually ($19 each). The bundle is only worth it if you want both.
 - **Do I need Vol. 1 before Vol. 2, or vice versa?** No — they cover
   different ground (one-off tasks vs. recurring systems) and either works
-  standalone. The bundle just saves $7 if you want both.
+  standalone. The bundle just saves $9 if you want both.
 - **Does this work with ChatGPT, Gemini, or Copilot, or only Claude?** Any
   AI chat assistant — every prompt is plain text, not tied to one tool.
 - **Are the trackers Excel-only, or do they work in Google Sheets?** Both —

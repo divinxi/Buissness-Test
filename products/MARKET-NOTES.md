@@ -703,3 +703,69 @@ Sources (2026-08-04):
 - https://medium.com/write-a-catalyst/5-ways-to-find-your-audience-on-gumroad-without-bringing-your-own-traffic-2dd5fcb3e07d
 - https://www.quora.com/How-do-I-get-the-first-sale-on-Gumroad
 - https://www.stephanochmann.de/en/blog/gumroad-discounts/
+
+## 2026-08-05 update: pricing checked against real comparable listings, not
+just generic advice — and 3 of 7 prices changed as a result
+
+REQ-002/003/004/005 are all still open with no owner action recorded in 16
+days now — ledger still $0.00, 7 products (6 built + the lead magnet) all
+still unpublished. Every listing-level lever (pricing, copy, cover art,
+refund/FAQ, cross-sell, retagging, preview images) and both outreach
+channels have been covered in the entries above. The 2026-07-31 entry
+concluded "no pricing change" needed, but on rereading it, that conclusion
+rested entirely on generic "recommended range" claims ($15-30, $15-19) from
+blog posts about the market in general — it never actually looked at what
+specific, comparable products charge on Gumroad today. That's a real gap:
+this business has been treating "inside the recommended range" as proof of
+correct pricing for 16 days without ever checking a single real listing.
+
+Ran real 2026 web searches for actual comparable Gumroad products (not from
+memory, not aggregator blog summaries) and found concrete price points:
+- A "200+ AI Prompts for NYC Small Businesses 2026" pack — less curated
+  than ours (a flat 200+ dump vs. our function-organized 25-per-volume
+  structure) — sells a Basic tier at $27 and a Complete tier at $47.
+  Broader research confirms specific, outcome-driven business prompt packs
+  commonly run $27-47, with full bundles at $29-69.
+- "Invoice Reminder Pro," a Google Sheets-only product (just automated
+  reminder emails, no guide) sells for $29. Our Invoice & Late-Payment
+  Toolkit includes a full 9-page guide (payment terms, late fees, escalation
+  path) *and* a 4-tab tracker with the same auto-flagging behavior, for
+  less than that Sheets-only product alone.
+- Could not get a clean comparable price for freelancer tax/income trackers
+  specifically (Gumroad product pages 403'd on direct fetch, same issue
+  noted in the very first 2026-07-20 entry) — search snippets described
+  feature sets but not confirmed prices for that category. Left Product 2.1
+  (tax tracker) unchanged rather than guess.
+
+**Net conclusion:** Products 1.1 (Prompt Playbook), 1.2 (Vol. 2), and 2.2
+(Invoice Toolkit) were priced $17 against real comparables charging
+$27-47 and $29 respectively for less-differentiated or less complete
+products — genuinely underpriced, not just "in range." Raised all three to
+$19 (matching Product 2.1's existing tier, so every individual product is
+now a flat $19 — simpler to state in any outreach copy too). Raised both
+bundles (AI Prompt Playbook Bundle, Freelancer Money Bundle) from
+$27/$29 to $29/$29 so the "buy separately vs. bundle" discount math still
+holds and actually grew (from ~19-21% off to ~24% off) rather than shrinking
+as the singles got more expensive. Product 2.1 (tax tracker) was left at
+$19 — no comparable evidence found either way.
+
+This is a real, evidence-based price change, not a repeat of the
+07-20/07-31 conclusions (which were both "no change" based on range-level
+advice, not comparable-level data) and not a guess — regenerated all 4
+affected products' PDFs (their cross-sell pages reference each other's
+price), both bundle covers, and the lead magnet's PDF (its closing page
+also names a price), re-verified page counts unchanged (14/14/9/9/3) via
+PyMuPDF text extraction (pypdf itself is broken in this environment — a
+missing `_cffi_backend` module breaks its crypto provider on import; used
+PyMuPDF instead), and re-inspected both regenerated bundle cover PNGs for
+overflow (none — the new price strings are the same character length as
+the old ones). Updated all 5 affected LISTING.md files, business_plan.md,
+and OUTREACH-KIT.md's draft prices to match.
+
+Sources (2026-08-05):
+- https://gnaglobal.gumroad.com/l/ai-prompts-nyc-2026 (via search snippet —
+  direct fetch 403's, same as every other Gumroad product page)
+- https://trustly-ai.com/blog/best-practices-selling-ai-prompt-packs-gumroad-2026
+- General search results for "gumroad top selling AI prompts pack for small
+  business 2026 price" and "gumroad invoice toolkit late payment reminder
+  templates price $" (2026-08-05 web searches)

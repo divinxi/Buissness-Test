@@ -254,20 +254,20 @@ def build():
         "business. Look for these on the same store page you downloaded this from.",
         styles["Body"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Freelancer Invoice &amp; Late-Payment Toolkit — $17", styles["SubHeader"]))
+    story.append(Paragraph("The Freelancer Invoice &amp; Late-Payment Toolkit — $19", styles["SubHeader"]))
     story.append(Paragraph(
         "Covers the other half of freelance money admin: what clients owe you. A ready-to-copy "
         "4-stage reminder email sequence, how to choose payment terms and set an enforceable late "
         "fee, and a spreadsheet that auto-flags overdue invoices.",
         styles["Body"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("The Small Business AI Prompt Playbook — $17", styles["SubHeader"]))
+    story.append(Paragraph("The Small Business AI Prompt Playbook — $19", styles["SubHeader"]))
     story.append(Paragraph(
         "25 ready-to-use AI prompts for marketing, support, finance, hiring, and sales, plus a "
         "spreadsheet ROI tracker. For the day-to-day operating tasks this tax guide doesn't cover.",
         styles["Body"]))
     story.append(Spacer(1, 14))
-    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $17", styles["SubHeader"]))
+    story.append(Paragraph("AI Prompt Playbook Vol. 2: Systems &amp; Automation — $19", styles["SubHeader"]))
     story.append(Paragraph(
         "25 more prompts for turning AI into repeatable systems: automation, customer lifecycle, "
         "competitive intelligence, ops reporting, and delegation, plus a recurring-workflow ROI "
@@ -276,7 +276,7 @@ def build():
     story.append(Spacer(1, 14))
     story.append(warn_box(
         "Get this guide and the Invoice & Late-Payment Toolkit together as The Freelancer Money "
-        "Bundle for $29 instead of $36 separately, if it's still available as a bundle listing.",
+        "Bundle for $29 instead of $38 separately, if it's still available as a bundle listing.",
         label="Bundle tip",
     ))
 

@@ -2,9 +2,10 @@
 
 **Product name:** The Freelancer Quarterly Tax & Expense Tracker (2026 Edition)
 
-**Price:** $19 (slightly above Product 1's $17 — this one solves a higher-stakes
-problem: money owed to the IRS, not just time saved. Freelancers will pay more
-to avoid a tax penalty than to save an hour.)
+**Price:** $19 (unchanged on 2026-08-05's pricing review — see
+products/MARKET-NOTES.md. Product 1 and Product 3 were raised to match this
+tier instead, since real comparable listings supported a higher price for
+those two, not evidence this one is priced too low.)
 
 **Category:** Business & Money → Financial Planning (or "Templates")
 
@@ -46,8 +47,7 @@ No subscription. No account needed. One-time download, yours forever.
 **Refund policy:** 30-day, no-questions-asked money-back guarantee — message
 through Gumroad and it's refunded, no hoops. (Research-backed: a 30-day
 guarantee measurably lifts conversion on digital products by removing the
-buyer's risk, and matters more here than on Product 1 since $19 for an
-unreviewed seller is a bigger ask than $17.)
+buyer's risk on a $19 purchase from an unreviewed seller.)
 
 **FAQ:**
 - **Is this valid outside the US?** No — it's built specifically around

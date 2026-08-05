@@ -82,7 +82,7 @@ def build():
         d.text((x + pad, y + 9), chip, font=tag_font, fill=ACCENT)
         x += tw + pad * 2 + 14
 
-    d.text((margin, 630), "$27 bundle  ·  $34 if bought separately", font=price_font, fill=WHITE)
+    d.text((margin, 630), "$29 bundle  ·  $38 if bought separately", font=price_font, fill=WHITE)
 
     d.text((margin, H - 90), "Ledger & Loop Digital", font=sub_font, fill=MUTED)
 

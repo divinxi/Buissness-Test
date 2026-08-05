@@ -6,6 +6,10 @@ send anything under a real person's name — everything below is copy for
 Jimmy to review, edit, and personally send/post himself, whenever he
 chooses to (independent of when REQ-003/004 resolve, except where noted).
 
+**2026-08-05 note:** prices in the drafts below were updated from $17-19 to
+a flat $19 each ($29 for either bundle) to match the pricing update made
+that day — see products/MARKET-NOTES.md (2026-08-05).
+
 ## Why this run built this
 products/MARKET-NOTES.md (2026-07-20) identified the real bottleneck once
 all 4 listings were built: Gumroad Discover barely surfaces new,
@@ -32,7 +36,7 @@ first only because it links to the live Gumroad page.
 > freelancers and small business owners. Two are done so far: a 2026
 > quarterly-tax guide + spreadsheet that calculates your self-employment
 > tax for you, and an invoice/late-payment toolkit with ready-to-send
-> reminder emails and an auto-flagging tracker. $17-19 each, or $29 for
+> reminder emails and an auto-flagging tracker. $19 each, or $29 for
 > both. No subscription, just a download. Use code `LAUNCH25` for 25% off
 > as an early-access thing — genuinely just want a few real people to try
 > these and tell me straight if something's missing or off. If you do grab
@@ -88,7 +92,7 @@ relevant subreddit" is easy to get wrong and risks an account-level ban:
 > invoices." So I built two small toolkits — a 2026 quarterly-tax guide +
 > spreadsheet that computes your self-employment tax from your own numbers,
 > and an invoice toolkit with a 4-stage reminder email sequence and a
-> tracker that auto-flags what's overdue. $17-19 each, $29 for both, one-time
+> tracker that auto-flags what's overdue. $19 each, $29 for both, one-time
 > download, 30-day refund if it's not useful. [Gumroad URL] — feedback
 > welcome, especially if something's missing.
 
@@ -134,7 +138,7 @@ both rather than assuming one covers the other:
 > late invoices is the worst part of the job." Two toolkits so far — a 2026
 > quarterly-tax guide + spreadsheet that computes your own self-employment
 > tax, and an invoice/late-payment kit with a 4-stage reminder sequence and
-> an auto-flagging tracker. $17-19 each, $29 for both, 30-day refund. No
+> an auto-flagging tracker. $19 each, $29 for both, 30-day refund. No
 > sales yet — genuinely want to know if this solves a real problem for you
 > or if I'm missing something obvious. [Gumroad URL]
 
@@ -161,7 +165,7 @@ to create (that would need a request in the queue).
 > self-employment tax, and an invoice toolkit with a ready-to-send 4-stage
 > reminder sequence plus a tracker that auto-flags what's overdue.
 >
-> $17-19 each, one-time download, 30-day refund if it's not useful. Link in
+> $19 each, one-time download, 30-day refund if it's not useful. Link in
 > the comments (or DM me) — and if you've got a freelancer money-admin
 > headache these don't cover, I'd genuinely like to hear it.
 
