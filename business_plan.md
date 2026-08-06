@@ -200,6 +200,20 @@ too. Regenerated all 4 affected PDFs (cross-sell pages), both bundle covers,
 and the lead magnet's PDF (cross-sell mention), all page counts unchanged.
 Full reasoning and sources: products/MARKET-NOTES.md (2026-08-05).
 
+## Buyer-trust gap check from real complaints (2026-08-06)
+17 days into REQ-003/004 being open with $0.00 in sales, ran fresh research
+that — for the first time — looked at the buyer's side (real Gumroad/AI-
+prompt-pack complaints and reviews) instead of seller-side pricing/SEO
+advice. Found two genuine, previously-unaddressed gaps: prompt-pack buyers
+specifically want a demonstrated example output before buying (proof it's
+not another generic pack), and the single most common Gumroad-wide
+complaint is a seller who never responds when something's wrong, not bad
+content. Fixed both: added a real filled-in prompt + illustrative sample
+output to both AI Prompt Playbook listings, and a response-time-commitment
+FAQ line ("real reply within 48 hours, not a bot") to all 6 paid listings.
+No pricing, tags, or new product this run. Full reasoning and sources:
+products/MARKET-NOTES.md (2026-08-06).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

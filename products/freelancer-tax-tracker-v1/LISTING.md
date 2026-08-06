@@ -67,6 +67,10 @@ buyer's risk on a $19 purchase from an unreviewed seller.)
   IRS.gov/SSA.gov as of July 2026 — see the Accuracy note below.
 - **What if this doesn't fit my situation?** Full refund within 30 days,
   no explanation needed — see refund policy above.
+- **What if my download is missing or something's broken?** Message through
+  Gumroad — every buyer message gets a real, personal reply within 48 hours,
+  not a bot. If it can't be sorted out, that goes straight to the refund
+  above, no back-and-forth required.
 
 **Tags:** freelancer taxes, quarterly taxes, self employment tax, schedule c,
 1099, tax tracker, small business finance, excel template

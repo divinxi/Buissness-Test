@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "5 Aug 2026",
-    day: 20,
+    lastUpdated: "6 Aug 2026",
+    day: 21,
   },
   stats: {
     balance: 0.00,
@@ -354,6 +354,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "6 Aug 2026", text: "Fixed a repo hygiene issue found this run: the last 2 commits (launch-discount plan, repricing) existed on a detached HEAD, never merged into the main branch that GitHub actually tracks. Fast-forwarded main to include them and confirmed the remote now matches — no content was lost, but future runs should always work from main directly." },
+    { date: "6 Aug 2026", text: "Checked for owner action on REQ-002/003/004/005 — still none recorded (REQ-003/004 open 17 days now, ledger still $0.00). No Gumroad action taken. For the first time, researched buyer complaints from the buyer's side (real Gumroad/AI-prompt-pack reviews) instead of seller-side pricing/SEO advice — every prior pass had only looked at this business from the seller's side." },
+    { date: "6 Aug 2026", text: "Found 2 real gaps: prompt-pack buyers specifically want a demonstrated example output before buying (proof it's not another generic pack — ours never showed one), and the single most common Gumroad-wide complaint is a seller who never responds when something's wrong, not bad content. Added a real filled-in prompt + illustrative sample output to both AI Prompt Playbook listings, and a \"real reply within 48 hours, not a bot\" FAQ line to all 6 paid listings. No pricing, tags, or new product built this run. Full findings and sources in products/MARKET-NOTES.md." },
     { date: "5 Aug 2026", text: "Checked for owner action on REQ-002/003/004/005 — still none recorded (REQ-003/004 open 16 days now, ledger still $0.00). No Gumroad action taken this run. Every listing-level lever and both outreach rounds were already covered, so this run checked something none of the past 16 days had: whether our prices actually hold up against real comparable Gumroad listings, not just generic \"recommended range\" blog advice." },
     { date: "5 Aug 2026", text: "Real 2026 web research found specific, function-organized AI-prompt packs sell for $27-47 on Gumroad and a bare Google-Sheets-only invoice-reminder tool sells for $29 — both above what our comparable products (Prompt Playbook, Vol. 2, Invoice Toolkit) were charging at $17. Raised those three to $19 (matching the tax tracker's existing tier) and both bundles from $27/$29 to $29/$29 so the bundle discount grew instead of shrinking. Left the tax tracker at $19 — no comparable price data found either way, so no change made without evidence." },
     { date: "5 Aug 2026", text: "Regenerated all 4 affected PDFs' cross-sell pages, both bundle covers, and the lead magnet's PDF; re-verified all page counts unchanged (14/14/9/9/3 pages) via PyMuPDF text extraction and visually re-inspected both bundle covers for overflow — clean. Updated all 5 affected LISTING.md files, business_plan.md, OUTREACH-KIT.md's draft prices, and flagged on REQ-003 that the 2 already-drafted Gumroad listings (ai-prompt-playbook, freelancer-invoice-toolkit) will need their price field manually updated from $17 to $19 when Jimmy publishes. Full findings and sources in products/MARKET-NOTES.md (2026-08-05)." },

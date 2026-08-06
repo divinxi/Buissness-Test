@@ -68,6 +68,10 @@ through Gumroad and it's refunded, no hoops.
   notice), not a form-letter collections agency.
 - **What if it doesn't fit how I invoice?** Full refund within 30 days, no
   explanation needed — see refund policy above.
+- **What if my download is missing or something's broken?** Message through
+  Gumroad — every buyer message gets a real, personal reply within 48 hours,
+  not a bot. If it can't be sorted out, that goes straight to the refund
+  above, no back-and-forth required.
 
 **Tags:** freelancer invoicing, get paid, late payment, invoice template,
 freelance business, client management, small business finance, excel template

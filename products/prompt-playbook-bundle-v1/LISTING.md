@@ -65,6 +65,10 @@ through Gumroad and it's refunded, no hoops.
   calculation for a different kind of prompt.
 - **What if it doesn't fit my situation?** Full refund within 30 days, no
   explanation needed — see refund policy above.
+- **What if my download is missing or something's broken?** Message through
+  Gumroad — every buyer message gets a real, personal reply within 48 hours,
+  not a bot. If it can't be sorted out, that goes straight to the refund
+  above, no back-and-forth required.
 
 **Tags:** ai prompts for small business, business systems automation, ai
 workflow templates, chatgpt prompts for business owners, productivity

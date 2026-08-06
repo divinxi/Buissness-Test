@@ -43,6 +43,21 @@ Every prompt comes with **when to actually use it** and **a tip that makes
 it work as a system, not just a one-time answer** — the difference between a
 prompt you run once and a habit that keeps paying off.
 
+**See one in action** — the "Lapsed Customer Win-Back Sequence" prompt,
+filled in for a fictional example (*customers inactive 90+ days, likely
+reason: they found a cheaper competitor, offer: 20% off their next order*):
+
+> **Email 1 (check-in, no pitch):** "Subject: Haven't seen you in a while —
+> just checking in. No offer, no ask — just wanted to see how things are
+> going and if there's anything that made you stop using [PRODUCT]."
+> **Email 3 (time-bound offer):** "Subject: 20% off, just for the next 7
+> days — Come back and we'll knock 20% off your next order through [DATE].
+> No strings, just want you back."
+
+*(Illustrative — the exact wording your AI assistant gives back depends on
+the model and the specifics you paste in. This shows the kind of result the
+prompt is built to produce, not a fixed script.)*
+
 **What you get:**
 - A 14-page PDF playbook, organized and ready to copy-paste (includes a
   "how this differs from Vol. 1" page and a closing page pointing to the
@@ -85,6 +100,10 @@ through Gumroad and it's refunded, no hoops.
 - **Will these prompts stop working as AI models change?** Unlikely — they're
   built around the task and the system structure, not a specific model
   version, so they hold up across model updates.
+- **What if my download is missing or something's broken?** Message through
+  Gumroad — every buyer message gets a real, personal reply within 48 hours,
+  not a bot. If it can't be sorted out, that goes straight to the refund
+  below, no back-and-forth required.
 - **What if it's not useful for my business?** Full refund within 30 days,
   no explanation needed — see refund policy above.
 

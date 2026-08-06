@@ -769,3 +769,67 @@ Sources (2026-08-05):
 - General search results for "gumroad top selling AI prompts pack for small
   business 2026 price" and "gumroad invoice toolkit late payment reminder
   templates price $" (2026-08-05 web searches)
+
+## 2026-08-06 update: mined real buyer complaints about digital products,
+not just seller-side pricing/SEO advice — 2 genuine gaps found and fixed
+
+REQ-002/003/004/005 are all still open with no owner action recorded in 17
+days now — ledger still $0.00, 7 products (6 + lead magnet) all still
+unpublished. Every prior research pass looked at this from the seller's
+side (pricing, tags, titles, discount mechanics). Never once looked at it
+from the buyer's side: what do people who actually buy Gumroad digital
+products — prompt packs and templates specifically — complain about after
+the purchase? That's a different, more direct signal for what our own
+listings might be missing.
+
+Ran real 2026 web searches (not from memory) on Gumroad buyer complaints
+and negative reviews, specifically for AI prompt packs and for the platform
+generally:
+- A well-documented pack (15-40 prompts) from a niche creator reportedly
+  outperforms a bloated 500-prompt dump — buyers want depth per prompt, not
+  raw count. This validates, doesn't change, our existing structure (25
+  prompts per volume, organized by function) — noted here as confirmation,
+  no copy change needed since we already don't have this problem.
+- Real, actionable gap: buyers of prompt packs specifically say they expect
+  "clear use cases, example outputs, compatibility notes and update
+  history" before buying — and our listings had "when to use it" and an
+  adaptation tip, but never actually showed a filled-in example with a
+  sample output. That's exactly the kind of proof-of-quality a generic,
+  unvetted competitor pack can't fake.
+- Separate, platform-wide gap: Gumroad's own Trustpilot rating skews
+  heavily negative (1.4/5, 83% one-star), and the single most common theme
+  across complaints is non-delivery or a seller who never responds to a
+  problem — not bad content, an absence of any response at all. Our 30-day
+  refund policy addresses the outcome (get your money back) but never
+  addressed the buyer's actual fear at the point of decision (will anyone
+  even answer if something's wrong).
+
+**Fixes made (copy-only, no new product, no Gumroad action):**
+- Added a concrete "See one in action" example to both AI Prompt Playbook
+  listings (v1 and Vol. 2) — a real prompt from each product's own
+  content.py, filled in with a fictional example input and a plausible
+  sample output, clearly labeled illustrative (output varies by model/
+  inputs, not a fixed script). Freelancer line and lead magnet weren't
+  changed here since spreadsheet/guide-driven products are already easy to
+  preview via the existing "look inside" screenshots — the example-output
+  gap is specific to prompt packs, where the buyer's real question is
+  "what do I actually get back," not "what's the format."
+- Added one new FAQ line to all 6 paid listings (both Prompt Playbook
+  volumes, both bundles, both freelancer toolkits): "What if my download is
+  missing or something's broken?" — a concrete response-time commitment
+  (real reply within 48 hours, not a bot) that routes straight to the
+  existing refund policy if unresolved. Not added to the free lead magnet
+  — no money at risk on a $0 listing, so the fear this addresses doesn't
+  really apply there.
+- Did not touch pricing, tags, titles, cover art, or bundle structure —
+  those levers were evidence-checked as recently as yesterday (08-05) and
+  the week before; this run found a genuinely different lever (post-
+  purchase trust/proof, not pre-purchase pricing/discovery) that nothing
+  since day 1 had actually looked at.
+
+Sources (2026-08-06):
+- https://ilmilog.com/best-ai-prompt-packs-in-2026/
+- https://trustly-ai.com/blog/best-practices-selling-ai-prompt-packs-gumroad-2026
+- https://www.trustpilot.com/review/gumroad.com
+- https://gumroad.pissedconsumer.com/review.html
+- https://cartmango.com/gumroad-scam/

@@ -33,6 +33,22 @@ Every prompt comes with **when to actually use it** and **a tip for adapting
 it to your business** — because a prompt you copy-paste without customizing
 is worth about as much as the generic list you didn't buy.
 
+**See one in action** — the "Weekly Social Content Batch" prompt, filled in
+for a fictional example (*Wren & Co., a small-batch candle maker that helps
+eco-conscious gift shoppers find a scent that means something*, topic: *"New
+Sea Salt & Fig scent just launched"*):
+
+> **Instagram:** "Just landed: Sea Salt & Fig. Salty air, warm fig — the kind
+> of scent that makes a room feel like a coastline. Link in bio before the
+> first batch sells out."
+> **Email teaser:** "Subject: The scent we didn't tell anyone about (until
+> now). Sea Salt & Fig just dropped — read on for the story behind it, and
+> first access before it goes live on the site."
+
+*(Illustrative — the exact wording your AI assistant gives back depends on
+the model and the specifics you paste in. This shows the kind of result the
+prompt is built to produce, not a fixed script.)*
+
 **What you get:**
 - A 14-page PDF playbook, organized and ready to copy-paste (includes a closing page pointing to the other Ledger &amp; Loop toolkits)
 - A companion Excel/Google Sheets tracker with a built-in ROI calculator — log the prompts you use and see the actual hours (and dollars) saved
@@ -57,6 +73,10 @@ $19 purchase.)
 - **Will these prompts stop working as AI models change?** Unlikely — they're
   built around the task and the wording that gets a useful answer, not a
   specific model version, so they hold up across model updates.
+- **What if my download is missing or something's broken?** Message through
+  Gumroad — every buyer message gets a real, personal reply within 48 hours,
+  not a bot. If it can't be sorted out, that goes straight to the refund
+  below, no back-and-forth required.
 - **Is this a subscription or does it expire?** Neither. One-time payment,
   yours forever, no account or login required.
 - **What if it's not useful for my business?** Full refund within 30 days,
