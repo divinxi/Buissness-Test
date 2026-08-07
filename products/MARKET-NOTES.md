@@ -833,3 +833,71 @@ Sources (2026-08-06):
 - https://www.trustpilot.com/review/gumroad.com
 - https://gumroad.pissedconsumer.com/review.html
 - https://cartmango.com/gumroad-scam/
+
+## 2026-08-07 update: found a genuinely new distribution channel — Pinterest — and why it's structurally different from every channel drafted so far
+
+REQ-002/003/004/005 are all still open with no owner action recorded in 18
+days now — ledger still $0.00, 7 products (6 + lead magnet) all still
+unpublished. Every listing-level lever (pricing, copy, cover art, refund/
+FAQ, cross-sell, retagging, preview images, buyer-trust gaps) and two rounds
+of outreach-kit channels (personal message, Reddit x2, Show IH, LinkedIn)
+have already been covered — repeating any of them would add nothing.
+Instead of another pass over the listings themselves, looked at whether the
+outreach kit was missing a *structurally different* channel, not just
+another community to post the same kind of link into.
+
+It was. Every channel drafted so far (personal message, Reddit, Show IH,
+LinkedIn) is attention/community-first: someone has to already be scrolling
+that feed and stop for a cold post. Real 2026 research on what's actually
+selling on Gumroad right now independently named Pinterest as "the
+strongest fit for digital products" specifically — 450M monthly users, and
+critically, they're there in a *search/planning* mindset (looking for
+templates, planners, trackers), not a passive-scroll one. That's a better
+structural match for a tax tracker / invoice tracker / prompt playbook than
+any channel already drafted, and multiple independent sources named budget/
+expense-tracker and "planner/template" products specifically as strong
+Pinterest categories. A second, separate finding: Pinterest is one of the
+few platforms where a direct link from the post straight to the product
+page is normal and expected, not something that reads as spammy the way it
+does on Reddit/LinkedIn.
+
+**The catch, and why this became a request instead of just more drafted
+copy:** unlike Reddit/LinkedIn/Indie Hackers (which only assume Jimmy
+already has a personal account), Pinterest realistically needs a **new**
+Business account to be worth doing properly (free, no monthly fee, no
+commission — confirmed via a dedicated 2026 source on Pinterest Business
+account costs — but still a new external account). This project's own rule
+says any new external account goes through the request queue, not straight
+into a "drafts only" file the way the other 4 channels did. Filed
+**REQ-006** (low priority — this is a new opportunity, not something already
+built and blocked) and put the actual ready-to-use pin drafts (3 pins:
+title, description, suggested board, per Pinterest's real 2026 spec — 2:3
+vertical, 1000×1500px, 100-char title/500-char description limits) in
+products/OUTREACH-KIT.md section 5, so nothing has to be written from
+scratch if/when Jimmy says yes.
+
+Deliberately did NOT also draft TikTok/Instagram Reels content this run,
+even though the same research calls short-form video a real, currently-
+strong channel for this same product category — video needs actual
+production (script, recording, editing), a materially bigger lift than a
+pin image + text, and drafting it properly today would have meant two
+half-finished channels instead of one properly-researched one. Noted in
+OUTREACH-KIT.md as a candidate for a dedicated future run, not lost, but not
+built today either — consistent with "quality over volume."
+
+Also note: two of the most Pinterest-specific source pages (madetospark.com,
+84pins.com) were blocked by this environment's network egress proxy on
+direct fetch, so their content is relayed via search-result snippets only,
+not independently read in full — flagging this the same way the 2026-07-20
+and 2026-08-05 entries flagged Gumroad's own 403s on direct fetch, so this
+isn't presented as more rigorously sourced than it actually is.
+
+Sources (2026-08-07):
+- https://medium.com/write-a-catalyst/how-to-get-free-traffic-to-your-digital-products-the-2026-no-ad-blueprint-for-gumroad-beyond-4556ca82e669
+- https://84pins.com/sell-digital-products-on-pinterest/ (via search snippet — direct fetch blocked by egress proxy)
+- https://madetospark.com/pinterest-for-gumroad (via search snippet — direct fetch blocked by egress proxy)
+- https://www.panstag.com/2026/06/pinterest-traffic-digital-products.html
+- https://84pins.com/pinterest-business-account-cost/
+- https://recurpost.com/blog/pinterest-pin-dimensions/
+- https://business.pinterest.com/creative-best-practices/
+- https://whop.com/blog/best-digital-products-to-sell/ (TikTok/Reels + planner/spreadsheet demand confirmation)

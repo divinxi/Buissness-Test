@@ -185,6 +185,87 @@ Reddit/IH.
   has access to needs his own judgment/account, not money or a new external
   account, so it doesn't meet the request-queue bar.
 
+## 5. Pinterest — a new channel (2026-08-07 research), and probably the single best-fit one found so far
+Every channel above (personal message, Reddit x2, Show IH, LinkedIn) assumes
+Jimmy already has a personal account to post from — none of them required a
+new external account. Pinterest is different, and worth treating as its own
+thing rather than folding into the list above.
+
+**Why this is worth the friction of a new account:** research specifically
+on what's selling on Gumroad in 2026 independently names Pinterest as "the
+strongest fit for digital products" for this exact category — 450M monthly
+users, largely in a research/planning mindset, actively searching for
+templates and planners rather than passively scrolling. Multiple sources
+name budget trackers, debt/expense trackers, and "planner/template" digital
+products specifically as strong Pinterest categories, and note that direct
+linking from a pin straight to a product page (Gumroad, Etsy, etc.) is
+normal and encouraged on Pinterest — unlike Reddit/LinkedIn, where an inline
+link outside "comments" reads as spammy. That's a structurally better fit
+for our three planner/tracker-style products than any channel drafted so
+far, which are all attention/community-first, not search-first.
+
+**What it needs that the other 4 channels didn't:** a Pinterest Business
+account. It's free (no monthly fee, no commission), but it's still a new
+external account per this project's own rule — filed as **REQ-006** in the
+request queue rather than created here. Everything below is drafted and
+ready the moment Jimmy makes that call (independent of REQ-003/004, since
+Pinterest doesn't require Gumroad to be live to post a pin — though the pin
+description does need a real, working Gumroad link, so posting pins in
+practice waits for REQ-003/004 too).
+
+**Format specs (2026-08-07 research):** vertical pins, 2:3 ratio (1000×1500px),
+PNG or JPEG. Pin titles up to 100 characters (front-load the first ~40 —
+that's what shows in-feed). Descriptions up to 500 characters. Keep any text
+overlay on the pin image itself short and high-contrast — it needs to read
+at thumbnail size in a muted feed, not carry the whole pitch.
+
+### Draft pin 1 — Freelancer Money Bundle
+**Title (fits in 100 chars, keyword-first):** 2026 Freelancer Tax & Invoice Tracker Bundle | Self-Employment Spreadsheet
+**Description (fits in 500 chars):**
+> Freelancer money admin, solved: a 2026 quarterly-tax guide + spreadsheet
+> that calculates your self-employment tax for you, and an invoice toolkit
+> with ready-to-send late-payment reminders and an auto-flagging tracker.
+> $29 for both, one-time download, works in Excel or Google Sheets, 30-day
+> refund. Know what you owe the IRS and get paid on time. [Gumroad link]
+**Suggested board:** "Freelancer Finance" / "Self-Employed Tax Tips" (create
+if none exists — Pinterest rewards pins added to a topically-matching board).
+**Image:** reuse products/freelancer-bundle-v1/dist/cover.png as a starting
+point, but it's the wrong aspect ratio (a Gumroad cover, not 2:3) — would
+need a resized/recomposed vertical version before actually pinning; not
+built this run, flagged for whenever Jimmy decides on REQ-006 so the image
+work isn't wasted if he says no.
+
+### Draft pin 2 — Freelancer Quarterly Tax & Expense Tracker
+**Title:** Self-Employment Tax Calculator Spreadsheet | 2026 Freelancer Guide
+**Description:**
+> Stop guessing what to set aside for taxes. A 9-page guide with the real
+> 2026 quarterly deadlines and all 17 IRS Schedule C categories, plus a
+> spreadsheet that computes your exact self-employment tax from your own
+> numbers. $19, one-time, Excel or Google Sheets, 30-day refund. [Gumroad link]
+**Suggested board:** "Small Business Taxes" / "Budget Spreadsheets."
+
+### Draft pin 3 — Small Business AI Prompt Playbook
+**Title:** 25 AI Prompts for Small Business Owners | ChatGPT Prompt Playbook
+**Description:**
+> 25 ready-to-use AI prompts for marketing, customer support, finance,
+> hiring, and sales — built for small business owners, not generic filler.
+> Comes with a spreadsheet that tracks the time and money each one saves
+> you. $19, one-time download, 30-day refund. [Gumroad link]
+**Suggested board:** "AI Tools for Small Business" / "ChatGPT Prompts."
+
+### What Pinterest does NOT get, and why
+No pin has been posted, and no account has been created — same posture as
+every other channel in this file. Also deliberately did not draft anything
+for TikTok/Instagram Reels this run, even though the same research
+identified short-form video as a real, currently-strong channel for this
+exact product category (planners/spreadsheets/templates): video needs
+actual production (script + recording + editing), which is a materially
+bigger lift than a pin image + text, and doing it justice would mean
+spreading this run thin across two half-built channels instead of one
+properly-drafted one. Worth a dedicated future run if Pinterest doesn't move
+the needle after Jimmy's decision on REQ-006 — noted here so it isn't lost,
+not built today.
+
 ---
 Sources:
 - https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit
@@ -198,3 +279,9 @@ Sources:
 - https://lagrowthmachine.com/linkedin-marketing-strategy-2026/
 - https://blog.annabyang.com/make-linkedin-less-cringe/
 - https://postiv.ai/blog/best-practices-for-posting-on-linkedin
+- https://84pins.com/sell-digital-products-on-pinterest/ (2026-08-07, via search snippet — direct fetch blocked by egress proxy)
+- https://madetospark.com/pinterest-for-gumroad (2026-08-07, via search snippet — direct fetch blocked)
+- https://www.panstag.com/2026/06/pinterest-traffic-digital-products.html
+- https://84pins.com/pinterest-business-account-cost/
+- https://recurpost.com/blog/pinterest-pin-dimensions/
+- https://business.pinterest.com/creative-best-practices/

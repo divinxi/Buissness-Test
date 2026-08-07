@@ -45,6 +45,15 @@
       "title": "Add the free lead magnet as a $0 Gumroad listing (no new account needed after all)",
       "detail": "Update 2026-08-01: this used to ask you to set up a brand-new email-capture account (Mailchimp/Beehiiv/ConvertKit, or a Google Form) for the free giveaway PDF (marketing/lead-magnet-freelancer-quickstart/dist/Freelancer-Money-Admin-Quick-Start.pdf). Researched it this run and that's not actually needed: Gumroad itself captures every buyer's email at checkout, including $0/pay-what-you-want purchases (which need an email but no payment method), and its built-in Workflows feature can send a scheduled follow-up email to anyone who downloads something, pointing at the paid toolkits. So I wrote marketing/lead-magnet-freelancer-quickstart/LISTING.md and generated a cover.png for it, same as the 6 paid products — it's now a $0/PWYW Gumroad listing on the account that already exists, not a new external service. Sources and reasoning in products/MARKET-NOTES.md (2026-08-01). Nothing for you to decide here anymore — this folds into REQ-003/004: whenever you're adding cover art and publishing the other 6 listings, add this one too (at $0/PWYW) and you get the email list as a side effect.",
       "blocks": "Building a real email list before the first Gumroad sale — no longer needs a separate decision, just rides along with REQ-003/004"
+    },
+    {
+      "id": "REQ-006",
+      "created": "2026-08-07",
+      "status": "open",
+      "priority": "low",
+      "title": "Decide whether to create a free Pinterest Business account (new distribution channel)",
+      "detail": "Research this run (real 2026 sources, see products/MARKET-NOTES.md) found Pinterest independently named as the strongest-fit free traffic channel for exactly our product type (planners/spreadsheets/templates) — 450M monthly users in a search/planning mindset, and direct linking from a pin to a product page is normal there, unlike Reddit/LinkedIn. It's a free account (no monthly fee, no commission), but it's still a new external account, so per this project's own rule I won't create it myself. I've drafted 3 ready-to-use pins (title, description, suggested board) in products/OUTREACH-KIT.md section 5 so this can move the same day you decide. If you'd rather not add another account to manage, that's a completely fine answer too — nothing else is blocked on this.",
+      "blocks": "Nothing already built — this is a new opportunity, not a blocker. Only blocks actually posting the 3 drafted pins."
     }
   ]
 }

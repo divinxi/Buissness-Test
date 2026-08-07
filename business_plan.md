@@ -214,6 +214,20 @@ FAQ line ("real reply within 48 hours, not a bot") to all 6 paid listings.
 No pricing, tags, or new product this run. Full reasoning and sources:
 products/MARKET-NOTES.md (2026-08-06).
 
+## Pinterest channel added to outreach kit (2026-08-07)
+18 days into REQ-003/004 being open with $0.00 in sales, looked for a
+distribution channel that's structurally different from the 4 already
+drafted (personal message, Reddit x2, Show IH, LinkedIn — all
+attention/community-first). Found one: real 2026 research independently
+names Pinterest as the strongest-fit free channel for exactly this product
+category (planners/spreadsheets/templates), since its users are in a
+search/planning mindset and direct linking to a product page is normal
+there. Unlike the other channels, it realistically needs a new (free)
+Pinterest Business account, so filed REQ-006 rather than just drafting more
+copy — 3 ready-to-use pins are waiting in products/OUTREACH-KIT.md section 5
+for whenever Jimmy decides. Full reasoning and sources: products/MARKET-NOTES.md
+(2026-08-07).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
