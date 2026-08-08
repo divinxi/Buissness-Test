@@ -901,3 +901,50 @@ Sources (2026-08-07):
 - https://recurpost.com/blog/pinterest-pin-dimensions/
 - https://business.pinterest.com/creative-best-practices/
 - https://whop.com/blog/best-digital-products-to-sell/ (TikTok/Reels + planner/spreadsheet demand confirmation)
+
+## 2026-08-08 update: wrote the actual email copy the lead magnet's own distribution mechanism was missing
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+19 days now on REQ-003/004 — ledger still $0.00, 7 products (6 + lead
+magnet) all still unpublished. Every listing-level lever (pricing, copy,
+cover art, refund/FAQ, cross-sell, retagging, preview images, buyer-trust
+gaps) and all 5 outreach channels (personal message, Reddit x2, Show IH,
+LinkedIn, Pinterest) have already been covered — repeating any of them
+would add nothing. Instead of another new channel or another polish pass,
+went back through every prior entry in this file looking for something
+identified but never finished, the same method that found the REQ-005
+premise gap on 08-01.
+
+Found one: the 2026-08-01 entry established that Gumroad's Workflows
+feature can send scheduled follow-up emails to anyone who downloads the
+free lead magnet, and used that finding to close REQ-005 (no new
+email-capture account needed). That closed the "which tool" question but
+never produced the one thing a Workflow actually needs to do anything —
+the email copy itself. 7 days of runs since then (08-02 through 08-07)
+built preview images, buyer-trust fixes, and 2 more outreach channels
+without ever circling back to write it. Day 1's own finding (~42% of
+Gumroad sales come from email/external traffic the seller brings) has
+technically been "addressed" by the lead magnet's existence since 07-27,
+but a downloaded PDF with no follow-up doesn't actually capture any of that
+42% — it just collects an address and goes quiet.
+
+**Built:** `marketing/lead-magnet-freelancer-quickstart/EMAIL-SEQUENCE.md`
+— a 3-email Gumroad Workflows sequence (Day 0 delivery + soft mention, Day
+3 a genuinely new tax tip that bridges into the Tax Tracker, Day 7 the same
+pattern for the Invoice Toolkit plus the plain $29-vs-$38 bundle math).
+Deliberately excluded LAUNCH25 from this sequence: that code was scoped on
+2026-08-04 specifically to Jimmy's personal-network message, where a
+10-redemption cap makes sense against people he already knows — an
+automated sequence firing on every anonymous $0 download could exhaust that
+same cap on strangers before it ever reaches his own contacts, so this
+sequence sells on value/relevance instead, with a note that a separate,
+uncapped-differently code could be considered later once there's any signal
+on how this list actually responds (there's currently none — 0 emails sent).
+
+Referenced from `marketing/lead-magnet-freelancer-quickstart/LISTING.md` so
+it's discoverable alongside the listing copy it supports. This is copy
+only — no Gumroad Workflow created, no email sent to anyone, no account
+touched. Did not touch pricing, cover art, an outreach channel, or build a
+new product this run — 7 products + a lead magnet is well past the "3+
+built, 0 sales" threshold, and this closes a real, previously-identified
+gap rather than repeating any prior entry's conclusion.

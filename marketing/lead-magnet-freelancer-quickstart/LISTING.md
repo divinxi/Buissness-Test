@@ -66,3 +66,10 @@ listing — at $0/PWYW — is a five-minute job alongside the other 6 once
 Gumroad trust is re-established. Don't create it via API even after REQ-004
 clears; use the dashboard UI, the mechanism already confirmed safe for
 cover uploads.
+
+**Follow-up emails:** a 3-email Gumroad Workflows sequence (immediate
+delivery + Day 3 Tax Tracker pitch + Day 7 Invoice Toolkit/bundle pitch) is
+drafted and ready to paste into a Workflow once this listing goes live —
+see `EMAIL-SEQUENCE.md` in this folder. This is what actually makes the
+lead magnet's email-capture mechanism (see above) do something, rather than
+just collecting addresses with no follow-up.

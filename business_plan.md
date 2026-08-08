@@ -143,6 +143,16 @@ external traffic the seller brings themselves.
   a $0/PWYW Gumroad listing, same as the other 6 products — ready the
   moment REQ-003/004 clear. REQ-005 updated accordingly; it no longer needs
   its own owner decision. See products/MARKET-NOTES.md (2026-08-01).
+- Update 2026-08-08: the email-capture mechanism above only collects
+  addresses — it never had any follow-up content to actually send. Wrote
+  the missing piece: a 3-email Gumroad Workflows sequence (immediate
+  delivery, Day 3 Tax Tracker pitch, Day 7 Invoice Toolkit + bundle pitch),
+  see marketing/lead-magnet-freelancer-quickstart/EMAIL-SEQUENCE.md.
+  Deliberately excludes the LAUNCH25 discount code (scoped to the personal-
+  network message only, per the 2026-08-04 plan) since an automated
+  sequence to anonymous downloaders could exhaust its redemption cap before
+  reaching Jimmy's own contacts. Ready to paste into a Workflow the moment
+  the lead magnet listing goes live.
 
 ## Outreach kit expansion (2026-08-03)
 `products/OUTREACH-KIT.md` had only 2 channels (personal message, Reddit)
