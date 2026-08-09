@@ -266,6 +266,106 @@ properly-drafted one. Worth a dedicated future run if Pinterest doesn't move
 the needle after Jimmy's decision on REQ-006 — noted here so it isn't lost,
 not built today.
 
+## 6. Short-form video (TikTok / Instagram Reels / YouTube Shorts) — the channel flagged and deliberately deferred on 2026-08-07 (2026-08-09 research)
+
+The Pinterest entry above (section 5) explicitly deferred this: "video needs
+actual production... worth a dedicated future run." This is that run. Unlike
+Pinterest, this doesn't need a new account by default — it assumes Jimmy
+posts from a personal TikTok/Instagram/YouTube he may already have, the same
+"not a new account unless you tell me otherwise" posture as the LinkedIn
+draft in section 4. If he doesn't have one and doesn't want to create one,
+nothing else is blocked on this — same as every other channel in this file.
+
+**Why this is structurally different from every other channel drafted so
+far:** sections 1-5 are all *one-shot* posts (a message, a Reddit post, a
+pin) — write once, post once. Real 2026 research on short-form video
+specifically found it works differently: platforms reward a **value ladder**
+— free, useful tips posted regularly (not a product pitch) that build enough
+trust for a much smaller number of direct product posts to convert. That
+means this channel needs two different kinds of content, not one: recurring
+free tips (below) and occasional direct-pitch scripts (further below).
+
+**Structure used for every script below** (per 2026 hook/body/payoff
+research): a 3-second hook (spoken + on-screen text, works with sound off),
+a clear promise by second 5, body content through the middle, a short CTA at
+the end. Target length 30-45 seconds — long enough to deliver one real
+piece of value, short enough to hold retention.
+
+### 6a. Direct-pitch scripts (one per product line, post occasionally)
+
+**Script 1 — Freelancer Money Bundle (tax + invoice pain, "Mistake Warning" hook)**
+| Time | On-screen text | Voiceover / action |
+|---|---|---|
+| 0-3s | "You're probably underpaying your quarterly taxes" | Look at camera, deadpan delivery |
+| 3-6s | "(and you won't find out until the IRS tells you)" | Hold, let it land |
+| 6-20s | Show the spreadsheet on screen | "I built a tracker that computes your exact self-employment tax from your own numbers — not a guess, the real 2026 math. Same toolkit also has an invoice tracker that auto-flags what's overdue, so you stop chasing clients from scratch every time." |
+| 20-30s | Show cover / price on screen | "$19 each, $29 for both. Link in bio." |
+| CTA | Text overlay: "Link in bio" | — |
+
+**Script 2 — Invoice & Late-Payment Toolkit ("Contrarian Claim" hook)**
+| Time | On-screen text | Voiceover / action |
+|---|---|---|
+| 0-3s | "The problem isn't your late-paying client" | Direct to camera |
+| 3-6s | "It's that you don't have a system" | — |
+| 6-25s | Show reminder email sequence on screen | "No due date that actually means anything, no deposit, and a reminder email you write from scratch every time you're already annoyed. I built a 4-stage reminder sequence — friendly to firm to final notice — plus a tracker that auto-flags Paid, Overdue, or Upcoming so you never have to check by hand." |
+| 25-35s | Show price | "$19, one-time, 30-day refund. Link in bio." |
+
+**Script 3 — Small Business AI Prompt Playbook ("List Tease" hook)**
+| Time | On-screen text | Voiceover / action |
+|---|---|---|
+| 0-3s | "5 AI prompts I actually use to run a business" | — |
+| 3-6s | "Not the generic ChatGPT list you've seen 100 times" | — |
+| 6-28s | Show 2-3 real prompt titles/snippets from content.py on screen | Read one prompt out loud, show the kind of output it gets — marketing, customer service, finance, hiring, sales, organized by what you're actually trying to do, not a flat dump. |
+| 28-35s | Show cover | "25 prompts total, $19, comes with a tracker that shows you the time it's saving. Link in bio." |
+
+### 6b. Recurring free-value scripts (the "value ladder" — post more often than the pitches above)
+
+Per the research finding above, these build the trust that makes 6a convert
+— post several of these for every one direct-pitch script, no product
+mentioned until the very last line if at all:
+
+1. **"The 2026 quarterly tax deadline you're about to miss"** — state the
+   next real deadline from the guide's own dates, one sentence on the
+   penalty for missing it. No pitch, or a soft one-line mention at the end.
+2. **"The one invoice mistake that causes most late payments"** — the
+   deposit-reduces-non-payment-risk finding already in the Invoice Toolkit
+   guide, told as a stat/fact, not an ad.
+3. **"Read this before you send a 3rd payment reminder"** — the
+   friendly-to-firm-to-final escalation logic, condensed to 30 seconds.
+4. **"The Schedule C category most freelancers forget"** — pick one of the
+   17 real categories from the Tax Tracker guide that's genuinely
+   non-obvious (e.g. the home office deduction's simplified vs. regular
+   method).
+5. **"An AI prompt that actually saves you an hour, not a gimmick"** — one
+   real prompt from the Playbook, demonstrated live, no pitch until the
+   last 3 seconds.
+
+None of these need new content to be *written* — every fact above already
+exists, verified, in the shipped guides (content.py / the PDFs themselves).
+The only new work if Jimmy chooses to film these is filming them, which is
+outside what this routine can do (no camera, no voice, no face) — same
+limitation as everything else in this file that needs a real human to
+actually record/post it.
+
+### What this does NOT do
+- Does not create a TikTok, Instagram, or YouTube account, and does not
+  assume Jimmy has one — if he doesn't and doesn't want one, nothing else
+  here is blocked on it, same as the LinkedIn note in section 4.
+- Does not film, record, or produce anything — this is a script/shot-list
+  only. Actual filming needs a real person on camera or voicing it, which
+  this routine structurally cannot do.
+- Does not add a new request to open_requests.json — same reasoning as
+  LinkedIn: posting from an account Jimmy already controls needs his own
+  judgment/time, not money or a new external account.
+
+Sources (2026-08-09):
+- https://www.mohacmedya.com/blog-archieve/tiktok-marketing-short-form-video-strategy-2026-mqc4lrd5/
+- https://resellready.co/blogs/news/done-for-you-digital-products-that-actually-sell
+- https://www.socialync.io/blog/short-form-video-structure-guide-2026
+- https://www.capcut.com/create/short-form-video-hooks-first-3-second-patterns
+- https://virvid.ai/blog/short-video-script-frameworks-with-trending-examples
+- https://faceless.so/blog/25-hook-formulas-to-boost-short-video-watch-time
+
 ---
 Sources:
 - https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit

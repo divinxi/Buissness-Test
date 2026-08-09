@@ -948,3 +948,65 @@ touched. Did not touch pricing, cover art, an outreach channel, or build a
 new product this run — 7 products + a lead magnet is well past the "3+
 built, 0 sales" threshold, and this closes a real, previously-identified
 gap rather than repeating any prior entry's conclusion.
+
+## 2026-08-09 update: built the short-form video scripts explicitly deferred on 08-07
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+20 days now on REQ-003/004 — ledger still $0.00, 7 products (6 + lead
+magnet) all still unpublished. Every listing-level lever and all 5
+outreach-kit channels (personal message, Reddit x2, Show IH, LinkedIn,
+Pinterest) have already been covered. The 2026-08-07 entry explicitly named
+one thing it deliberately did NOT build — TikTok/Instagram Reels/YouTube
+Shorts content — because video needs real production and doing it alongside
+Pinterest in one run would have meant two half-finished channels. Filed it
+as "worth a dedicated future run" instead of losing it. This is that run.
+
+Ran fresh 2026 research (not from memory) specifically on short-form video
+for digital products: TikTok/Reels/Shorts are described as a genuine
+commercial/discovery channel in 2026 (part search engine, part conversion
+engine, not just entertainment), and — the one finding that changed how this
+was built — the format that actually converts is a **value ladder**: mostly
+free, useful tips content posted regularly, with only occasional direct
+product pitches, rather than pitch-every-time. Separately found a concrete
+2026 script structure (hook in 0-3s readable with sound off, clear promise
+by 5s, body, short CTA) and the 3 highest-performing 2026 hook formulas
+(Contrarian Claim, Mistake Warning, List Tease).
+
+**Built:** a new section 6 in `products/OUTREACH-KIT.md` with two kinds of
+content, matching the value-ladder finding rather than just writing 3 more
+one-shot pitch scripts like the Reddit/LinkedIn drafts:
+- **3 direct-pitch scripts** (hook/body/payoff table format, timed, one per
+  product line: Freelancer Money Bundle, Invoice Toolkit, AI Prompt
+  Playbook), each built around a real fact already in that product's own
+  guide (the auto-flagging tracker, the 4-stage reminder sequence, real
+  prompt titles from content.py) — not generic filler.
+- **5 recurring free-tip topics** (no product pitch, or a soft one-line
+  mention at most) — each one traceable to a fact that already exists,
+  verified, in a shipped guide (the real 2026 quarterly deadline, the
+  deposit-reduces-non-payment-risk finding, the home-office deduction
+  method), so nothing here required inventing a new claim to verify.
+
+Deliberately did NOT create or assume a TikTok/Instagram/YouTube account —
+same posture as the LinkedIn draft (section 4): if Jimmy already has a
+personal account, these are ready to film from it; if not, nothing else is
+blocked on this, and no new request was filed since posting from an account
+Jimmy already controls needs only his own time/judgment, not money or a new
+external account (the same distinction that kept LinkedIn out of the
+request queue while Pinterest went in). Also explicitly did not attempt to
+film, record, or produce anything — that needs a real person on camera or
+voicing it, which is outside what this routine can do, so this stays a
+script/shot-list deliverable, same category as every other outreach draft
+in this file.
+
+No new product built, no pricing/cover-art change — 7 products + lead
+magnet is well past the "3+ built, 0 sales" threshold, and this closes a
+real, previously-identified-but-deferred gap rather than repeating any
+entry above.
+
+Sources (2026-08-09):
+- https://www.mohacmedya.com/blog-archieve/tiktok-marketing-short-form-video-strategy-2026-mqc4lrd5/
+- https://resellready.co/blogs/news/done-for-you-digital-products-that-actually-sell
+- https://www.socialync.io/blog/short-form-video-structure-guide-2026
+- https://www.capcut.com/create/short-form-video-hooks-first-3-second-patterns
+- https://virvid.ai/blog/short-video-script-frameworks-with-trending-examples
+- https://faceless.so/blog/25-hook-formulas-to-boost-short-video-watch-time

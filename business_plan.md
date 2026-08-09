@@ -224,6 +224,20 @@ FAQ line ("real reply within 48 hours, not a bot") to all 6 paid listings.
 No pricing, tags, or new product this run. Full reasoning and sources:
 products/MARKET-NOTES.md (2026-08-06).
 
+## Short-form video scripts added to outreach kit (2026-08-09)
+The 2026-08-07 Pinterest entry explicitly deferred TikTok/Reels/Shorts
+content as "worth a dedicated future run" since video needs real production.
+Built it: `products/OUTREACH-KIT.md` section 6 now has 3 timed hook/body/
+payoff pitch scripts (one per product line) plus 5 recurring free-tip topics
+implementing the "value ladder" approach 2026 research recommends for this
+format (mostly free value, occasional pitch, not pitch-every-time). Every
+fact used is already verified in a shipped guide — no new claims. Doesn't
+assume or require a new TikTok/Instagram/YouTube account, same posture as
+the LinkedIn draft; if Jimmy has a personal account these are ready to film,
+if not nothing else is blocked on it. Scripts only — this routine can't
+film or post video. Full reasoning and sources: products/MARKET-NOTES.md
+(2026-08-09).
+
 ## Pinterest channel added to outreach kit (2026-08-07)
 18 days into REQ-003/004 being open with $0.00 in sales, looked for a
 distribution channel that's structurally different from the 4 already
