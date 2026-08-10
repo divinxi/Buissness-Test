@@ -224,6 +224,17 @@ FAQ line ("real reply within 48 hours, not a bot") to all 6 paid listings.
 No pricing, tags, or new product this run. Full reasoning and sources:
 products/MARKET-NOTES.md (2026-08-06).
 
+## Tax tracker pricing gap closed with real comparables (2026-08-10)
+The 2026-08-05 pricing pass left Product 2.1 (tax tracker) at $19 with no
+real comparable data either way — Gumroad product pages kept 403ing on
+direct fetch. Found real comparable prices this run via search snippets:
+bare freelancer tax/income trackers with no guide run $5-16, while fuller
+toolkits (guide + tracker + extras like audit-response templates) run
+$29-80. Our $19 sits correctly between those tiers for a guide + verified
+calculator that isn't a kitchen-sink bundle. No price change — this closes
+the gap with evidence instead of leaving it as "no data found." Full
+reasoning and sources: products/MARKET-NOTES.md (2026-08-10).
+
 ## Short-form video scripts added to outreach kit (2026-08-09)
 The 2026-08-07 Pinterest entry explicitly deferred TikTok/Reels/Shorts
 content as "worth a dedicated future run" since video needs real production.

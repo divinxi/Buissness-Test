@@ -5,7 +5,13 @@
 **Price:** $19 (unchanged on 2026-08-05's pricing review — see
 products/MARKET-NOTES.md. Product 1 and Product 3 were raised to match this
 tier instead, since real comparable listings supported a higher price for
-those two, not evidence this one is priced too low.)
+those two, not evidence this one is priced too low. Confirmed again on
+2026-08-10 with actual comparable Gumroad tax-tracker prices, which
+2026-08-05 couldn't find: bare income/tax trackers with no guide run $5-16,
+while fuller toolkits with a guide plus extras like audit-response templates
+run $29-80. $19 sits correctly between those tiers for a product that's a
+guide + calculator but not a kitchen-sink bundle — see products/MARKET-NOTES.md
+2026-08-10.)
 
 **Category:** Business & Money → Financial Planning (or "Templates")
 

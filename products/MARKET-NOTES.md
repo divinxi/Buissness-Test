@@ -1010,3 +1010,53 @@ Sources (2026-08-09):
 - https://www.capcut.com/create/short-form-video-hooks-first-3-second-patterns
 - https://virvid.ai/blog/short-video-script-frameworks-with-trending-examples
 - https://faceless.so/blog/25-hook-formulas-to-boost-short-video-watch-time
+
+## 2026-08-10 update: closed the one pricing gap 2026-08-05 left open — real comparable prices for the tax tracker
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+21 days now on REQ-003/004 — ledger still $0.00, 7 products (6 + lead
+magnet) all still unpublished. Every listing-level lever, all 6 outreach
+channels, and the buyer-trust/positioning checks have already been covered;
+repeating any of them would add nothing. Went back through this file for
+something identified but left unresolved, the same method that found the
+REQ-005 premise gap (08-01) and the EMAIL-SEQUENCE.md gap (08-08).
+
+Found one: the 2026-08-05 pricing pass raised 3 of 4 individual products to
+$19 after finding real comparables, but explicitly left Product 2.1 (the
+tax tracker) unchanged because "direct fetch 403's on Gumroad product pages"
+meant no comparable price was found either way — a genuine open question,
+not a real "no change needed" conclusion.
+
+Ran fresh 2026 web searches specifically for comparable Gumroad freelancer
+tax/income tracker spreadsheets (search snippets only — direct Gumroad
+product-page fetches are still blocked by this environment's egress proxy,
+same limitation noted on 07-20/08-05/08-07). This time actual prices
+surfaced:
+- Bare trackers with no guide, just a spreadsheet: "Freelancer Income & Tax
+  Estimator" at $5, "ClearLedger Freelancer Finance Tracker" (UK) at £12.99
+  (~$16).
+- Fuller kitchen-sink toolkits (guide + tracker + extras like an IRS audit
+  response folder, AI tax-assistant prompts, a bonus mini-guide, built by
+  self-described accountants/tax strategists): "Gig Seller Tax Tracker and
+  Deduction Toolkit" at $29+, and an "Ultimate Freelancer Finance Toolkit —
+  ULTRA Premium" at $79.90 for a much broader scope (a full financial
+  management system, not just taxes).
+
+**Net conclusion:** our $19 sits correctly between those two tiers. Our
+product is a real step up from the bare $5-16 trackers (a 9-page guide with
+a full worked SE-tax example, all 17 real Schedule C categories, and a
+5-tab workbook with a verified calculator, not just a blank log), but it's
+deliberately not a kitchen-sink bundle with audit templates and bonus
+guides the way the $29-80 products are — so pricing at their level would be
+overreaching for what's actually inside. No price change made. This is a
+real, evidence-based confirmation (the first one this line has had), not a
+guess or a repeat of 08-05's "no data found" — closes that gap for good.
+Updated products/freelancer-tax-tracker-v1/LISTING.md's price note to cite
+this. No other listing, cover, or product changed this run.
+
+Sources (2026-08-10):
+- https://kaptenm.gumroad.com/l/freelancer-tax-tracker (via search snippet — direct fetch blocked by egress proxy)
+- https://songqian.gumroad.com/l/se-tax-estimator-2026 (via search snippet — direct fetch blocked by egress proxy)
+- https://liversidge8.gumroad.com/l/ttugn (ClearLedger Freelancer Finance Tracker, via search snippet)
+- https://taxtok.gumroad.com/l/okjyj (Gig Seller Tax Tracker and Deduction Toolkit, via search snippet)
+- General search results for "gumroad freelancer tax tracker template price" and "digitaldatadc gumroad Freelancer Finance Toolkit price" (2026-08-10 web searches)
