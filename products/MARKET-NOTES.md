@@ -1060,3 +1060,74 @@ Sources (2026-08-10):
 - https://liversidge8.gumroad.com/l/ttugn (ClearLedger Freelancer Finance Tracker, via search snippet)
 - https://taxtok.gumroad.com/l/okjyj (Gig Seller Tax Tracker and Deduction Toolkit, via search snippet)
 - General search results for "gumroad freelancer tax tracker template price" and "digitaldatadc gumroad Freelancer Finance Toolkit price" (2026-08-10 web searches)
+
+## 2026-08-11 update: full-catalog integrity audit (clean) + closed a real asymmetry — the AI Prompt Playbook line had no lead magnet
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+22 days now on REQ-003/004 — ledger still $0.00, 8 products (7 built + 1
+lead magnet) all still unpublished. Every listing-level lever, all 6
+outreach channels, and the buyer-trust/pricing checks have already been
+covered; repeating any would add nothing. This run did two things: verify
+nothing already shipped had quietly drifted, then find and close a real gap.
+
+**Part 1 — fresh integrity audit on the whole catalog (not done since
+08-01/07-23).** Installed reportlab/openpyxl/Pillow/PyMuPDF fresh (not
+present in this environment by default) and rebuilt all 4 individual
+products (Prompt Playbook v1, Vol. 2, Tax Tracker, Invoice Toolkit) from
+their current `content.py` files, then diffed the rebuilt output against
+what's actually committed in `dist/`. Every rebuild came back byte-identical
+except for ReportLab/openpyxl's own embedded build timestamp (confirmed via
+PDF metadata inspection) — i.e. every committed deliverable file genuinely
+matches its source, with zero drift despite the heavy editing on 08-05
+(pricing) and 08-06 (buyer-trust copy). Also re-scanned every PDF for stale
+`$17` prices, lorem/filler, and leftover bracket artifacts (the one match,
+the Invoice Toolkit's `[LATE FEE %]`, is a legitimate fill-in token, not the
+07-23 bug recurring) — all clean. Discarded the re-rebuilt files rather than
+committing them, since they contained only meaningless timestamp diffs, not
+real content changes. This is a genuine, evidence-based confirmation (not a
+repeat of 08-01's QA writeup) that the "no owner action in 3 weeks" period
+hasn't let anything silently rot.
+
+**Part 2 — the real finding: the flagship product line never got the one
+conversion tool that already worked for the other line.** The freelancer
+line has had a free lead magnet since 07-27 and a 3-email nurture sequence
+for it since 08-08. The AI Prompt Playbook line — built first, arguably the
+flagship product — never had either. That's not a hypothetical gap; it's the
+same "prospecting funnel" asymmetry between two lines of an otherwise
+identical catalog, and nothing in the last 3 weeks of research (which
+covered pricing, bundling, cover art, tags, buyer trust, and 6 distribution
+channels) ever looked at it, because it was never framed as a listing-level
+lever — it's a line-level one.
+
+**Built:** `marketing/lead-magnet-ai-prompt-quickstart/` — a free 4-page PDF
+("The Small Business AI Prompt Quick-Start") containing one complete, real
+prompt from each of the 5 categories in the paid Playbook (Weekly Social
+Content Batch, Difficult Email Response Drafter, Expense Categorization
+Assistant, Job Description Generator, Cold Outreach Email Personalizer,
+copied verbatim from `products/prompt-playbook-v1/scripts/content.py`, not
+rewritten or abridged) plus a 60-second, 5-question AI-readiness self-audit
+and a closing page pricing both Playbook volumes and the bundle. Followed
+the exact pattern already validated by the freelancer lead magnet: a
+`content.py`/`build_pdf.py`/`build_cover.py` script set, a generated cover
+(same visual language as the paid Playbook covers, marked FREE), a
+`LISTING.md`, and an `EMAIL-SEQUENCE.md` (3 emails: immediate delivery, Day
+3 bridging into Volume 1, Day 7 introducing Volume 2 and the bundle math).
+
+QA'd the same way every product in this catalog has been: extracted the
+built PDF's text (4 pages, confirmed against the cover's page count claim —
+caught and fixed a real mismatch where the first cover draft said "3-page"
+before the actual page count was checked, same discipline as the 07-22/07-28
+cover-art catches), scanned for lorem/TBD (none), and rendered + visually
+inspected all 4 pages plus the cover PNG for overflow/collisions (none — the
+5-chip tag row and all prompt boxes fit cleanly).
+
+**Deliberately not counted as a 9th sellable product** — same accounting as
+the freelancer lead magnet: free by design, a distribution asset, not
+inventory. Product-ready count stays at 6 (4 individual + 2 bundles); lead
+magnets are now 2. No pricing, cover, or copy change on any of the 8 existing
+listings this run — none were stale (confirmed by Part 1's audit). No
+Gumroad account action taken.
+
+Sources (2026-08-11): none — this was an internal audit and reuse of
+already-verified content from
+`products/prompt-playbook-v1/scripts/content.py`, not new market research.

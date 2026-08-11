@@ -136,6 +136,17 @@ of the two freelancer toolkits, built 2026-07-27 in response to the
 recurring finding in products/MARKET-NOTES.md that Gumroad Discover barely
 surfaces new listings and most digital-product sales come from email/
 external traffic the seller brings themselves.
+
+`marketing/lead-magnet-ai-prompt-quickstart/` — a free 4-page PDF excerpt
+("The Small Business AI Prompt Quick-Start") for the AI Prompt Playbook
+line, built 2026-08-11. The freelancer line has had its own lead magnet +
+email nurture sequence since 07-27/08-08; the AI Prompt Playbook line
+(the flagship product, built first) never had one — a real, previously
+unexamined asymmetry between the two product lines. Contains 5 complete,
+real prompts (one per category from the paid Playbook) plus a 60-second
+AI-readiness self-audit and a 3-email Gumroad Workflows sequence
+(EMAIL-SEQUENCE.md) nurturing toward Volume 1, Volume 2, and the bundle.
+Same $0/PWYW mechanism as the freelancer lead magnet — no new account.
 - Update 2026-08-01: no separate email-capture account needed after all —
   Gumroad itself captures buyer emails at checkout (including $0/pay-what-
   you-want purchases) and has a built-in Workflows feature for follow-up

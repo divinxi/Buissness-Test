@@ -1,0 +1,89 @@
+import os
+from PIL import Image, ImageDraw, ImageFont
+
+OUT = os.path.join(os.path.dirname(__file__), "..", "dist", "cover.png")
+
+W, H = 1600, 1000
+BG = (28, 28, 30)
+ACCENT = (122, 200, 174)
+MUTED = (170, 170, 176)
+WHITE = (245, 245, 244)
+
+FONT_DIRS = [
+    "C:/Windows/Fonts",
+    "/usr/share/fonts/truetype/dejavu",
+    "/usr/share/fonts/truetype/liberation",
+]
+FONT_ALIASES = {
+    "arialbd.ttf": ["arialbd.ttf", "DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf"],
+    "arial.ttf": ["arial.ttf", "DejaVuSans.ttf", "LiberationSans-Regular.ttf"],
+}
+
+
+def load_font(name, size):
+    for fname in FONT_ALIASES.get(name, [name]):
+        for d in FONT_DIRS:
+            c = os.path.join(d, fname)
+            if os.path.exists(c):
+                return ImageFont.truetype(c, size)
+    return ImageFont.load_default()
+
+
+def draw_doc_mockup(d, ox, oy, accent):
+    """Single PDF-page mockup — this is a PDF-only giveaway, no companion xlsx."""
+    pdf_w, pdf_h = 300, 380
+    page_bg = (245, 245, 244)
+    line_col = (205, 205, 208)
+    shadow = (18, 18, 20)
+    d.rounded_rectangle([ox + 10, oy + 10, ox + pdf_w + 10, oy + pdf_h + 10], radius=16, fill=shadow)
+    d.rounded_rectangle([ox, oy, ox + pdf_w, oy + pdf_h], radius=16, fill=page_bg)
+    d.rounded_rectangle([ox + 26, oy + 32, ox + pdf_w - 26, oy + 56], radius=7, fill=accent)
+    for i in range(8):
+        ly = oy + 92 + i * 32
+        lw = pdf_w - 52 if i % 3 != 2 else pdf_w - 120
+        d.rectangle([ox + 26, ly, ox + 26 + lw, ly + 9], fill=line_col)
+
+
+def build():
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+
+    d.rectangle([0, 0, 14, H], fill=ACCENT)
+
+    draw_doc_mockup(d, 1180, 290, ACCENT)
+
+    title_font = load_font("arialbd.ttf", 56)
+    sub_font = load_font("arial.ttf", 34)
+    tag_font = load_font("arialbd.ttf", 24)
+    eyebrow_font = load_font("arialbd.ttf", 28)
+    price_font = load_font("arialbd.ttf", 42)
+
+    margin = 110
+    d.text((margin, 120), "FREE — 4-PAGE QUICK-START", font=eyebrow_font, fill=ACCENT)
+    d.text((margin, 190), "The Small Business AI", font=title_font, fill=WHITE)
+    d.text((margin, 258), "Prompt Quick-Start", font=title_font, fill=ACCENT)
+
+    d.text((margin, 380), "5 real prompts — one per category — plus a", font=sub_font, fill=MUTED)
+    d.text((margin, 422), "60-second AI-readiness self-audit.", font=sub_font, fill=MUTED)
+
+    chips = ["MARKETING", "SUPPORT", "FINANCE", "HIRING", "SALES"]
+    x = margin
+    y = 520
+    for chip in chips:
+        bbox = d.textbbox((0, 0), chip, font=tag_font)
+        tw = bbox[2] - bbox[0]
+        pad = 18
+        d.rounded_rectangle([x, y, x + tw + pad * 2, y + 48], radius=24, outline=ACCENT, width=2)
+        d.text((x + pad, y + 9), chip, font=tag_font, fill=ACCENT)
+        x += tw + pad * 2 + 14
+
+    d.text((margin, 640), "Free download", font=price_font, fill=WHITE)
+
+    d.text((margin, H - 90), "Ledger & Loop Digital", font=sub_font, fill=MUTED)
+
+    img.save(OUT)
+    print(f"Wrote {OUT}")
+
+
+if __name__ == "__main__":
+    build()
