@@ -274,6 +274,28 @@ copy — 3 ready-to-use pins are waiting in products/OUTREACH-KIT.md section 5
 for whenever Jimmy decides. Full reasoning and sources: products/MARKET-NOTES.md
 (2026-08-07).
 
+## Owner-friction check (2026-08-12)
+23 days into REQ-003/004 with $0.00 in sales, every listing/copy/pricing/
+distribution lever aimed at buyers has already been pulled at least once
+(pricing checked twice against real comparables, buyer-trust fixes, cover
+art, 6 outreach channels, lead magnets + email sequences on both product
+lines, bundling, a full catalog integrity audit on 08-11). Repeating any of
+that would add nothing, so this run looked at the bottleneck itself instead
+of the product: REQ-003 and REQ-004 have each accumulated a dated update
+paragraph almost every week since 07-20, so by today each is a wall of text
+before any actionable step. That's a plausible real reason nothing has
+happened yet, distinct from every buyer-side hypothesis tested so far.
+
+Fix: added a one-line `note_to_owner_2026-08-12` at the top of
+`requests/open_requests.json` giving the entire unblock path (revoke/check
+API token, glance at drafts, drag-drop covers, fix 2 prices, publish) with
+no reading required beyond it, and prepended a "FASTEST SAFE PATH" summary
+to REQ-004 and REQ-003 themselves so the actionable step comes before the
+history in each. Nothing removed — full context stays for anyone who wants
+it, this only reorders what comes first. No new product, no pricing/cover/
+copy change, no Gumroad action taken. Mirrored the same summary into the
+dashboard's request cards.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
