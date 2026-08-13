@@ -15,8 +15,18 @@ guide + calculator but not a kitchen-sink bundle — see products/MARKET-NOTES.m
 
 **Category:** Business & Money → Financial Planning (or "Templates")
 
+**⏰ Time-sensitive note (added 2026-08-13):** the real Q3 2026 estimated tax
+deadline is **September 15, 2026** — see QUARTERLY_DEADLINES in
+scripts/content.py. As of this listing's last update that's about a month
+out. This isn't manufactured urgency (no fake countdown timer, no "X people
+bought this today"); it's the actual date this product's own worked example
+is built around. Worth leading with once this goes live and worth
+re-checking as it approaches — after Sept 15 passes this line should be
+swapped for the Q4 (Jan 15, 2027) deadline instead of left stale. See
+products/MARKET-NOTES.md (2026-08-13).
+
 **Short blurb (for the card/thumbnail area):**
-> Know exactly what you owe the IRS before they tell you. Real 2026 quarterly deadlines, Schedule C expense categories, and a self-employment tax calculator that shows its math.
+> Q3 2026 estimated taxes are due September 15 — know exactly what you owe the IRS before they tell you. Real 2026 quarterly deadlines, Schedule C expense categories, and a self-employment tax calculator that shows its math.
 
 **Full description:**
 

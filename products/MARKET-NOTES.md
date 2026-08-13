@@ -1131,3 +1131,59 @@ Gumroad account action taken.
 Sources (2026-08-11): none — this was an internal audit and reuse of
 already-verified content from
 `products/prompt-playbook-v1/scripts/content.py`, not new market research.
+
+## 2026-08-13 update: a genuinely new lever that only exists because of today's date — the Q3 2026 tax deadline is now ~1 month out
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+24 days now on REQ-003/004 — ledger still $0.00, 8 products (6 built + 2 lead
+magnets) all still unpublished, unchanged since yesterday's REQ-003/004
+friction fix. Every listing-level lever, all 6 outreach channels, buyer-trust
+and pricing checks, and now the owner-friction angle itself have all been
+covered — repeating any would add nothing. Rather than search for another
+angle from scratch, checked whether anything in the existing catalog has
+become newly relevant simply because of the calendar, since that's a category
+of lever nothing in the 27 days above has used (everything so far has been
+timeless copy/pricing/distribution work).
+
+It has: the Freelancer Quarterly Tax & Expense Tracker is built around real
+2026 IRS quarterly deadlines (`QUARTERLY_DEADLINES` in its own
+`scripts/content.py`, verified against IRS.gov/SSA.gov as of July 2026). Q3
+2026's deadline is **September 15, 2026** — as of today (2026-08-13), that's
+about a month away. This wasn't a usable urgency hook on 07-20 (deadline
+2 months out, too far to matter) or even most days since; it's specifically
+true now, and will specifically stop being true after Sept 15 passes. This is
+honest urgency (a real, externally-verifiable regulatory date this product's
+own worked example already uses), not manufactured scarcity (no fake
+countdown timers, no invented "X people bought this" claims) — the same
+"kept honest" standard every discount/outreach draft in this file has held to
+since day 1.
+
+**Added (copy-only, no new product, no Gumroad action):**
+- A dated "⏰ Time-sensitive" callout to `freelancer-tax-tracker-v1/LISTING.md`
+  and `freelancer-bundle-v1/LISTING.md` (the two listings that actually
+  contain the tax tracker), plus an updated short blurb on both leading with
+  the Sept 15 date. Explicitly not added to the invoice toolkit, either AI
+  Prompt Playbook volume, their bundle, or either lead magnet — none of those
+  have a real calendar deadline behind them, and inventing one would be
+  exactly the kind of fake urgency this file has consistently avoided.
+- A new section 7 in `products/OUTREACH-KIT.md`: an optional, time-boxed line
+  Jimmy can fold into the personal-network/Reddit/Show IH/LinkedIn drafts
+  *if* he sends them before Sept 15, plus an explicit instruction not to use
+  it after that date and to swap in the Q4 2026 deadline (Jan 15, 2027)
+  instead once this one passes — so this doesn't silently go stale the way a
+  one-time note easily could.
+
+Deliberately did not touch pricing, cover art, refund/FAQ copy, retagging, or
+build a new product this run — 6 products + 2 lead magnets is well past the
+"3+ built, 0 sales" threshold, and this is genuinely new, dated,
+previously-impossible-to-write work, not a repeat of any entry above. A
+future run (or Jimmy, if he's reading this after Sept 15) should revisit both
+edited LISTING.md files and OUTREACH-KIT.md section 7 to swap in the Q4
+deadline — flagging this now so it doesn't get missed the way stale content
+has been caught before (07-23, 07-29).
+
+Sources (2026-08-13): none new — reused the same IRS.gov/SSA.gov-verified
+`QUARTERLY_DEADLINES` figures already cited in
+`products/freelancer-tax-tracker-v1/scripts/content.py` and business_plan.md,
+cross-checked only against today's actual date (2026-08-13, per this session's
+system context) to confirm the ~1-month framing is accurate, not new research.

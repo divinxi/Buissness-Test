@@ -296,6 +296,22 @@ it, this only reorders what comes first. No new product, no pricing/cover/
 copy change, no Gumroad action taken. Mirrored the same summary into the
 dashboard's request cards.
 
+## Time-sensitive urgency framing added (2026-08-13)
+24 days into REQ-003/004 being open with $0.00 in sales, every timeless
+listing/pricing/distribution/owner-friction lever had already been pulled at
+least once (see products/MARKET-NOTES.md for the full history). Found one
+genuinely new angle that only exists because of today's date: the tax
+tracker's real Q3 2026 estimated-tax deadline (September 15, 2026) is now
+about a month away — honest urgency, not manufactured scarcity, since it's
+the same IRS-verified date the product's own worked example already uses.
+Added a dated callout to products/freelancer-tax-tracker-v1/LISTING.md and
+products/freelancer-bundle-v1/LISTING.md, plus an optional time-boxed line in
+products/OUTREACH-KIT.md section 7 for Jimmy to use if he sends outreach
+before Sept 15 (with an explicit instruction to swap to the Q4 deadline,
+January 15 2027, after that date so it doesn't go stale). No pricing, new
+product, or Gumroad action this run. Full reasoning: products/MARKET-NOTES.md
+(2026-08-13).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

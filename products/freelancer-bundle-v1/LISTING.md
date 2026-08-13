@@ -10,8 +10,15 @@ products/MARKET-NOTES.md.)
 
 **Category:** Business & Money → Templates (or "Freelancing")
 
+**⏰ Time-sensitive note (added 2026-08-13):** the tax-tracker half of this
+bundle is built around the real Q3 2026 estimated tax deadline —
+**September 15, 2026**, about a month out as of this update. Real deadline,
+not manufactured urgency; see products/freelancer-tax-tracker-v1/LISTING.md
+and products/MARKET-NOTES.md (2026-08-13) for the same note on the
+standalone tracker.
+
 **Short blurb (for the card/thumbnail area):**
-> Everything a freelancer needs to handle their own money admin: know what you owe the IRS, and get paid on time. Two guides, two spreadsheets, one price.
+> Everything a freelancer needs to handle their own money admin: know what you owe the IRS before the Sept 15 Q3 deadline, and get paid on time. Two guides, two spreadsheets, one price.
 
 **Full description:**
 

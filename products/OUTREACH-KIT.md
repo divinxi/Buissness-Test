@@ -366,6 +366,41 @@ Sources (2026-08-09):
 - https://virvid.ai/blog/short-video-script-frameworks-with-trending-examples
 - https://faceless.so/blog/25-hook-formulas-to-boost-short-video-watch-time
 
+## 7. Time-sensitive framing: the Q3 2026 tax deadline is now ~1 month out (2026-08-13)
+
+Every channel above (1-6) was drafted with evergreen copy — deliberately, since
+none of them knew when Jimmy would actually resolve REQ-003/004 and send them.
+That's still the safest default for the invoice/AI-prompt lines, which have no
+real calendar deadline to lean on. But the tax tracker (and the bundle that
+includes it) does: the real **Q3 2026 estimated tax deadline is September 15,
+2026** (see `QUARTERLY_DEADLINES` in
+`products/freelancer-tax-tracker-v1/scripts/content.py`, verified against
+IRS.gov as of July 2026 per business_plan.md). As of this note, that's about a
+month away — genuinely time-relevant for the first time in this file's
+history, not something that was true or usable back on 07-25 when section 1
+was first drafted.
+
+**If Jimmy sends outreach before Sept 15, 2026**, swap this line into the
+personal-network message (section 1) and the Reddit/Show IH/LinkedIn drafts
+(sections 2-4) wherever they mention the tax tracker — real urgency, not
+fabricated scarcity, since it's the same deadline the product's own worked
+example is built around:
+
+> Q3 estimated taxes are due September 15 — if you haven't set money aside
+> yet, the tax tracker in here computes exactly what you owe from your own
+> numbers in a few minutes.
+
+**If Jimmy sends outreach after Sept 15, 2026**, do NOT use this line — it
+would read as stale/wrong. At that point the next real deadline becomes Q4
+2026 (due January 15, 2027, per the same QUARTERLY_DEADLINES table), and a
+future run should swap the framing rather than leave this section pointing at
+a passed date.
+
+This is copy guidance only — no draft in sections 1-4 was rewritten in place
+(their evergreen versions still work fine and stay the default); this is an
+optional, time-boxed upgrade Jimmy or a future run can apply if send timing
+lines up. Full reasoning in products/MARKET-NOTES.md (2026-08-13).
+
 ---
 Sources:
 - https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit
