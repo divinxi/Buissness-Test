@@ -312,6 +312,30 @@ January 15 2027, after that date so it doesn't go stale). No pricing, new
 product, or Gumroad action this run. Full reasoning: products/MARKET-NOTES.md
 (2026-08-13).
 
+## Consolidated go-live checklist added (2026-08-14)
+28 days into REQ-003/004 being open with $0.00 in sales, checked whether the
+Gumroad storefront was actually live despite no request being marked
+resolved (direct fetch to divine357.gumroad.com and its listing pages —
+still blocked by this environment's egress proxy, same result as every
+attempt since 07-20, so no new information there). Every listing-level
+lever, all 6 outreach channels, and now two rounds of owner-friction
+reduction (08-12's note_to_owner, REQ-003/004's "fastest safe path"
+summaries) have already been used.
+
+Found one real gap in the 08-12 friction fix: it only walked through the 3
+original Gumroad drafts, not the 5 newer ready listings (Vol. 2, both
+bundles, both free lead magnets) built since — publishing all 8 in one
+sitting still meant opening 8 separate LISTING.md files and manually
+cross-referencing file paths. Built `GO-LIVE-CHECKLIST.md` at the repo root:
+one linear, ordered checklist covering all 8 listings with price, exact
+file paths (deliverables, cover, preview images), and a pointer to each
+LISTING.md for the full copy — collapses the whole publish sequence into a
+single pass instead of eight lookups. Also added a short pointer from
+REQ-003 and a new `note_to_owner_2026-08-14` field to
+`requests/open_requests.json` so it's discoverable without reading this
+file. No pricing, cover, or copy change, no new product, no Gumroad action
+taken. Full reasoning: `products/MARKET-NOTES.md` (2026-08-14).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

@@ -1187,3 +1187,55 @@ Sources (2026-08-13): none new — reused the same IRS.gov/SSA.gov-verified
 `products/freelancer-tax-tracker-v1/scripts/content.py` and business_plan.md,
 cross-checked only against today's actual date (2026-08-13, per this session's
 system context) to confirm the ~1-month framing is accurate, not new research.
+
+## 2026-08-14 update: built the consolidated go-live checklist the 08-12 friction fix left incomplete
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+28 days now on REQ-003/004 — ledger still $0.00, 8 listings (6 paid + 2 free
+lead magnets) all still unpublished. Tried again to independently verify the
+storefront's live status (divine357.gumroad.com and its 3 listing pages) —
+still blocked by this environment's egress proxy, same inconclusive result
+as every attempt since 07-20; no new information there. Every listing-level
+lever, all 6 outreach channels, and both prior owner-friction fixes (08-12's
+note_to_owner + "fastest safe path" summaries) have already been used —
+repeating any would add nothing.
+
+Went back through 08-12's fix specifically (the most recent, most directly
+relevant entry) rather than the whole file, the same "find something
+identified but left unfinished" method that found the REQ-005 premise gap
+(08-01) and the missing EMAIL-SEQUENCE.md (08-08). Found a real gap: 08-12's
+"fastest safe path" only walks through the 3 original Gumroad drafts (the
+ones REQ-003 was originally scoped to). It doesn't mention the 5 newer
+listings — Vol. 2, the AI Prompt Bundle, the Freelancer Bundle, and both
+free lead magnets — that didn't exist when REQ-003 was first written on
+07-20 and have accumulated since. Publishing all 8 in one sitting still
+meant reading 8 separate LISTING.md files and manually collecting file
+paths, prices, and cover/preview-image locations from each — exactly the
+"too much reading before any action" problem 08-12 diagnosed, just at the
+catalog level instead of the single-request level.
+
+**Built:** `GO-LIVE-CHECKLIST.md` at the repo root — one linear, numbered
+checklist covering all 8 listings in recommended order (security check
+first, then the 3 existing drafts, then the 5 new listings, then optional
+discount code and email-workflow setup), with exact price, deliverable file
+paths, cover path, and preview-image paths filled in per item, plus a
+pointer to each LISTING.md for the full description/FAQ copy (deliberately
+not duplicated in full, so the checklist can't drift out of sync with the
+listing copy it points at). Added a short pointer to it from REQ-003 and a
+new `note_to_owner_2026-08-14` field in `requests/open_requests.json`, and a
+matching entry in `business_plan.md`, so it's discoverable from any of the
+three places an owner might look first.
+
+This is a genuinely new artifact, not a repeat of 08-12's note_to_owner
+(that's a paragraph describing the path; this is the literal step-by-step
+checklist with the specific paths already resolved) or of any listing-level
+conversion entry above. No pricing, cover, or copy change on any of the 8
+listings this run — none were stale (the price grep run this session found
+every "$17/$27/$34/$36/$38" reference in the repo is either historical
+narrative text explaining a past price change or correct current bundle
+math, not a live stale price). No new product built, no Gumroad account
+action taken.
+
+Sources (2026-08-14): none — this was an internal consolidation of already-
+verified file paths and prices from each product's own LISTING.md, not new
+market research.
