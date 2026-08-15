@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "14 Aug 2026",
-    day: 29,
+    lastUpdated: "15 Aug 2026",
+    day: 30,
   },
   stats: {
     balance: 0.00,
@@ -368,7 +368,9 @@ const DATA = {
     },
   ],
   activity: [
-    { date: "14 Aug 2026", text: "Checked for owner action on REQ-002/003/004/005/006 — still none recorded (REQ-003/004 open 25 days now, ledger still $0.00). No Gumroad action taken. Tried again to independently verify the storefront's live status (divine357.gumroad.com and its listing pages) — still blocked by this environment's network egress proxy, same inconclusive result as every attempt since 07-20." },
+    { date: "15 Aug 2026", text: "Checked for owner action on REQ-002/003/004/005/006 — still none recorded (REQ-003/004 open 26 days now, ledger still $0.00). No Gumroad action taken. Tried divine357.gumroad.com and gumroad.com directly again — both still blocked by this environment's egress proxy, same as every attempt since 07-20." },
+    { date: "15 Aug 2026", text: "QA'd yesterday's GO-LIVE-CHECKLIST.md: verified all 12 referenced deliverable/cover file paths plus 8 preview images resolve correctly on disk. All correct, nothing missing or renamed — no edits needed." },
+    { date: "15 Aug 2026", text: "Real finding: this plan's own \"Gumroad takes a % + payment fee\" line was never actually verified in 30 days — what we'd keep per sale was an unverified assumption. Researched real 2026 fee structure: 10%+$0.50 on direct sales (~13% effective, our whole strategy since Discover barely surfaces new listings) vs. a flat 30% on Discover-found sales — meaning a $19 sale nets ~$16.50 direct vs. ~$13.30 via Discover. First time this repo has quantified the economic (not just visibility) reason the outreach-kit strategy beats waiting on Discover. No pricing change, no new product, no Gumroad action. Full sources: products/MARKET-NOTES.md (2026-08-15)." },
     { date: "14 Aug 2026", text: "Found a real gap in 08-12's owner-friction fix: its \"fastest safe path\" only walks through the 3 original Gumroad drafts, not the 5 newer listings (Vol. 2, both bundles, both free lead magnets) built since — publishing all 8 in one sitting still meant opening 8 separate LISTING.md files and manually collecting file paths, prices, and cover/preview-image locations from each." },
     { date: "14 Aug 2026", text: "Built GO-LIVE-CHECKLIST.md at the repo root: one linear, numbered checklist covering all 8 ready listings in order (security check, the 3 existing drafts, the 5 new listings, optional discount code + email-workflow setup), with exact price, deliverable/cover/preview-image paths per item, and a pointer to each LISTING.md for the full copy so it can't drift out of sync. Linked from REQ-003 and a new note_to_owner_2026-08-14 in requests/open_requests.json, and from business_plan.md. Also re-ran a stale-price grep across the whole repo — every $17/$27/$34/$36/$38 reference found is either historical narrative or correct bundle math, nothing actually stale. No pricing/cover/copy change, no new product, no Gumroad action taken. Full reasoning: products/MARKET-NOTES.md (2026-08-14)." },
     { date: "13 Aug 2026", text: "Found a genuinely new lever that only exists because of today's date: the tax tracker's real Q3 2026 estimated-tax deadline (September 15, 2026) is now about a month out — honest urgency, not manufactured scarcity, since it's the same IRS-verified date the product's own worked example already uses. This wasn't usable on 07-20 (too far out) and hasn't been tried in the 27 days since, since every prior run's levers were timeless copy/pricing/distribution work." },

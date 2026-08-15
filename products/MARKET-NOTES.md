@@ -1239,3 +1239,75 @@ action taken.
 Sources (2026-08-14): none — this was an internal consolidation of already-
 verified file paths and prices from each product's own LISTING.md, not new
 market research.
+
+## 2026-08-15 update: verified real Gumroad fee structure (never checked in 30 days) + go-live checklist file-path QA
+
+30 days into REQ-003/004 with $0.00 in sales. Checked for owner action first
+(none recorded on REQ-002/003/004/005/006 — still 5 open, ledger still
+$0.00). Tried divine357.gumroad.com and gumroad.com directly again — both
+still blocked by this environment's egress proxy, no new information there,
+same as every attempt since 07-20.
+
+**QA pass on yesterday's new artifact:** GO-LIVE-CHECKLIST.md (built 08-14)
+references 12 specific file paths (covers, PDFs, xlsx) plus 8 preview
+images across 8 product folders. Verified every single one resolves on disk
+— all correct, nothing missing or renamed since it was written. No edits
+needed; this closes the "was it actually built right" question the file's
+own newness left open.
+
+**Real finding:** every prior pricing pass (07-31 niche check, 08-05
+comparable-price repricing, 08-06 buyer-trust, 08-10 tax-tracker gap) reasoned
+about what buyers pay, but this plan's own "Gumroad takes a % + payment fee"
+line was never itself verified — what we'd actually *keep* per sale has been
+an unverified assumption for 30 days. Gumroad's own pricing page
+(gumroad.com) is blocked by this environment's egress proxy same as the
+storefront, so this relies on several independent third-party 2026
+fee-breakdown articles (checkoutpage.com, wearefounders.uk, swell.is,
+schoolmaker.com, cartmango.com, latuos.com, chargepanda.com, checkthat.ai)
+that converge on the same numbers rather than a single primary source —
+reasonably confident, not certain; Jimmy should sanity-check against his own
+Gumroad dashboard once he's logged in for REQ-003/004 anyway.
+
+Findings:
+- Direct sales (buyer arrives via a link we shared, not Gumroad Discover):
+  **10% + $0.50** per transaction, headline rate; a couple of sources cite
+  ~13% effective once card-network variance is included — using 13% as the
+  conservative planning number.
+- Discover/marketplace sales (buyer finds us via Gumroad's own on-site
+  search): a flat **30%** fee — 2.5-3x the direct-sale cost.
+- Since January 2025 Gumroad is the Merchant of Record on every sale, so
+  that fee already includes card processing and Gumroad handles sales
+  tax/VAT/GST collection and remittance worldwide — one real compliance
+  burden Jimmy doesn't have to think about separately.
+
+Net-per-sale, computed at the conservative 13% for direct / flat 30% for
+Discover:
+| Listing | Price | Net if direct | Net if via Discover |
+|---|---|---|---|
+| Individual product | $19 | ~$16.50 | ~$13.30 |
+| Bundle | $29 | ~$25.30 | ~$20.30 |
+
+**Why this is a real, non-repeat finding:** it's the first time this repo
+has quantified *why* the outreach-kit strategy (all 8 channels point at
+direct links, none at Discover) is the economically correct call, not just
+the "Discover barely surfaces new listings" visibility argument already
+made on 07-27. A Discover-driven sale isn't just harder to get, it's worth
+meaningfully less once it happens. Added the summary to business_plan.md's
+new "Real Gumroad fee structure verified" section so future ledger entries
+can be checked against real expected net, not gross price. No pricing
+change — $19/$29 were already benchmarked against what buyers pay, and this
+only affects what we keep, not what we charge. No new product, no cover/
+copy change on any of the 8 listings, no Gumroad account action taken.
+
+Sources (2026-08-15, all accessed via WebSearch since gumroad.com itself is
+blocked to direct fetch in this environment — third-party writeups, not
+Gumroad's own documentation, cross-checked against each other for
+consistency rather than a single source):
+- https://checkoutpage.com/blog/gumroad-fees
+- https://www.wearefounders.uk/gumroad-fees-2026-what-sellers-actually-pay-per-sale/
+- https://www.swell.is/content/gumroad-pricing
+- https://www.schoolmaker.com/blog/gumroad-pricing
+- https://cartmango.com/gumroad-pricing/
+- https://latuos.com/gumroad-fees/
+- https://www.chargepanda.com/blog/post/gumroad-vs-self-hosted-the-real-cost-of-platform-fees-in-2026
+- https://checkthat.ai/brands/gumroad/pricing

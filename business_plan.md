@@ -336,6 +336,47 @@ REQ-003 and a new `note_to_owner_2026-08-14` field to
 file. No pricing, cover, or copy change, no new product, no Gumroad action
 taken. Full reasoning: `products/MARKET-NOTES.md` (2026-08-14).
 
+## Real Gumroad fee structure verified (2026-08-15)
+30 days into REQ-003/004 being open with $0.00 in sales, every listing-level
+lever (pricing checked 3x against real comparables, buyer-trust fixes,
+urgency framing, cover art, 8 outreach channels, lead magnets + sequences,
+bundling, two rounds of owner-friction reduction, a full catalog integrity
+audit, and a go-live-checklist file-path verification also done this run)
+has already been pulled at least once. One thing had never been checked in
+30 days: this plan's own "Gumroad takes a % + payment fee per sale" line in
+the Model section above was always vague, not a verified number — the actual
+take-home per sale was never computed.
+
+Researched it (WebSearch; Gumroad's own pricing page is blocked by this
+environment's egress proxy the same as the storefront itself, so this relies
+on several independent third-party 2026 fee-breakdown writeups that converge
+on the same figures — treat as reasonably confident, not primary-source
+certain):
+- **Direct sales** (buyer arrives via a link we shared — our whole
+  strategy, since Discover barely surfaces new listings): **10% + $0.50**
+  per transaction. Since Jan 2025 Gumroad acts as Merchant of Record, so
+  that fee already bundles card processing and handles sales tax/VAT/GST
+  remittance worldwide — one less real-world compliance thing for Jimmy to
+  worry about. Some breakdowns cite a slightly higher effective rate
+  (~13%) once card-network variance is factored in; treat 10%+$0.50 as the
+  headline, ~13% as a conservative planning number.
+- **Discover/marketplace sales** (buyer finds us via Gumroad's own search):
+  a flat **30% fee** — roughly 2.5-3x the direct-sale cost.
+
+**Why this matters, concretely:** on a $19 listing, direct-sale net is
+~$16.55 (≈$16.50 at the more conservative 13%); the same sale via Discover
+nets ~$13.30. On a $29 bundle: ~$25.30 direct vs. ~$20.30 via Discover. This
+is a real, previously-unquantified economic reason (not just the discovery-
+visibility reason already in this plan) that the outreach-kit strategy
+(personal message, Reddit, Show IH, LinkedIn, Pinterest research, video
+scripts — all aimed at *direct* links) is the right call over waiting on
+Discover traffic. No pricing change from this — $19/$29 were already sized
+against comparable listings' sticker prices, and this doesn't change what
+buyers pay, only what we keep. Recorded here so the ledger's future real
+entries can be sanity-checked against the right expected net, not the gross
+sale price. Full reasoning and sources: `products/MARKET-NOTES.md`
+(2026-08-15).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
