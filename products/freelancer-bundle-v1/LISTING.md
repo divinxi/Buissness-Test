@@ -68,8 +68,16 @@ through Gumroad and it's refunded, no hoops.
 payment, quarterly taxes, self employment tax, small business finance,
 excel template
 
-**Files to upload:** the same 4 deliverables already built and listed
-individually — no new files to generate:
+**How to create this listing (2026-08-18 correction):** Gumroad has a native
+"Bundle" product type — do NOT create this as a regular product and manually
+re-upload the 4 files. Instead: New Product → select type **"Bundle"** →
+name it and set the price → on the next step, pick "Freelancer Quarterly Tax
+& Expense Tracker" and "Freelancer Invoice & Late-Payment Toolkit" from your
+list of existing products. Gumroad automatically includes both products'
+files — no re-upload, and no risk of attaching a stale/wrong file version.
+This only works once both component products are already live as their own
+listings, so create this bundle last (matches the order already in
+GO-LIVE-CHECKLIST.md). For reference, the 4 files being bundled are:
 - products/freelancer-tax-tracker-v1/dist/Freelancer-Tax-Expense-Tracker-Guide.pdf
 - products/freelancer-tax-tracker-v1/dist/Freelancer-Tax-Tracker.xlsx
 - products/freelancer-invoice-toolkit-v1/dist/Freelancer-Invoice-Late-Payment-Toolkit-Guide.pdf

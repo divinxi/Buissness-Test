@@ -52,15 +52,21 @@ sync — this checklist points at the source of truth, it doesn't replace it).
       `Automation-ROI-Tracker.xlsx` · Cover: `dist/cover.png` · +2 preview images (same `dist/`)
 - [ ] **The AI Prompt Playbook Bundle** (Vol. 1 + Vol. 2) — $29 — full copy:
       `products/prompt-playbook-bundle-v1/LISTING.md`
-      Files: reuses the 4 files already listed under Vol. 1 + Vol. 2 above ·
-      Cover: `products/prompt-playbook-bundle-v1/dist/cover.png` · +4 preview
-      images (reused from Vol. 1 + Vol. 2's `dist/` folders, see LISTING.md
-      for exact paths)
+      **Create as Gumroad's native "Bundle" product type**, not a regular
+      product (2026-08-18 correction — verified via Gumroad's own docs):
+      New Product → type "Bundle" → price $29 → select the already-published
+      "Small Business AI Prompt Playbook" and "AI Prompt Playbook Vol. 2"
+      listings. Gumroad pulls in both products' files automatically — no
+      file re-upload. Must be created after both components are live (they
+      already are, above, in this checklist's order). Cover:
+      `products/prompt-playbook-bundle-v1/dist/cover.png`.
 - [ ] **The Freelancer Money Bundle** (Tax Tracker + Invoice Toolkit) — $29
       — full copy: `products/freelancer-bundle-v1/LISTING.md`
-      Files: reuses the 4 files already listed under the Tax Tracker +
-      Invoice Toolkit above · Cover: `products/freelancer-bundle-v1/dist/cover.png`
-      · +4 preview images (reused, see LISTING.md for exact paths)
+      **Create as Gumroad's native "Bundle" product type**, same as above:
+      New Product → type "Bundle" → price $29 → select the already-published
+      "Freelancer Quarterly Tax & Expense Tracker" and "Freelancer Invoice &
+      Late-Payment Toolkit" listings — no file re-upload needed. Cover:
+      `products/freelancer-bundle-v1/dist/cover.png`.
 - [ ] **The Freelancer Money Admin Quick-Start** (free lead magnet) — $0 /
       Pay-What-You-Want, $0 minimum — full copy:
       `marketing/lead-magnet-freelancer-quickstart/LISTING.md`
@@ -98,6 +104,17 @@ go up anyway).
       this just makes the captured emails actually useful.
 
 ---
+
+## 2026-08-18 correction
+The bundle steps (4 and onward, the two bundle listings) originally told you
+to manually re-upload the 4 component files as if creating a brand-new
+regular product. That was wrong — Gumroad has a dedicated "Bundle" product
+type (New Product → type "Bundle") that lets you pick your own
+already-published products and automatically includes their files, no
+re-upload needed. Fixed above and in both bundle LISTING.md files. Source:
+Gumroad's own help center / product docs (help.gumroad.com/article/339-product-bundles),
+verified via WebSearch this run since it was never actually checked before —
+every prior pass assumed bundles worked like every other listing.
 
 ## What this checklist deliberately does NOT include
 - No pricing/copy/positioning reasoning — that's in each LISTING.md and

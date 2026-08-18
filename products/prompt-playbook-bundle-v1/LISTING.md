@@ -74,8 +74,16 @@ through Gumroad and it's refunded, no hoops.
 workflow templates, chatgpt prompts for business owners, productivity
 systems, business tools, bundle
 
-**Files to upload:** the same 4 deliverables already built and listed
-individually — no new files to generate:
+**How to create this listing (2026-08-18 correction):** Gumroad has a native
+"Bundle" product type — do NOT create this as a regular product and manually
+re-upload the 4 files. Instead: New Product → select type **"Bundle"** →
+name it and set the price → on the next step, pick "Small Business AI Prompt
+Playbook" and "AI Prompt Playbook Vol. 2" from your list of existing
+products. Gumroad automatically includes both products' files — no
+re-upload, and no risk of attaching a stale/wrong file version. This only
+works once both component products are already live as their own listings,
+so create this bundle last (matches the order already in
+GO-LIVE-CHECKLIST.md). For reference, the 4 files being bundled are:
 - products/prompt-playbook-v1/dist/Small-Business-AI-Prompt-Playbook.pdf
 - products/prompt-playbook-v1/dist/AI-Ops-Tracker.xlsx
 - products/prompt-playbook-vol2-v1/dist/AI-Prompt-Playbook-Vol2-Systems-Automation.pdf

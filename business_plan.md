@@ -377,6 +377,29 @@ entries can be sanity-checked against the right expected net, not the gross
 sale price. Full reasoning and sources: `products/MARKET-NOTES.md`
 (2026-08-15).
 
+## Bundle-creation mechanism corrected (2026-08-18)
+31 days into REQ-003/004 being open with $0.00 in sales, ran a fresh QA pass
+rather than another positioning/pricing angle (both LISTING.md content and
+all 4 companion .xlsx files' formulas re-verified this run — everything
+still checks out, no defects found, cover art visually reviewed and still
+looks strong; nothing needed changing there). While re-reading the two
+bundle listings for that QA, found a real mechanical error that had been
+sitting uncorrected since the bundles were first built: both
+`products/prompt-playbook-bundle-v1/LISTING.md` and
+`products/freelancer-bundle-v1/LISTING.md`, plus `GO-LIVE-CHECKLIST.md`,
+told the owner to create the bundle as an ordinary new Gumroad product and
+manually re-upload the 4 component files. That's not how Gumroad bundles
+actually work — WebSearched it for the first time this run and confirmed via
+Gumroad's own help docs that Gumroad has a native "Bundle" product type:
+New Product → type "Bundle" → pick your own already-published products, and
+Gumroad attaches their files automatically. No re-upload, and no risk of a
+stale/mismatched file version if a component product's deliverable is ever
+regenerated later. Fixed both LISTING.md files and the checklist to describe
+the real flow (bundle must be created after its 2 component listings are
+already live, which the checklist's ordering already happened to get right).
+No pricing/cover/copy change to the individual products, no new product, no
+Gumroad action taken.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
