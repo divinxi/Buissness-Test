@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "18 Aug 2026",
-    day: 31,
+    lastUpdated: "19 Aug 2026",
+    day: 32,
   },
   stats: {
     balance: 0.00,
@@ -290,8 +290,8 @@ const DATA = {
     {
       id: "REQ-002",
       title: "Decide on a permanent business/store name",
-      detail: "\"Ledger &amp; Loop Digital\" is a placeholder I used so the first product could ship without waiting. Keep it, or tell me a direction and I'll propose a shortlist.",
-      blocks: "nothing urgent — cosmetic on the listing and cover art only.",
+      detail: "<strong>19 Aug update:</strong> skipped the \"just say so and I'll propose a shortlist\" round trip and picked 4 options directly: (1) <strong>Keep \"Ledger &amp; Loop Digital\"</strong> — recommended, zero cost, already on all 8 PDFs/covers/listings, no regeneration needed. (2) \"Loop &amp; Ledger Co.\" — same words reordered, more casual. (3) \"Steady Hand Digital\" — leans on the reliability/trust angle the 08-06 buyer-complaint research found matters most. (4) \"Fieldwork Digital\" — leans on \"built from real problems.\" Reply with a number or your own name and I'll rename everywhere (~30 min); silence keeps option 1, which is already shipped everywhere.",
+      blocks: "Nothing load-bearing — cosmetic only. Silence has a safe, zero-cost default.",
       priority: "low",
     },
     {
@@ -368,6 +368,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "19 Aug 2026", text: "Checked for owner action on all open requests again — none recorded (REQ-003/004 open 30 days now, ledger still $0.00; verified via git commit authorship, not just the requests file, that nothing has been touched by Jimmy since REQ-001 on 07-20). Re-tried divine357.gumroad.com directly — still blocked by this environment's egress proxy, same as every attempt since day 1." },
+    { date: "19 Aug 2026", text: "Every buyer-facing conversion lever has now been pulled at least once (pricing 3x, buyer-trust fixes, urgency framing, cover art + previews, 8 outreach channels, 2 lead magnets, bundling both lines, 2 rounds of owner-friction reduction, fee-structure verification, a real bundle-mechanism bug fix) — repeating any today would be a paragraph restating \"still blocked, still $0\" with no new fact behind it, not real work." },
+    { date: "19 Aug 2026", text: "Found the one open request that never got a friction-reduction pass: REQ-002 (business name) offered \"I can propose a shortlist if you want — just say so,\" an offer nobody could accept without a reply that itself just asked for the shortlist. Proposed 4 concrete options directly, including \"keep the current placeholder\" as a zero-cost default already live in every shipped file, so it now resolves with one reply or silence. Also fixed a real inconsistency it surfaced: business_plan.md's own title still said \"[Name TBD]\" while every other file had used \"Ledger &amp; Loop Digital\" since day 1 — corrected to match. No pricing/cover/copy change, no new product, no Gumroad action taken." },
     { date: "18 Aug 2026", text: "Checked for owner action on all open requests again — none recorded (REQ-003/004 open 29 days now, ledger still $0.00). No Gumroad action taken." },
     { date: "18 Aug 2026", text: "Ran a fresh QA pass instead of another positioning angle: re-verified all 4 companion .xlsx files' formulas (SE tax math, deduction logic, deadline countdowns) still compute correctly, and visually reviewed all 8 cover images — everything checks out, nothing needed fixing there." },
     { date: "18 Aug 2026", text: "Found and fixed a real mechanical error while re-reading the bundle listings: both bundle LISTING.md files and GO-LIVE-CHECKLIST.md told the owner to manually re-upload the 4 component files as a regular new Gumroad product. WebSearched Gumroad's actual bundle mechanism for the first time — it has a native \"Bundle\" product type that auto-includes an already-published product's files with no re-upload. Corrected both LISTING.md files, GO-LIVE-CHECKLIST.md, REQ-003, and business_plan.md." },

@@ -1,6 +1,6 @@
-# Business Plan — [Name TBD] Digital Products Co.
+# Business Plan — Ledger & Loop Digital (working name, pending REQ-002 confirmation)
 
-Status date: 2026-08-01
+Status date: 2026-08-19
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -399,6 +399,52 @@ the real flow (bundle must be created after its 2 component listings are
 already live, which the checklist's ordering already happened to get right).
 No pricing/cover/copy change to the individual products, no new product, no
 Gumroad action taken.
+
+## Day 32 check-in: REQ-002 friction reduced + honest state-of-the-business assessment (2026-08-19)
+32 days into REQ-003/004 being open with $0.00 in sales — still no owner
+action recorded on any request since REQ-001 on 07-20 (verified via `git log`
+author history, not just re-reading the requests file: every commit since
+then is authored by this routine, none by Jimmy). Every buyer-facing
+conversion lever has now been pulled at least once: pricing checked 3x
+against real comparables (07-31 range check, 08-05 repricing, 08-10 tax-
+tracker gap), buyer-trust fixes (08-06), urgency framing (08-13), cover art
+(07-22) plus "look inside" previews (08-02), 8 outreach channels across 3
+research rounds (07-25, 08-03, 08-07, 08-09), 2 free lead magnets with email
+sequences (07-27/08-08, 08-11), bundling on both product lines (07-21,
+07-30), 2 rounds of owner-friction reduction on REQ-003/004 (08-12, 08-14), a
+real Gumroad fee-structure verification (08-15), and a real mechanical bug
+fix in the bundle-creation instructions (08-18). Re-attempted a direct fetch
+of the storefront (divine357.gumroad.com) again today — still blocked by
+this environment's egress proxy, same result as every attempt since 07-20,
+no new information there.
+
+Honest assessment: repeating any listing-level lever today would not be real
+work, it would be a paragraph restating "still blocked, still $0" with no new
+fact behind it — exactly the manufactured busywork this routine's own
+instructions say to avoid. Looked instead at the one open request that had
+never gotten a friction-reduction pass: REQ-002 (business name), open since
+day 1 and still unanswered after 32 days like everything else, but unlike
+REQ-003/004/006 it was phrased as "I can propose a shortlist if you want —
+just say so," an offer nobody could accept without a reply that itself just
+asks for the shortlist. Skipped that round trip and proposed 4 concrete
+options directly (see requests/open_requests.json), including "keep the
+current placeholder" as a zero-cost default that already matches every
+shipped file, so REQ-002 now resolves with either a one-word reply or
+silence itself.
+
+That review also surfaced a real, small inconsistency: this file's own title
+still read "[Name TBD]" while every other file in the repo (dashboard,
+all 8 LISTING.md files, all PDFs/covers) had used "Ledger & Loop Digital"
+consistently since day 1. Fixed the title above to match what's actually
+shipped everywhere else — a correctness fix, not a rebrand (no deliverable
+content changed, since the name itself isn't changing unless Jimmy picks a
+different option).
+
+No pricing/cover/copy change, no new product, no Gumroad action taken. The
+real, unchanged bottleneck after 32 days remains entirely REQ-003/004 (owner
+must check/revoke the Gumroad API token and publish the 8 already-ready
+listings) — there is nothing left on the product or market side that hasn't
+already been tried at least once.
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
