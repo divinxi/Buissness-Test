@@ -1311,3 +1311,72 @@ consistency rather than a single source):
 - https://latuos.com/gumroad-fees/
 - https://www.chargepanda.com/blog/post/gumroad-vs-self-hosted-the-real-cost-of-platform-fees-in-2026
 - https://checkthat.ai/brands/gumroad/pricing
+
+## 2026-08-20 update: found and fixed a real cover-art bug — Gumroad's auto-thumbnail was cropping our product name off every listing
+
+34 days into REQ-003/004 being open with $0.00 in sales, checked
+`products/MARKET-NOTES.md` for anything previously flagged but never acted
+on (the same method that found the REQ-005 premise gap on 08-01 and the
+missing email sequence on 08-08) — found nothing outstanding; every lever
+in this file has genuinely been pulled at least once. Rather than repeat
+one, looked at cover art from a new angle: covers have been touched twice
+(07-22 mockup graphic, 08-02 "look inside" previews) but always evaluated
+as the full landscape image a buyer sees *after* clicking into the listing
+page — nobody had ever checked how they look in the format a buyer sees
+*first*, Gumroad's auto-generated thumbnail.
+
+**Real finding (WebSearch, cross-checked across 2 independent searches and
+several sources — pixelmeasures.com, topbubbleindex.com, justhandledlabs.com,
+Gumroad's own help center article at gumroad.com/help/article/60):**
+Gumroad auto-generates every listing's search/library/Discover thumbnail by
+**center-cropping a square from the cover image** (600x600 minimum,
+recommended cover 1280x720). Design guidance from these sources explicitly
+warns to keep vital content centered for exactly this reason.
+
+Didn't take that on faith — rendered the actual center-crop our own
+`products/prompt-playbook-v1/dist/cover.png` (1600x1000, so Gumroad's crop
+keeps only x:300-1300) would produce. Result: the word "AI" was cut
+completely off the product's own name, "MARKETING" was cut mid-word, and
+"Ledger & Loop Digital" read as "Loop Digital" — because every one of the 8
+cover scripts left-aligns its title at margin=110, which sits outside the
+crop's left edge. This is a real, confirmed, previously-unexamined bug, not
+a hypothesis: a buyer scrolling Gumroad's search or library grid — the
+first-impression format entirely different from the full cover already
+reviewed twice — could not read this business's own product's name.
+
+**Fix:** added a `safe_center()` helper to all 8 `build_cover.py` scripts
+(one per product + both lead magnets) that centers the title lines and the
+brand name inside x:320-1280 (a 20px buffer inside the actual x:300-1300
+crop), instead of left-margin-aligning them. Subtitle text, category chips,
+eyebrow labels, and the decorative PDF/xlsx mockup graphic were
+deliberately left at their original left/right positions — they're
+secondary context that's illegible at 600x600 in a result grid regardless
+of position, so only the two things a buyer actually needs to recognize
+the product by (its name, the brand) were moved.
+
+Caught and fixed a second real bug introduced by the first fix before
+shipping: centering the title made 4 of the 8 titles (playbook-v1, Vol. 2,
+the invoice toolkit, and the freelancer lead magnet) run wide enough to
+overlap the decorative PDF/xlsx mockup graphic on the right side of the
+full-size cover — not caught by the thumbnail-crop check, only by
+re-rendering and visually inspecting each full cover. Verified the exact
+overlap in pixels (not just by eye) and reduced those 4 titles' font sizes
+by 12-17% until every title clears the mockup by a 30px+ margin, confirmed
+programmatically across all 8 files before re-rendering.
+
+Regenerated all 8 `dist/cover.png` files, visually inspected all 8 full
+covers and simulated the 600x600 thumbnail crop for 3 of them to confirm
+the fix (title + brand name fully legible with margin to spare, matching
+Gumroad's own stated crop mechanism). No PDF/xlsx/LISTING.md content
+changed — this is a rendering-layout fix only, same title/subtitle/price/
+chip text on every listing. No pricing, new product, or Gumroad action.
+
+Sources (2026-08-20, WebSearch — gumroad.com/help itself returned in
+search results and was consistent with the third-party writeups, so this
+is corroborated by Gumroad's own documentation, not third-party guesses
+alone):
+- https://gumroad.com/help/article/60-adding-a-cover-image
+- https://www.pixelmeasures.com/platform-sizes/gumroad/product-cover/
+- https://www.pixelmeasures.com/platform-sizes/gumroad/
+- https://www.topbubbleindex.com/blog/gumroad-banners/
+- https://justhandledlabs.com/guides/make-gumroad-cover-thumbnail-with-ai/

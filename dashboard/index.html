@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "19 Aug 2026",
-    day: 32,
+    lastUpdated: "20 Aug 2026",
+    day: 33,
   },
   stats: {
     balance: 0.00,
@@ -368,6 +368,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "20 Aug 2026", text: "Checked for owner action on all open requests again — none recorded (REQ-003/004 open 31 days now, ledger still $0.00). Re-read products/MARKET-NOTES.md for anything previously flagged but never finished (the method that found the REQ-005 and email-sequence gaps) — found nothing outstanding, confirming every buyer-facing lever tried so far has genuinely been used at least once." },
+    { date: "20 Aug 2026", text: "Found and fixed a real, previously-unexamined cover-art bug: Gumroad auto-generates every listing's search/library thumbnail by center-cropping a square from the cover image (confirmed via Gumroad's own help docs + 4 independent sources). All 8 cover scripts left-aligned the product title, which sits outside that crop. Rendered the actual crop to confirm, not just took the docs on faith — the flagship product's thumbnail cut the word \"AI\" completely off \"AI Prompt Playbook\" and the brand name read as \"Loop Digital\"." },
+    { date: "20 Aug 2026", text: "Fixed all 8 covers (6 products + 2 lead magnets): titles and brand name now center inside the crop-safe zone; secondary text/mockup graphic left as-is since it's illegible at thumbnail scale regardless of position. Caught and fixed a second bug the fix introduced — centering pushed 4 titles into the decorative mockup graphic on the full-size cover — by measuring the actual pixel overlap and shrinking those 4 titles' fonts until clear. Regenerated and visually verified all 8 covers plus a simulated 600x600 thumbnail crop. No PDF/xlsx/copy change, no pricing, no new product, no Gumroad action. Full writeup: products/MARKET-NOTES.md (2026-08-20)." },
     { date: "19 Aug 2026", text: "Checked for owner action on all open requests again — none recorded (REQ-003/004 open 30 days now, ledger still $0.00; verified via git commit authorship, not just the requests file, that nothing has been touched by Jimmy since REQ-001 on 07-20). Re-tried divine357.gumroad.com directly — still blocked by this environment's egress proxy, same as every attempt since day 1." },
     { date: "19 Aug 2026", text: "Every buyer-facing conversion lever has now been pulled at least once (pricing 3x, buyer-trust fixes, urgency framing, cover art + previews, 8 outreach channels, 2 lead magnets, bundling both lines, 2 rounds of owner-friction reduction, fee-structure verification, a real bundle-mechanism bug fix) — repeating any today would be a paragraph restating \"still blocked, still $0\" with no new fact behind it, not real work." },
     { date: "19 Aug 2026", text: "Found the one open request that never got a friction-reduction pass: REQ-002 (business name) offered \"I can propose a shortlist if you want — just say so,\" an offer nobody could accept without a reply that itself just asked for the shortlist. Proposed 4 concrete options directly, including \"keep the current placeholder\" as a zero-cost default already live in every shipped file, so it now resolves with one reply or silence. Also fixed a real inconsistency it surfaced: business_plan.md's own title still said \"[Name TBD]\" while every other file had used \"Ledger &amp; Loop Digital\" since day 1 — corrected to match. No pricing/cover/copy change, no new product, no Gumroad action taken." },

@@ -30,6 +30,22 @@ def load_font(name, size):
     return ImageFont.load_default()
 
 
+# Gumroad auto-generates a 600x600 thumbnail by center-cropping the cover
+# (confirmed via 2026-08-20 research + a rendered simulation — see
+# products/MARKET-NOTES.md). For a 1600x1000 cover that crop keeps only
+# x:300-1300, so anything meant to be recognizable in that thumbnail
+# (product title, brand name) must be centered inside this safe zone
+# rather than left-margin aligned.
+SAFE_L, SAFE_W = 320, 960
+
+
+def safe_center(d, y, text, font, fill):
+    bbox = d.textbbox((0, 0), text, font=font)
+    tw = bbox[2] - bbox[0]
+    x = SAFE_L + max(0, (SAFE_W - tw) // 2)
+    d.text((x, y), text, font=font, fill=fill)
+
+
 def draw_doc_mockup(d, ox, oy, accent):
     """Single PDF-page mockup — this is a PDF-only giveaway, no companion xlsx."""
     pdf_w, pdf_h = 300, 380
@@ -53,7 +69,7 @@ def build():
 
     draw_doc_mockup(d, 1180, 290, ACCENT)
 
-    title_font = load_font("arialbd.ttf", 58)
+    title_font = load_font("arialbd.ttf", 56)
     sub_font = load_font("arial.ttf", 34)
     tag_font = load_font("arialbd.ttf", 26)
     eyebrow_font = load_font("arialbd.ttf", 28)
@@ -61,8 +77,8 @@ def build():
 
     margin = 110
     d.text((margin, 120), "FREE — 3-PAGE QUICK-START", font=eyebrow_font, fill=ACCENT)
-    d.text((margin, 190), "The Freelancer Money", font=title_font, fill=WHITE)
-    d.text((margin, 258), "Admin Quick-Start", font=title_font, fill=ACCENT)
+    safe_center(d, 190, "The Freelancer Money", title_font, WHITE)
+    safe_center(d, 258, "Admin Quick-Start", title_font, ACCENT)
 
     d.text((margin, 380), "Quarterly tax deadlines, the savings rule of thumb,", font=sub_font, fill=MUTED)
     d.text((margin, 422), "the #1 invoice habit, and a 5-question self-audit.", font=sub_font, fill=MUTED)
@@ -80,7 +96,7 @@ def build():
 
     d.text((margin, 640), "Free download", font=price_font, fill=WHITE)
 
-    d.text((margin, H - 90), "Ledger & Loop Digital", font=sub_font, fill=MUTED)
+    safe_center(d, H - 90, "Ledger & Loop Digital", sub_font, MUTED)
 
     img.save(OUT)
     print(f"Wrote {OUT}")

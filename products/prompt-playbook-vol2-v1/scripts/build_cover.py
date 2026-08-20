@@ -29,6 +29,22 @@ def load_font(name, size):
     return ImageFont.load_default()
 
 
+# Gumroad auto-generates a 600x600 thumbnail by center-cropping the cover
+# (confirmed via 2026-08-20 research + a rendered simulation — see
+# products/MARKET-NOTES.md). For a 1600x1000 cover that crop keeps only
+# x:300-1300, so anything meant to be recognizable in that thumbnail
+# (product title, brand name) must be centered inside this safe zone
+# rather than left-margin aligned.
+SAFE_L, SAFE_W = 320, 960
+
+
+def safe_center(d, y, text, font, fill):
+    bbox = d.textbbox((0, 0), text, font=font)
+    tw = bbox[2] - bbox[0]
+    x = SAFE_L + max(0, (SAFE_W - tw) // 2)
+    d.text((x, y), text, font=font, fill=fill)
+
+
 def draw_doc_mockup(d, ox, oy, accent):
     """Small PDF-page + spreadsheet-grid mockup so the cover isn't text-only."""
     pdf_w, pdf_h = 250, 320
@@ -77,7 +93,7 @@ def build():
 
     draw_doc_mockup(d, 1220, 300, ACCENT)
 
-    title_font = load_font("arialbd.ttf", 84)
+    title_font = load_font("arialbd.ttf", 60)
     sub_font = load_font("arial.ttf", 38)
     tag_font = load_font("arialbd.ttf", 22)
     badge_font = load_font("arialbd.ttf", 30)
@@ -85,8 +101,8 @@ def build():
     margin = 110
     draw_badge(d, margin, 165, "VOL. 2", badge_font)
 
-    d.text((margin, 240), "AI Prompt Playbook", font=title_font, fill=WHITE)
-    d.text((margin, 340), "Systems & Automation", font=title_font, fill=ACCENT)
+    safe_center(d, 240, "AI Prompt Playbook", title_font, WHITE)
+    safe_center(d, 340, "Systems & Automation", title_font, ACCENT)
 
     d.text((margin, 470), "25 prompts for turning AI into repeatable systems —", font=sub_font, fill=MUTED)
     d.text((margin, 516), "not just one-off tasks.", font=sub_font, fill=MUTED)
@@ -108,7 +124,7 @@ def build():
             x += tw + pad * 2 + 12
         y += 60
 
-    d.text((margin, H - 90), "Ledger & Loop Digital", font=sub_font, fill=MUTED)
+    safe_center(d, H - 90, "Ledger & Loop Digital", sub_font, MUTED)
 
     img.save(OUT)
     print(f"Wrote {OUT}")

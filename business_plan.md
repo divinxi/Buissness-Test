@@ -1,6 +1,6 @@
 # Business Plan — Ledger & Loop Digital (working name, pending REQ-002 confirmation)
 
-Status date: 2026-08-19
+Status date: 2026-08-20
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -445,6 +445,37 @@ real, unchanged bottleneck after 32 days remains entirely REQ-003/004 (owner
 must check/revoke the Gumroad API token and publish the 8 already-ready
 listings) — there is nothing left on the product or market side that hasn't
 already been tried at least once.
+
+## Cover-art thumbnail bug found and fixed (2026-08-20)
+34 days into REQ-003/004 being open with $0.00 in sales, checked
+`products/MARKET-NOTES.md` for anything previously flagged but never
+finished — nothing outstanding, confirming the day-32 assessment that
+every buyer-facing lever tried so far has genuinely been used at least
+once. Looked at cover art from a new angle instead of repeating one:
+covers had only ever been evaluated as the full landscape image a buyer
+sees on the listing page, never as Gumroad's auto-generated search/library
+thumbnail — a different, first-impression format.
+
+Real finding, confirmed by rendering it (not just reading the docs):
+Gumroad creates every thumbnail by center-cropping a square from the
+cover. For our 1600x1000 covers that keeps only x:300-1300 — and all 8
+`build_cover.py` scripts left-align the product title at margin=110,
+outside that crop. Simulating the actual crop on the flagship product's
+cover showed the word "AI" cut completely from "AI Prompt Playbook" and
+the brand name reading as "Loop Digital" — a real, confirmed defect, not a
+hypothesis, in the exact format most buyers see first.
+
+Fixed all 8 covers (products + both lead magnets): title lines and the
+brand name now center inside the crop-safe zone; secondary text (subtitle,
+chips, mockup graphic) was left as-is since it's illegible at thumbnail
+scale regardless of position. Also caught and fixed a second-order bug the
+first fix introduced — centering pushed 4 titles wide enough to overlap
+the decorative mockup graphic on the full-size cover — by measuring the
+actual pixel overlap and shrinking those 4 titles' fonts until clear.
+Regenerated and visually verified all 8 covers plus a simulated thumbnail
+crop. No PDF/xlsx/listing-copy change, no pricing, no new product, no
+Gumroad action. Full reasoning and sources: products/MARKET-NOTES.md
+(2026-08-20).
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on

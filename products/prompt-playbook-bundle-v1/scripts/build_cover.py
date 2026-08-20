@@ -30,6 +30,22 @@ def load_font(name, size):
     return ImageFont.load_default()
 
 
+# Gumroad auto-generates a 600x600 thumbnail by center-cropping the cover
+# (confirmed via 2026-08-20 research + a rendered simulation — see
+# products/MARKET-NOTES.md). For a 1600x1000 cover that crop keeps only
+# x:300-1300, so anything meant to be recognizable in that thumbnail
+# (product title, brand name) must be centered inside this safe zone
+# rather than left-margin aligned.
+SAFE_L, SAFE_W = 320, 960
+
+
+def safe_center(d, y, text, font, fill):
+    bbox = d.textbbox((0, 0), text, font=font)
+    tw = bbox[2] - bbox[0]
+    x = SAFE_L + max(0, (SAFE_W - tw) // 2)
+    d.text((x, y), text, font=font, fill=fill)
+
+
 def draw_doc_mockup(d, ox, oy, accent):
     """Two overlapping PDF-page mockups (Vol. 1 + Vol. 2) so the cover reads as a 2-guide bundle."""
     pdf_w, pdf_h = 220, 290
@@ -65,8 +81,8 @@ def build():
 
     margin = 110
     d.text((margin, 110), "50 PROMPTS — VOL. 1 + VOL. 2, TOGETHER", font=eyebrow_font, fill=ACCENT)
-    d.text((margin, 178), "The AI Prompt", font=title_font, fill=WHITE)
-    d.text((margin, 250), "Playbook Bundle", font=title_font, fill=ACCENT)
+    safe_center(d, 178, "The AI Prompt", title_font, WHITE)
+    safe_center(d, 250, "Playbook Bundle", title_font, ACCENT)
 
     d.text((margin, 380), "One-off tasks and repeatable systems —", font=sub_font, fill=MUTED)
     d.text((margin, 422), "both playbooks, both trackers, one price.", font=sub_font, fill=MUTED)
@@ -84,7 +100,7 @@ def build():
 
     d.text((margin, 630), "$29 bundle  ·  $38 if bought separately", font=price_font, fill=WHITE)
 
-    d.text((margin, H - 90), "Ledger & Loop Digital", font=sub_font, fill=MUTED)
+    safe_center(d, H - 90, "Ledger & Loop Digital", sub_font, MUTED)
 
     img.save(OUT)
     print(f"Wrote {OUT}")
