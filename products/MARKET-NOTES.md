@@ -1380,3 +1380,58 @@ alone):
 - https://www.pixelmeasures.com/platform-sizes/gumroad/
 - https://www.topbubbleindex.com/blog/gumroad-banners/
 - https://justhandledlabs.com/guides/make-gumroad-cover-thumbnail-with-ai/
+
+## 2026-08-25 update: independently verified the "works in Google Sheets"
+claim made in all 6 paid listings' FAQs — never actually checked before
+
+REQ-002/003/004/005/006 are all still open with no owner action recorded in
+36 days now on REQ-003/004 — ledger still $0.00, 6 products (4 individual +
+2 bundles) plus 2 free lead magnets all still unpublished. Re-attempted a
+direct fetch of divine357.gumroad.com again today (this environment's
+network egress proxy now blocks the whole domain outright rather than
+returning a 403 as in earlier attempts) — still no way to independently
+confirm or rule out any owner action taken directly on Gumroad without a
+repo edit. Every listing-level lever (pricing 3x, copy, cover art 2x + the
+thumbnail-crop fix, refund/FAQ, cross-sell, retagging, preview images,
+buyer-trust fixes, urgency framing) and all 5 outreach channels have already
+been covered across the 36-day history above — repeating any of them today
+would add nothing.
+
+Found one real, previously-unverified item: every one of the 6 paid
+listings' FAQs states "works the same in Google Sheets" for its companion
+.xlsx file, but that claim was written from general knowledge on the day
+each FAQ was drafted (2026-07-24) — it was never actually checked against
+what each workbook specifically contains. Google Sheets doesn't support
+100% of Excel's feature surface (VBA macros, some newer array/dynamic-array
+functions, certain named-range and external-reference patterns can behave
+differently), so an unverified claim like this is exactly the kind of thing
+that could cause a support request or refund if it turned out to be wrong
+for even one file.
+
+Installed openpyxl fresh and inspected all 4 companion workbooks
+(AI-Ops-Tracker.xlsx, Automation-ROI-Tracker.xlsx, Freelancer-Tax-
+Tracker.xlsx, Invoice-Payment-Tracker.xlsx — the bundles and lead magnets
+reuse these, no separate files to check) for every formula function, data
+validation rule, conditional formatting rule, and defined name actually
+used:
+- Formula functions across all 4 files: `SUM`, `SUMIF`, `COUNTA`, `COUNTIF`,
+  `COUNTIFS`, `IF`, `AND`, `OR`, `IFERROR`, `VLOOKUP`, `TODAY`, `DATE`,
+  `MIN`. Every one of these is a standard, identically-supported function in
+  Google Sheets — nothing from Excel's newer dynamic-array family (`XLOOKUP`,
+  `FILTER`, `LET`, spilled arrays) or anything Sheets-incompatible.
+- Data validation dropdowns (expense categories, prompt categories,
+  workflow frequency) are all inline literal lists (`type="list"` with a
+  comma-separated `formula1` string), not range references to another
+  sheet — the simplest, most portable validation type and fully supported
+  on import.
+- No VBA macros (openpyxl can't write them and none were ever added by
+  hand), no named ranges/defined names, no array formulas, no external
+  workbook references — all real Sheets-compatibility risk factors, all
+  absent.
+
+**Conclusion: the claim is true, and now verified rather than asserted.**
+No FAQ wording changed since nothing was found to be inaccurate — this
+closes out an unverified claim with confirmation, the same category of
+finding as the 2026-08-01 QA pass (verify first, only edit if something's
+actually wrong). No pricing/cover/copy change, no new product, no Gumroad
+action taken.

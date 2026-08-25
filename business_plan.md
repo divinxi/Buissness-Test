@@ -477,6 +477,23 @@ crop. No PDF/xlsx/listing-copy change, no pricing, no new product, no
 Gumroad action. Full reasoning and sources: products/MARKET-NOTES.md
 (2026-08-20).
 
+## Google Sheets compatibility verified, not just claimed (2026-08-25)
+36 days into REQ-003/004 being open with $0.00 in sales, every listing-level
+lever (pricing 3x, copy, cover art twice plus the thumbnail-crop fix,
+refund/FAQ, cross-sell, retagging, preview images, buyer-trust fixes,
+urgency framing) and all 5 outreach channels have already been used at
+least once — repeating any would add nothing. All 6 paid listings' FAQs
+have claimed "works the same in Google Sheets" since 2026-07-24, but that
+was written from general knowledge, never checked against what each
+workbook actually contains. Installed openpyxl and audited all 4 companion
+.xlsx files for every formula function, data-validation rule, and defined
+name: only standard functions used everywhere (SUM/SUMIF/COUNTA/COUNTIF/
+COUNTIFS/IF/AND/OR/IFERROR/VLOOKUP/TODAY/DATE/MIN — nothing from Excel's
+newer dynamic-array family), only inline-list data validation (no
+range-referenced dropdowns), no macros, no named ranges, no array formulas.
+Claim confirmed true — no FAQ wording changed since nothing was wrong. Full
+reasoning: products/MARKET-NOTES.md (2026-08-25).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
