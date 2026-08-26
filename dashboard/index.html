@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "25 Aug 2026",
-    day: 38,
+    lastUpdated: "26 Aug 2026",
+    day: 39,
   },
   stats: {
     balance: 0.00,
@@ -368,7 +368,10 @@ const DATA = {
     },
   ],
   activity: [
-    { date: "25 Aug 2026", text: "Checked for owner action on all open requests again — none recorded since REQ-001 on 07-20 (REQ-003/004 open 36 days now, ledger still $0.00). Re-tried divine357.gumroad.com directly — this environment's egress proxy now blocks the domain outright rather than 403ing, still no way to independently confirm Gumroad-side state." },
+    { date: "26 Aug 2026", text: "Real operational bug found and fixed: the published dashboard artifact was stuck on the 20 Aug snapshot (day 33) despite this repo's commits since then claiming daily republishes through 25 Aug — the actual link Jimmy would view was 6 days stale. Re-published from the current repo state so the live page now matches; will keep verifying the live artifact reads back correctly on future runs, not just assume the publish call succeeded." },
+    { date: "26 Aug 2026", text: "Checked for owner action on all open requests again — none recorded since REQ-001 on 07-20 (REQ-003/004 open 37 days now, ledger still $0.00). Every listing-level lever, all 5 outreach channels, and several QA/verification passes have already been used at least once — repeating any would add nothing." },
+    { date: "26 Aug 2026", text: "Found the one thing that changes on its own regardless of owner action: the 08-13 Q3-tax-deadline urgency line said \"about a month out\" — today it's 20 days out (about 3 weeks). Refreshed the wording in the tax tracker and freelancer bundle LISTING.md files and OUTREACH-KIT.md section 7, and added an explicit note that this lever expires entirely if Jimmy hasn't acted by Sept 15 (next real deadline after that is 4 months out) — a genuine, time-bound cost to continued inaction, not manufactured pressure." },
+    { date: "26 Aug 2026", text: "Re-verified all 8 listings' referenced deliverable/cover/preview file paths still resolve correctly on disk after the 08-20 cover regeneration — every filename named in each LISTING.md checked against each product's actual dist/ folder, all match. No pricing/cover/copy change beyond the date fix, no new product, no Gumroad action taken. Full writeup: business_plan.md (2026-08-26)." },
     { date: "25 Aug 2026", text: "Verified, rather than just asserted, a claim every paid listing's FAQ has made since 07-24: \"works the same in Google Sheets.\" Installed openpyxl and audited all 4 companion .xlsx files' formulas, data validation, and defined names — only standard functions (SUM/SUMIF/COUNTIF/COUNTIFS/IF/AND/OR/IFERROR/VLOOKUP/TODAY/DATE/MIN/COUNTA), only inline-list dropdowns, no macros/named ranges/array formulas. Claim confirmed true; no FAQ wording changed since nothing was wrong. Full writeup: products/MARKET-NOTES.md (2026-08-25)." },
     { date: "20 Aug 2026", text: "Found and fixed a real, previously-unexamined cover-art bug: Gumroad auto-generates every listing's search/library thumbnail by center-cropping a square from the cover image (confirmed via Gumroad's own help docs + 4 independent sources). All 8 cover scripts left-aligned the product title, which sits outside that crop. Rendered the actual crop to confirm, not just took the docs on faith — the flagship product's thumbnail cut the word \"AI\" completely off \"AI Prompt Playbook\" and the brand name read as \"Loop Digital\"." },
     { date: "20 Aug 2026", text: "Fixed all 8 covers (6 products + 2 lead magnets): titles and brand name now center inside the crop-safe zone; secondary text/mockup graphic left as-is since it's illegible at thumbnail scale regardless of position. Caught and fixed a second bug the fix introduced — centering pushed 4 titles into the decorative mockup graphic on the full-size cover — by measuring the actual pixel overlap and shrinking those 4 titles' fonts until clear. Regenerated and visually verified all 8 covers plus a simulated 600x600 thumbnail crop. No PDF/xlsx/copy change, no pricing, no new product, no Gumroad action. Full writeup: products/MARKET-NOTES.md (2026-08-20)." },

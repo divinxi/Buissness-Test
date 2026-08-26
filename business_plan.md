@@ -494,6 +494,39 @@ range-referenced dropdowns), no macros, no named ranges, no array formulas.
 Claim confirmed true — no FAQ wording changed since nothing was wrong. Full
 reasoning: products/MARKET-NOTES.md (2026-08-25).
 
+## Urgency copy refreshed to stay accurate (2026-08-26)
+37 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship, not just
+re-reading the requests file). Every listing-level lever, all 5 outreach
+channels, and now several rounds of QA/verification passes (file-path
+integrity, formula re-checks, cover-thumbnail crop, Google Sheets
+compatibility) have already been done at least once — repeating any would
+add nothing new.
+
+One thing does change daily on its own regardless of owner action: the
+08-13 Q3-tax-deadline urgency line said "about a month out" as of that
+date. Today it's 20 days out (about 3 weeks) — a stale-but-still-true-ish
+claim is exactly the kind of small inaccuracy that erodes buyer trust the
+08-06 review-mining research flagged as the top real complaint category.
+Refreshed the wording in `products/freelancer-tax-tracker-v1/LISTING.md`,
+`products/freelancer-bundle-v1/LISTING.md`, and
+`products/OUTREACH-KIT.md` section 7 to say "about 3 weeks (20 days) out,"
+and added an explicit note that this specific lever expires entirely if
+Jimmy hasn't acted by Sept 15 (the next real deadline after that is Q4
+2026, 4 months out) — a genuine, time-bound reason today's inaction has a
+real cost beyond "another day of $0," not manufactured pressure.
+
+Also re-verified: all 8 listings' referenced deliverable/cover/preview file
+paths still resolve correctly on disk after the 08-20 cover regeneration
+(cross-checked every `.pdf`/`.xlsx`/`.png` filename named in each
+LISTING.md against what's actually in each product's `dist/` folder — all
+match, nothing missing or renamed). No pricing/cover/copy change beyond the
+date-accuracy fix above, no new product, no Gumroad action taken. Honest
+assessment: this is a small, real fix — not a new lever — because there
+isn't a new lever left to pull that hasn't already been tried; the
+business remains entirely bottlenecked on REQ-003/004 (owner must
+check/revoke the Gumroad API token and publish).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
