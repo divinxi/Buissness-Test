@@ -91,6 +91,22 @@ go up anyway).
       `products/OUTREACH-KIT.md` section 1. Skip if you'd rather not manage
       discount codes right now — nothing else depends on it.
 
+## 9b. Optional, same sitting — enable Gumroad's built-in affiliate program
+Found 2026-08-27 (see `products/MARKET-NOTES.md`): free, no new account,
+costs nothing unless a sale actually happens through it. Two independent
+things to turn on per listing, either or both:
+- [ ] Each of the 6 paid listings → Share tab → Affiliates → invite anyone
+      you want to promote it by email, suggested commission **30%**
+      (leaves ~$10.80-$13.30 of a $19 sale after Gumroad's own cut).
+- [ ] Each listing → opt into Gumroad's own global affiliate marketplace
+      (defaults to ~10% commission) — this is passive: people already
+      browsing Gumroad to find products to promote can pick ours up with no
+      outreach needed from us. New listings take ~24h+ to get indexed into
+      it after publishing.
+Skip either or both if you'd rather not manage affiliates right now —
+nothing else depends on this, it's the only lever found so far that
+doesn't need your own time to work.
+
 ## 10. Optional, once listings are live — Gumroad Workflows email sequences
 - [ ] For the freelancer lead magnet: Gumroad → Workflows → new workflow
       triggered by a purchase of "The Freelancer Money Admin Quick-Start" →

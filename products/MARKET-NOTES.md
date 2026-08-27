@@ -1435,3 +1435,84 @@ closes out an unverified claim with confirmation, the same category of
 finding as the 2026-08-01 QA pass (verify first, only edit if something's
 actually wrong). No pricing/cover/copy change, no new product, no Gumroad
 action taken.
+
+## 2026-08-27 update: Gumroad's own built-in affiliate program — a real,
+previously unexplored distribution lever, distinct from everything tried so far
+
+38 days into REQ-003/004 being open with $0.00 in sales (verified again via
+`git log` authorship — still nothing from Jimmy since REQ-001 on day 1),
+every listing-level lever and all 8 outreach-kit channels share one
+property never examined before: every single one of them routes through
+Jimmy personally — a message he sends, a post he makes, a community he
+posts to. None of them tap into *someone else's* existing audience. Checked
+whether Gumroad itself has a mechanism for that.
+
+It does: Gumroad has a built-in Affiliates feature, confirmed via WebSearch
+across several independent 2026 sources (Gumroad's own help-center article
+title is indexed in search results, though a direct fetch of
+`gumroad.com/help` is blocked by this environment's egress proxy the same
+as the storefront itself — so this is corroborated third-party reporting,
+not primary-source-verified, same confidence level as the 2026-08-15 fee
+research):
+
+- **Free, no monthly cost, no new account.** It's a setting inside the same
+  product editor already used to publish — Share tab → Affiliates section
+  on each product page. Nothing external to sign up for.
+- **Two distinct mechanisms:**
+  1. *Direct-recruit:* invite a specific person by email and set their
+     commission — sources give a range of roughly 1%-75% (one source says
+     up to 90%), seller's choice per affiliate, can vary by person.
+  2. *Gumroad's own global affiliate marketplace:* people already browsing
+     Gumroad specifically to find products to promote (a different
+     audience than Discover's buyer-side browsers) can pick up any listed
+     product at a flat ~10% commission without Jimmy reaching out to them
+     at all — fully passive on our side. One source notes new products are
+     indexed into this marketplace on a ~24h+ delay after publishing, not
+     instantly.
+- **Commission is paid only out of real completed sales** — there is
+  nothing to pay upfront, it doesn't touch the $50 approved budget, and it
+  doesn't have to be decided before publishing (it's a toggle that can be
+  turned on any time afterward, including after seeing whether direct
+  channels produce any sales first).
+
+**Why this is worth flagging as a real, new opportunity rather than another
+angle on the same 8 channels:** at $19/$29 with effectively $0 marginal
+cost of goods (the files are already built), even a generous commission is
+close to pure incremental revenue — a sale through an affiliate that would
+otherwise never happen at zero Jimmy-effort cost is strictly better than no
+sale. This is also the first lever found in 38 days that could produce
+sales without depending on Jimmy's own personal reach or the time he has to
+spend posting/messaging, which every other channel (including all 8 in
+OUTREACH-KIT.md) requires to some degree.
+
+**Suggested starting point (not applied — recommendation only):** 30%
+commission for directly-recruited affiliates on all 6 paid listings. At
+$19, 30% is $5.70 to the affiliate, leaving roughly $10.80-$13.30 for us
+after Gumroad's own ~10-13% direct-sale cut (see 2026-08-15 fee research)
+— still a real margin, and generous enough by industry norms (many digital
+creators run 30-50%) to be worth an affiliate's time recommending it. Leave
+the passive Gumroad Affiliates marketplace listing at its default ~10% —
+no extra decision needed there beyond opting each product in.
+
+**Why this isn't set up automatically:** setting a commission rate is a
+real decision about how much of future revenue to give away, and per this
+project's own operating rule, anything that changes the real-money
+economics of a sale needs Jimmy's sign-off, even though enabling it costs
+nothing today. Added as a recommended, optional addition to REQ-003 and
+`GO-LIVE-CHECKLIST.md` — same pattern already used for the optional
+LAUNCH25 discount code on 2026-08-04 — rather than a new REQ, since it
+doesn't need a new account or identity, just a same-sitting setting change
+whenever Jimmy is already in the Gumroad dashboard publishing.
+
+No pricing change to what buyers pay, no new product built, no Gumroad
+action taken this run.
+
+Sources (2026-08-27, WebSearch — gumroad.com/help itself is indexed and
+titled correctly in search results, consistent with the third-party
+writeups, so this is corroborated rather than single-source):
+- https://gumroad.com/help/article/249-affiliate-faq
+- https://dev.to/snake_sun/setting-up-a-gumroad-affiliate-program-in-5-minutes-and-what-nobody-tells-you-3an6
+- https://www.topbubbleindex.com/blog/gumroad-affiliate-program/
+- https://stephanochmann.de/en/blog/affiliate-program-gumroad/
+- https://affylist.com/products/gumroad
+- https://www.schoolmaker.com/blog/gumroad-affiliate-program

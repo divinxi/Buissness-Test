@@ -527,6 +527,24 @@ isn't a new lever left to pull that hasn't already been tried; the
 business remains entirely bottlenecked on REQ-003/004 (owner must
 check/revoke the Gumroad API token and publish).
 
+## Gumroad's built-in affiliate program found (2026-08-27)
+38 days into REQ-003/004 being open with $0.00 in sales, every prior
+distribution effort (all 8 outreach-kit channels) shares one property never
+questioned before: each one routes through Jimmy personally reaching people
+he knows or posting into a community himself. Checked whether Gumroad has a
+mechanism that doesn't depend on that, and it does: a free, built-in
+Affiliates feature (Share tab → Affiliates on each product page) — either
+inviting specific people at a commission Jimmy sets (roughly 1-75%), or
+opting into Gumroad's own global affiliate marketplace where people already
+looking for products to promote can pick ours up passively at ~10%, with no
+outreach from us at all. Costs nothing to enable and only pays out of real
+sales, so it doesn't touch the $50 budget — but setting a commission rate
+gives away real future revenue, so per this project's own money rule it's a
+recommendation on REQ-003 (suggested 30% for direct-recruited affiliates),
+not something applied automatically. No pricing change, no new product, no
+Gumroad action taken. Full reasoning and sources: products/MARKET-NOTES.md
+(2026-08-27).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
