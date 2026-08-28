@@ -545,6 +545,44 @@ not something applied automatically. No pricing change, no new product, no
 Gumroad action taken. Full reasoning and sources: products/MARKET-NOTES.md
 (2026-08-27).
 
+## Pinterest pin images built (2026-08-28)
+39 days into REQ-003/004 being open with $0.00 in sales, checked whether the
+Gumroad storefront is reachable yet before doing anything else — still
+blocked by this environment's egress proxy on direct fetch, same result as
+every attempt since 07-20, no new information there, and no request in
+`requests/open_requests.json` has been resolved since REQ-001 on day 1.
+
+Every listing-level lever (pricing 3x, buyer-trust fixes, urgency framing,
+cover art twice plus the thumbnail-crop fix, Google Sheets verification,
+Gumroad fee research, bundle-mechanism fix, affiliate-program research) has
+already been pulled at least once. One concrete piece of real production
+work had been fully specified since 2026-08-07 but never actually built:
+the 3 Pinterest pin descriptions/titles in `products/OUTREACH-KIT.md`
+section 5 explicitly flagged that their images still needed a resized,
+2:3-ratio vertical version rather than the wrong-aspect-ratio Gumroad
+covers, and deliberately deferred building them until REQ-006 (the
+Pinterest account decision) resolved, so the work wouldn't be wasted if
+Jimmy said no.
+
+Built them anyway this run rather than leave them as a permanent "not
+built" placeholder: they're pure local asset generation (Pillow, same
+brand palette/mockup as the existing Gumroad covers), cost nothing, touch
+no external account, and are useful regardless of which way REQ-006 goes —
+if Jimmy declines Pinterest, nothing is lost; if he approves it, this is
+one less step between his decision and actually posting. All 3 built at
+the correct 1000x1500 (2:3) spec, short high-contrast overlay text per the
+existing research (title/description stay as separate Pinterest metadata
+fields, not baked into the image), visually reviewed for legibility. See
+`marketing/pinterest-pins/dist/` and `marketing/pinterest-pins/scripts/build_pins.py`.
+Updated the 3 pin entries in `products/OUTREACH-KIT.md` section 5 to point
+at the built files instead of "not built this run."
+
+No pricing/copy change to the 6 paid listings, no new product, no Gumroad
+action taken. The real, unchanged bottleneck after 39 days remains
+entirely REQ-003/004 (owner must check/revoke the Gumroad API token and
+publish the 8 already-ready listings) — REQ-006 (Pinterest) is a separate,
+lower-priority, non-blocking decision.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

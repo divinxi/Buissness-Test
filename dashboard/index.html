@@ -259,7 +259,7 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "27 Aug 2026",
+    lastUpdated: "28 Aug 2026",
     day: 40,
   },
   stats: {
@@ -304,7 +304,7 @@ const DATA = {
     {
       id: "REQ-006",
       title: "Decide whether to create a free Pinterest Business account (new distribution channel)",
-      detail: "Research found Pinterest independently named as the strongest-fit free traffic channel for exactly our product type (planners/spreadsheets/templates) — 450M monthly users in a search/planning mindset, and direct linking from a pin to a product page is normal there, unlike Reddit/LinkedIn. It's free (no monthly fee, no commission), but it's still a new external account, so I won't create it myself. 3 ready-to-use pins (title, description, suggested board) are drafted in <code>products/OUTREACH-KIT.md</code> section 5, ready the moment you decide. If you'd rather not add another account to manage, that's a completely fine answer — nothing else is blocked on this.",
+      detail: "Research found Pinterest independently named as the strongest-fit free traffic channel for exactly our product type (planners/spreadsheets/templates) — 450M monthly users in a search/planning mindset, and direct linking from a pin to a product page is normal there, unlike Reddit/LinkedIn. It's free (no monthly fee, no commission), but it's still a new external account, so I won't create it myself. 3 ready-to-use pins (title, description, suggested board) are drafted in <code>products/OUTREACH-KIT.md</code> section 5. <strong>28 Aug update:</strong> the 3 pin images themselves are now built too (1000x1500, on-brand) — <code>marketing/pinterest-pins/dist/</code> — so a yes here is a same-day post, nothing left to prepare. If you'd rather not add another account to manage, that's a completely fine answer — nothing else is blocked on this.",
       blocks: "Nothing already built — this is a new opportunity, not a blocker. Only blocks actually posting the 3 drafted pins.",
       priority: "low",
     },
@@ -368,6 +368,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "28 Aug 2026", text: "Found yesterday's commit (day 39, the affiliate-program research) never made it onto the main branch — it was sitting on a detached HEAD only. Fast-forwarded main to include it and confirmed origin already had it too, so nothing was actually lost, but flagging the pattern in case a future run's work risks being orphaned the same way." },
+    { date: "28 Aug 2026", text: "Checked for owner action on all open requests — still none recorded since REQ-001 on 07-20 (REQ-003/004 now open 39 days, ledger still $0.00). Re-tried a direct fetch of the storefront — still blocked by this environment's egress proxy, same as every attempt since day 1, no new information there." },
+    { date: "28 Aug 2026", text: "Built the one piece of real production work that had been fully specified since 08-07 but never actually made: the 3 Pinterest pin images (REQ-006, still an open owner decision). Generated all 3 at the correct 1000x1500 (2:3) vertical spec using the same brand palette/mockup as the existing Gumroad covers — marketing/pinterest-pins/dist/. Pure local asset work, no account, no spend, useful either way REQ-006 goes. Updated OUTREACH-KIT.md's 3 pin entries and REQ-006 to point at the built files instead of \"not built this run.\"" },
     { date: "27 Aug 2026", text: "Checked for owner action on all open requests again — none recorded since REQ-001 on 07-20 (verified via git commit authorship; REQ-003/004 now open 38 days, ledger still $0.00). Tried a fresh WebFetch/WebSearch on the storefront URL directly — still blocked by this environment's egress proxy, same as every prior attempt, no new information there." },
     { date: "27 Aug 2026", text: "Found a genuinely new lever after 38 days: every distribution channel tried so far (all 8 in OUTREACH-KIT.md) depends on Jimmy's own time and reach — his message, his post, his network. Researched whether Gumroad has anything that doesn't, and it does: a free built-in Affiliates feature (Share tab on each product page) — either inviting specific people at a commission we set, or opting into Gumroad's own global affiliate marketplace where people already looking for products to promote can pick ours up passively at ~10%, no outreach needed from us." },
     { date: "27 Aug 2026", text: "Costs nothing to enable and only pays out of real sales, but setting a commission rate gives away real future revenue, so per this project's own money rule it's a recommendation, not something turned on automatically. Added a suggested 30% direct-affiliate rate to REQ-003 and a new optional step 9b in GO-LIVE-CHECKLIST.md — a same-sitting toggle whenever Jimmy is already in the Gumroad dashboard publishing. Full reasoning and sources: products/MARKET-NOTES.md (2026-08-27)." },

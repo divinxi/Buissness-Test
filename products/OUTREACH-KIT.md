@@ -229,11 +229,10 @@ at thumbnail size in a muted feed, not carry the whole pitch.
 > refund. Know what you owe the IRS and get paid on time. [Gumroad link]
 **Suggested board:** "Freelancer Finance" / "Self-Employed Tax Tips" (create
 if none exists — Pinterest rewards pins added to a topically-matching board).
-**Image:** reuse products/freelancer-bundle-v1/dist/cover.png as a starting
-point, but it's the wrong aspect ratio (a Gumroad cover, not 2:3) — would
-need a resized/recomposed vertical version before actually pinning; not
-built this run, flagged for whenever Jimmy decides on REQ-006 so the image
-work isn't wasted if he says no.
+**Image:** built 2026-08-28 —
+`marketing/pinterest-pins/dist/pin-freelancer-bundle.png`, 1000x1500 (2:3),
+same brand palette/mockup as the Gumroad covers. Ready to upload the moment
+Jimmy decides on REQ-006.
 
 ### Draft pin 2 — Freelancer Quarterly Tax & Expense Tracker
 **Title:** Self-Employment Tax Calculator Spreadsheet | 2026 Freelancer Guide
@@ -243,6 +242,7 @@ work isn't wasted if he says no.
 > spreadsheet that computes your exact self-employment tax from your own
 > numbers. $19, one-time, Excel or Google Sheets, 30-day refund. [Gumroad link]
 **Suggested board:** "Small Business Taxes" / "Budget Spreadsheets."
+**Image:** built 2026-08-28 — `marketing/pinterest-pins/dist/pin-tax-tracker.png`.
 
 ### Draft pin 3 — Small Business AI Prompt Playbook
 **Title:** 25 AI Prompts for Small Business Owners | ChatGPT Prompt Playbook
@@ -252,6 +252,7 @@ work isn't wasted if he says no.
 > Comes with a spreadsheet that tracks the time and money each one saves
 > you. $19, one-time download, 30-day refund. [Gumroad link]
 **Suggested board:** "AI Tools for Small Business" / "ChatGPT Prompts."
+**Image:** built 2026-08-28 — `marketing/pinterest-pins/dist/pin-ai-prompt-playbook.png`.
 
 ### What Pinterest does NOT get, and why
 No pin has been posted, and no account has been created — same posture as
