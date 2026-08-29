@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "28 Aug 2026",
-    day: 40,
+    lastUpdated: "29 Aug 2026",
+    day: 41,
   },
   stats: {
     balance: 0.00,
@@ -368,6 +368,8 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "29 Aug 2026", text: "Found the same orphaned-commit problem again, for real this time: yesterday's \"fixed it, origin already had it too\" claim was wrong — origin/main on GitHub was still 2 days behind (stuck at 08-26), meaning the day 39 and day 40 work was never actually on GitHub. Fast-forwarded main and pushed, then verified with a live `git ls-remote origin main` (not just local state) that it actually landed this time." },
+    { date: "29 Aug 2026", text: "Ran a genuinely new QA pass instead of another listing-copy lever: rendered every page of all 4 paid PDFs and checked every text/image block against the page boundary, catching real clipping instead of just page counts. Found a confirmed, real defect — page 4 of the Invoice & Late-Payment Toolkit's payment-terms table was unreadable (overlapping columns) because its cells were raw strings instead of wrapped Paragraphs. Fixed the build script, rebalanced column widths, regenerated the PDF, and visually re-verified the fix. The other 3 PDFs' tables passed the same scan clean." },
     { date: "28 Aug 2026", text: "Found yesterday's commit (day 39, the affiliate-program research) never made it onto the main branch — it was sitting on a detached HEAD only. Fast-forwarded main to include it and confirmed origin already had it too, so nothing was actually lost, but flagging the pattern in case a future run's work risks being orphaned the same way." },
     { date: "28 Aug 2026", text: "Checked for owner action on all open requests — still none recorded since REQ-001 on 07-20 (REQ-003/004 now open 39 days, ledger still $0.00). Re-tried a direct fetch of the storefront — still blocked by this environment's egress proxy, same as every attempt since day 1, no new information there." },
     { date: "28 Aug 2026", text: "Built the one piece of real production work that had been fully specified since 08-07 but never actually made: the 3 Pinterest pin images (REQ-006, still an open owner decision). Generated all 3 at the correct 1000x1500 (2:3) vertical spec using the same brand palette/mockup as the existing Gumroad covers — marketing/pinterest-pins/dist/. Pure local asset work, no account, no spend, useful either way REQ-006 goes. Updated OUTREACH-KIT.md's 3 pin entries and REQ-006 to point at the built files instead of \"not built this run.\"" },

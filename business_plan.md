@@ -583,6 +583,54 @@ entirely REQ-003/004 (owner must check/revoke the Gumroad API token and
 publish the 8 already-ready listings) — REQ-006 (Pinterest) is a separate,
 lower-priority, non-blocking decision.
 
+## Real PDF rendering bug found and fixed (2026-08-29)
+40 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Also found and fixed a real operational bug before starting today's product
+work: yesterday's and the day before's commits (the Pinterest pins and the
+affiliate-program research) existed only on a detached local HEAD —
+`origin/main` on GitHub was still stuck two days behind, at the 08-26
+commit. A prior run's activity log had claimed this exact problem was
+already found and fixed on day 40, but that fix was never actually pushed,
+so it didn't survive into this session. Fast-forwarded `main` to include
+both orphaned commits and pushed, then verified with a live `git ls-remote
+origin main` (not just local branch state, which is exactly what silently
+failed last time) that GitHub actually has them now. Take-away for future
+runs: always verify a push landed with `git ls-remote`, not just a `git
+push` exit code or local `git log`.
+
+Every listing-level lever tried in the last 40 days (pricing, copy, cover
+art, urgency, outreach channels, bundling, fee/affiliate research) had
+already been pulled at least once, most more than once — repeating any
+would be manufactured busywork, not real work. Instead of another
+positioning angle, ran a genuinely new kind of QA no prior run had done:
+previous "sanity checks" only verified PDF page counts and .xlsx formula
+correctness, never whether the PDFs actually render cleanly. Installed
+`pymupdf`, rendered every page of all 4 paid guide PDFs to check every text
+and image block's bounding box against its page boundary — a check that
+catches real clipping/overflow, not just page-count drift.
+
+Found a real, confirmed-by-rendering defect: page 4 of the Freelancer
+Invoice & Late-Payment Toolkit guide (`products/freelancer-invoice-toolkit-v1/`)
+had its "Choosing Payment Terms" table built from raw Python strings passed
+directly into a reportlab `Table` instead of `Paragraph` flowables — reportlab
+does not wrap plain strings inside table cells, so the "Meaning," "Best For,"
+and "Risk" columns overflowed and rendered as illegible overlapping text
+across the entire table (visually confirmed, not just a hunch — see the
+before-image this run generated). This is the single highest-stakes table
+in that guide, in the highest-priced individual listing after the bundles,
+and would have been the first thing a paying buyer saw go wrong. Fixed
+`build_pdf.py` to wrap every cell in a `Paragraph` with a proper table-cell
+style and rebalanced the four column widths so the "Term" column doesn't
+mid-word-wrap ("Milestone-Based" etc.). Regenerated the PDF, re-ran the
+bounding-box scan (zero issues now) and visually re-rendered the page to
+confirm — page count unchanged at 9. The other 3 paid PDFs' tables passed
+the same scan clean, so no other file needed this fix. No pricing/cover/copy
+change beyond the table fix itself, no new product, no Gumroad action taken.
+The real, unchanged bottleneck after 40 days remains entirely REQ-003/004
+(owner must check/revoke the Gumroad API token and publish the 8
+already-ready listings).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

@@ -50,6 +50,10 @@ styles.add(ParagraphStyle("EmailLabel", fontName="Helvetica-Bold", fontSize=9.5,
                            textColor=ACCENT, spaceAfter=2))
 styles.add(ParagraphStyle("EmailBody", fontName="Courier", fontSize=8.7, leading=13,
                            textColor=INK, leftIndent=8))
+styles.add(ParagraphStyle("TableCell", fontName="Helvetica", fontSize=8.3, leading=10.8,
+                           textColor=INK))
+styles.add(ParagraphStyle("TableCellBold", fontName="Helvetica-Bold", fontSize=8.3, leading=10.8,
+                           textColor=INK))
 
 
 def warn_box(text, label="Watch out"):
@@ -145,8 +149,13 @@ def build():
     story.append(Spacer(1, 10))
     rows = [["Term", "Meaning", "Best For", "Risk"]]
     for t in PAYMENT_TERMS:
-        rows.append([t["term"], t["meaning"], t["best_for"], t["risk"]])
-    t = Table(rows, colWidths=[1.15 * inch, 2.05 * inch, 2.15 * inch, 0.95 * inch])
+        rows.append([
+            Paragraph(t["term"], styles["TableCellBold"]),
+            Paragraph(t["meaning"], styles["TableCell"]),
+            Paragraph(t["best_for"], styles["TableCell"]),
+            Paragraph(t["risk"], styles["TableCell"]),
+        ])
+    t = Table(rows, colWidths=[1.3 * inch, 1.75 * inch, 2.35 * inch, 0.9 * inch])
     t.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
         ("TEXTCOLOR", (0, 0), (-1, 0), HexColor("#ffffff")),
