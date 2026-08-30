@@ -631,6 +631,36 @@ The real, unchanged bottleneck after 40 days remains entirely REQ-003/004
 (owner must check/revoke the Gumroad API token and publish the 8
 already-ready listings).
 
+## Affiliate recruitment message drafted (2026-08-30)
+42 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Checked `products/MARKET-NOTES.md` and `products/OUTREACH-KIT.md` for
+anything already flagged but never finished before starting anything new,
+rather than reaching for another positioning/pricing angle that's already
+been pulled multiple times. Found one real gap: the 2026-08-27 research
+identified Gumroad's built-in direct-recruit Affiliates feature as a real
+lever and added a suggested 30% commission to REQ-003, but — unlike every
+other distribution channel in this plan (personal message, Reddit, Show IH,
+LinkedIn, Pinterest, short-form video) — it stopped at the recommendation
+and never got an actual message to send. A "yes" from Jimmy on that
+recommendation still meant writing outreach copy from scratch before it
+could go anywhere, which is inconsistent with how every other channel in
+OUTREACH-KIT.md was already handled (draft first, so a decision is a
+same-day send).
+
+Wrote `products/OUTREACH-KIT.md` section 8: a ready-to-send message for
+recruiting specific people (someone with their own freelancer/small-
+business audience — a newsletter, a community, a following) as a direct
+Gumroad affiliate, explicit about the 30% commission and real net numbers
+using the already-verified fee research (2026-08-15) and commission range
+(2026-08-27) — no new claims invented. Clearly scoped as usable only after
+REQ-003/004 resolve and Jimmy actually turns the affiliate toggle on, same
+precondition every other outreach draft already carries. No pricing/cover/
+copy change to the 6 paid listings, no new product, no Gumroad action taken.
+The real, unchanged bottleneck after 42 days remains entirely REQ-003/004
+(owner must check/revoke the Gumroad API token and publish the 8
+already-ready listings).
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

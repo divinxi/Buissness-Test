@@ -404,6 +404,68 @@ This is copy guidance only — no draft in sections 1-4 was rewritten in place
 optional, time-boxed upgrade Jimmy or a future run can apply if send timing
 lines up. Full reasoning in products/MARKET-NOTES.md (2026-08-13).
 
+## 8. Affiliate recruitment message — the 2026-08-27 research had no draft to send (2026-08-30)
+
+42 days into REQ-003/004 being open with $0.00 in sales, checked
+`products/MARKET-NOTES.md` and this file for anything already flagged but
+never actually finished before starting anything new — found one: the
+2026-08-27 research (see business_plan.md and MARKET-NOTES.md for that
+date) identified Gumroad's built-in direct-recruit Affiliates feature as a
+real distribution lever and added a suggested 30% commission to REQ-003,
+but stopped at the recommendation. Unlike every other channel in this file
+(sections 1-6), it never got a ready-to-send draft — so a "yes, do this"
+from Jimmy still meant writing a message from scratch before it could go
+anywhere. Fixed that gap the same way this file already handles every other
+channel: draft it now so a decision is a same-day send, not a future
+writing task.
+
+**Who this is for, and how it's different from section 1:** section 1's
+personal-network message is aimed at people who might *buy* the toolkits
+themselves. This one is aimed at people who have their own audience of
+freelancers/small-business owners (a newsletter, a course, a community they
+run or moderate, a modest but real following) and might promote the
+toolkits *to that audience* for a cut of each sale — a different ask, to a
+different, smaller list of people.
+
+**Precondition:** only usable after Jimmy (1) resolves REQ-003/004 and the
+listings are actually live, and (2) turns on direct-recruit Affiliates in
+the Gumroad product editor (Share tab → Affiliates) and sets a commission —
+30% suggested per the 2026-08-27 research. Sending this before either is
+true would link to a page that doesn't exist yet or offer a commission that
+isn't actually configured.
+
+> Hey — quick one. I've built a couple of practical toolkits for
+> freelancers and small business owners: a 2026 quarterly-tax guide +
+> spreadsheet that calculates self-employment tax automatically, and an
+> invoice/late-payment kit with ready-to-send reminder emails. $19 each, $29
+> for both, real content not filler.
+>
+> I know you're in front of [freelancers/small-business owners/whatever
+> describes their specific audience] — if you think either would be useful
+> to the people you talk to, I've set up a 30% affiliate commission on
+> Gumroad. You'd get a unique link, and 30% of anything that sells through
+> it, no cost or commitment on your end beyond sharing it if and when it
+> feels natural. Totally fine to say no, just thought I'd ask since it
+> seemed like a genuine fit. Here's the storefront if you want to look
+> first: [Gumroad URL].
+
+Notes for Jimmy: send this only to people you know personally who
+plausibly reach that audience — a handful of specific names, not a mass
+list; a cold version of this to strangers would read as an unsolicited biz-
+dev pitch rather than the favor-among-people-who-know-each-other framing
+that makes it work. The real numbers if someone takes it: at $19 and 30%
+commission, that's $5.70 to the affiliate per sale, leaving roughly
+$10.80-$13.30 for us after Gumroad's own direct-sale cut (10%+$0.50,
+~13% conservative — see the 2026-08-15 fee research in business_plan.md).
+On the $29 bundle, 30% is $8.70 to the affiliate. Separately from any
+direct invite, also worth opting each listing into Gumroad's own passive
+global affiliate marketplace (~10% default, no message needed at all) —
+that's a one-click setting, not something this draft is for.
+
+No pricing/copy change to the 6 paid listings, no new product, no Gumroad
+action taken this run — this is a draft message only, same posture as
+every other channel in this file.
+
 ---
 Sources:
 - https://redship.io/learn/how-to-avoid-getting-banned-marketing-reddit
