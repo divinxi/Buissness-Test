@@ -661,6 +661,53 @@ The real, unchanged bottleneck after 42 days remains entirely REQ-003/004
 (owner must check/revoke the Gumroad API token and publish the 8
 already-ready listings).
 
+## Day 43 check-in: repo credential audit + honest status assessment (2026-08-31)
+43 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Read every product LISTING.md, `products/MARKET-NOTES.md`, and
+`products/OUTREACH-KIT.md` in full before doing anything, specifically
+looking for a genuinely untried angle rather than another rephrasing of one
+already used. Honest finding: at this point every buyer-facing lever has
+been pulled at least once, most 2-3 times (pricing x3, buyer-trust fixes,
+urgency framing x2, cover art x2 plus the thumbnail-crop fix, Google Sheets
+verification, PDF rendering QA, Gumroad fee research, bundle-mechanism fix,
+affiliate research + a ready-to-send recruitment message, 8 outreach
+channels including built Pinterest pin images and video scripts). There is
+no unbuilt product left in the queue either — all 6 paid products plus 2
+free lead magnets are fully built, QA'd, and listing-ready.
+
+Rather than manufacture a new "finding" to look productive, did two real,
+small, previously-undone things instead:
+1. **Repo credential audit for REQ-004.** REQ-004 has asked Jimmy to check/
+   revoke a Gumroad API token since day 1, but this repo itself was never
+   actually checked for a leftover copy of that token. Ran `git log --all -p`
+   over the entire commit history plus a full working-tree grep for
+   token/key/secret patterns and any `.env`/credential file — found nothing.
+   Recorded the result on REQ-004: the repo itself carries no exposure
+   beyond the Gumroad-side token, which only Jimmy can rotate.
+2. **Date-accuracy refresh.** The 08-13/08-26 Q3-tax-deadline urgency copy
+   said "about 3 weeks (20 days) out" — as of today it's 15 days (about 2
+   weeks) to September 15. Updated the 3 files that state this
+   (`products/freelancer-tax-tracker-v1/LISTING.md`,
+   `products/freelancer-bundle-v1/LISTING.md`,
+   `products/OUTREACH-KIT.md` section 7) so the claim stays accurate rather
+   than quietly going stale, consistent with the 08-06 finding that buyer
+   trust is most damaged by small inaccuracies, not missing features.
+
+No pricing/cover/copy change beyond the date fix, no new product, no
+Gumroad action taken. Honest assessment for whoever reads this: the
+product and market work on this business is essentially complete for this
+phase. Continuing to invent a "new lever" every single day when none is
+genuinely left would itself become a form of busywork this routine's
+instructions explicitly warn against. The real, unchanged, sole bottleneck
+after 43 days remains REQ-003/004 — a roughly 10-minute owner action
+(check/revoke the API token, drag-drop 6 cover images, fix 2 prices, hit
+publish per `GO-LIVE-CHECKLIST.md`). Once that unblocks, the AI-generated
+guides and trackers behind these listings are original written/structured
+work, not a resale of someone else's product, and the FAQ commitments
+(48-hour real replies, 30-day refund) are honest — this is a genuinely
+sellable catalog sitting idle on distribution, not a quality problem.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.
