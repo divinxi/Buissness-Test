@@ -708,6 +708,65 @@ work, not a resale of someone else's product, and the FAQ commitments
 (48-hour real replies, 30-day refund) are honest — this is a genuinely
 sellable catalog sitting idle on distribution, not a quality problem.
 
+## Day 44 check-in: real PDF rendering bug found via full-text proofread + fixed local main branch drift (2026-09-01)
+44 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Before touching anything, discovered this session's local `main` branch was
+itself stale — a `git checkout main` landed on the day-38 commit (4a9c996)
+even though `origin/main` on GitHub was already at day 43 (152dd15). This is
+the same class of detached-HEAD/stale-branch bug fixed on 2026-08-06 and
+2026-08-29: a local checkout of `main` can silently point at an old commit
+if a prior session never fast-forwarded it after pushing from a detached
+HEAD. Fixed by fetching and fast-forwarding local `main` to `origin/main`
+before reading anything else — no work was lost (origin already had
+everything), but reading the wrong commit first would have meant redoing or
+reverting the day-39 through day-43 fixes. Take-away reinforced for future
+runs: always `git fetch origin main && git merge --ff-only origin/main` (or
+equivalent) right after `git checkout main`, don't trust a bare checkout to
+already be current.
+
+Every buyer-facing lever has been pulled at least once, most 2-3 times, and
+the day-43 entry already concluded there's no unbuilt product or untried
+listing-level angle left. Rather than manufacture another one, ran a real QA
+pass no prior run had actually done: previous QA checked page counts,
+formula correctness, file-path integrity, and PDF bounding-box overflow
+(2026-08-29), but never read every word of every shipped PDF's actual
+extracted text looking for typos/rendering artifacts. Installed pymupdf,
+extracted full text from all 6 paid PDFs (products/*/dist/*.pdf) plus both
+free lead magnets, and read all of it plus every LISTING.md and
+OUTREACH-KIT.md/GO-LIVE-CHECKLIST.md through a scripted double-word/common-
+typo scan and a manual read.
+
+Found a real, confirmed-by-extraction defect: page 3 of "AI Prompt Playbook
+Vol. 2" (`products/prompt-playbook-vol2-v1/`) rendered "Knowledge Base Q&A;
+Builder From Your Docs" and "Build a structured Q&A; knowledge base" — a
+stray semicolon that isn't in the source content and would read as a visible
+typo/bug to a paying customer. Root cause: `scripts/content.py` had a
+literal, unescaped `Q&A` while every other ampersand in this codebase that
+sits next to a heading/label is hand-escaped as `&amp;` before being passed
+into reportlab's `Paragraph` (which parses a mini-XML markup language).
+Confirmed the actual trigger by comparing against every other unescaped `&`
+in all 6 products' content.py files (there are many, e.g. "Marketing &
+Content", "Depreciation & Section 179") — none of those broke, because
+they all have a space immediately after the `&`. Only `&` immediately
+followed by a letter with no space (as in `Q&A`) hits reportlab's entity
+parser and produces the stray-semicolon artifact — a narrow, specific,
+now-understood failure mode, not a guess. Fixed by escaping it as `Q&amp;A`
+(the same convention used everywhere else in this file), regenerated the
+PDF, and re-verified via fresh extraction: zero `&[A-Za-z]+;` artifacts
+anywhere in the file, page count unchanged at 14. No other PDF or listing
+had this pattern.
+
+Also refreshed the Q3 tax-deadline urgency copy (2 weeks/15 days → 2
+weeks/14 days, since it's now Sept 1) in the tax tracker and freelancer
+bundle LISTING.md files and OUTREACH-KIT.md section 7, same accuracy
+discipline as every prior refresh. No pricing/cover change, no new
+product, no Gumroad action taken. The real, unchanged bottleneck after 44
+days remains entirely REQ-003/004 — everything else genuinely checkable
+without an owner action has now been checked at least once, this Q&A bug
+being the first new *defect* (not just a repeated lever) found since the
+08-29 table-overflow fix.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

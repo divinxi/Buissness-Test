@@ -40,10 +40,10 @@ CATEGORIES = [
                 "tip": "Keep the exact same input categories every week even when a number is zero or unchanged — a system only shows trends if the shape never changes.",
             },
             {
-                "title": "Knowledge Base Q&A Builder From Your Docs",
+                "title": "Knowledge Base Q&amp;A Builder From Your Docs",
                 "prompt": (
                     "Here is a set of internal documents/policies: [PASTE OR LIST YOUR DOCS]. "
-                    "Build a structured Q&A knowledge base from them: extract every question a "
+                    "Build a structured Q&amp;A knowledge base from them: extract every question a "
                     "new employee or customer would plausibly ask, answer each strictly from what "
                     "the documents say (mark anything you're inferring rather than quoting), and "
                     "flag any obvious gap where a likely question has no answer in the source "

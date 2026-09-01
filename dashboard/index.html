@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "31 Aug 2026",
-    day: 43,
+    lastUpdated: "1 Sep 2026",
+    day: 44,
   },
   stats: {
     balance: 0.00,
@@ -368,6 +368,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "1 Sep 2026", text: "Local main branch had drifted stale again at the start of this run — checking out \"main\" landed on the day-38 commit even though GitHub's origin/main was already at day 43. Fixed by fetching and fast-forwarding before reading anything, so today's work started from the real current state, not 5 days behind." },
+    { date: "1 Sep 2026", text: "Ran a QA pass no prior run had done: extracted the full text of all 6 paid PDFs plus both free lead magnets (pymupdf) and read every word looking for rendering artifacts, not just page counts/formulas/file paths (already covered). Found a real, confirmed bug: page 3 of AI Prompt Playbook Vol. 2 rendered \"Q&A;\" with a stray semicolon instead of \"Q&A\", caused by one unescaped ampersand-letter pair in the source content hitting reportlab's XML-style parser (every other ampersand in the codebase has a space after it, which doesn't trigger the bug — confirmed by comparison, not guessed)." },
+    { date: "1 Sep 2026", text: "Fixed the escaping in products/prompt-playbook-vol2-v1/scripts/content.py, regenerated the PDF, and re-verified via fresh text extraction: zero artifacts, page count unchanged at 14. Also refreshed the Q3 tax-deadline urgency copy (2 weeks/15 days → 2 weeks/14 days, now Sept 1) in the tax tracker and freelancer bundle listings and the outreach kit. No pricing/cover change, no new product, no Gumroad action taken. Full writeup: business_plan.md (2026-09-01)." },
     { date: "31 Aug 2026", text: "Checked for owner action on all open requests again — still none recorded since REQ-001 on 07-20 (verified via git commit authorship; REQ-003/004 now open 43 days, ledger still $0.00). Local branch had drifted back to a detached HEAD 4 commits behind origin/main from a prior run — fixed by checking out main and fast-forwarding before doing any work this run, so nothing gets orphaned again." },
     { date: "31 Aug 2026", text: "Read the full history in business_plan.md, MARKET-NOTES.md, and OUTREACH-KIT.md before touching anything, to check honestly whether a genuinely new lever exists rather than manufacturing one. Conclusion: every buyer-facing lever has already been pulled at least once (most 2-3x) and no unbuilt product remains in the queue — did two small real things instead of inventing a new \"finding\": audited the full repo + git history for any leftover Gumroad API token/credential (found none — added evidence to REQ-004), and refreshed the Q3 tax-deadline urgency copy from \"3 weeks (20 days)\" to the now-accurate \"2 weeks (15 days)\" out across 3 files." },
     { date: "30 Aug 2026", text: "Closed a real gap left open since 08-27: the affiliate-program research recommended a 30% commission but never drafted an actual message to recruit affiliates with, unlike every other distribution channel in OUTREACH-KIT.md. Wrote section 8 — a ready-to-send invite for people with their own freelancer/small-business audience, using the already-verified fee and commission numbers. No new product, no pricing/Gumroad action." },

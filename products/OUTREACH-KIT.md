@@ -367,7 +367,7 @@ Sources (2026-08-09):
 - https://virvid.ai/blog/short-video-script-frameworks-with-trending-examples
 - https://faceless.so/blog/25-hook-formulas-to-boost-short-video-watch-time
 
-## 7. Time-sensitive framing: the Q3 2026 tax deadline is now ~2 weeks out (2026-08-13, refreshed 2026-08-31)
+## 7. Time-sensitive framing: the Q3 2026 tax deadline is now ~2 weeks out (2026-08-13, refreshed 2026-09-01)
 
 Every channel above (1-6) was drafted with evergreen copy — deliberately, since
 none of them knew when Jimmy would actually resolve REQ-003/004 and send them.
@@ -377,7 +377,7 @@ includes it) does: the real **Q3 2026 estimated tax deadline is September 15,
 2026** (see `QUARTERLY_DEADLINES` in
 `products/freelancer-tax-tracker-v1/scripts/content.py`, verified against
 IRS.gov as of July 2026 per business_plan.md). As of this note, that's about 2
-weeks (15 days) away — genuinely time-relevant for the first time in this
+weeks (14 days) away — genuinely time-relevant for the first time in this
 file's history, not something that was true or usable back on 07-25 when
 section 1 was first drafted. This window is closing: if Jimmy hasn't acted on
 REQ-003/004 by Sept 15, this specific lever is gone for good (the next real
