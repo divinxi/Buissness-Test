@@ -15,10 +15,10 @@ guide + calculator but not a kitchen-sink bundle — see products/MARKET-NOTES.m
 
 **Category:** Business & Money → Financial Planning (or "Templates")
 
-**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-01):** the real
+**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-02):** the real
 Q3 2026 estimated tax deadline is **September 15, 2026** — see
 QUARTERLY_DEADLINES in scripts/content.py. As of this listing's last update
-that's about 2 weeks out (14 days). This isn't manufactured urgency (no fake
+that's 13 days out. This isn't manufactured urgency (no fake
 countdown timer, no "X people bought this today"); it's the actual date this
 product's own worked example is built around. Worth leading with once this
 goes live and worth re-checking as it approaches — after Sept 15 passes this
@@ -52,6 +52,20 @@ numbers (not last year's, not rounded estimates).
   Estimator that computes your exact self-employment tax from your own
   numbers, and a Dashboard that shows your net profit, suggested quarterly
   payment, and days until your next deadline, all live.
+
+**See the math** — the actual worked example from page 3 of the guide, for
+$60,000 in net profit:
+
+| Step | Calculation | Result |
+|---|---|---|
+| Net earnings from SE | $60,000 × 92.35% | $55,410 |
+| Social Security (12.4%) | $55,410 × 12.4% (under the $184,500 cap) | $6,870.84 |
+| Medicare (2.9%) | $55,410 × 2.9% | $1,606.89 |
+| **Total SE tax** | $6,870.84 + $1,606.89 | **$8,477.73** |
+
+*(Real numbers straight from the guide, not a hypothetical. The companion
+spreadsheet's Quarterly Tax Estimator tab runs this exact calculation
+automatically off your own net profit — you never do this math by hand.)*
 
 **What this is NOT:** personalized tax advice, tax filing software, or a
 replacement for a CPA when the stakes are high (multi-state income, an

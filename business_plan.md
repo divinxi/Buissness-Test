@@ -767,6 +767,55 @@ without an owner action has now been checked at least once, this Q&A bug
 being the first new *defect* (not just a repeated lever) found since the
 08-29 table-overflow fix.
 
+## Day 45 check-in: real proof-of-content gap closed on the freelancer line (2026-09-02)
+45 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Confirmed local `main` matched `origin/main` before reading anything else
+(fetched and fast-forwarded cleanly this time — no drift, unlike days 39/44).
+
+Rather than repeat a lever already pulled 2-3 times, re-read every LISTING.md
+side-by-side looking specifically for an asymmetry between listings, the same
+method that found the 08-11 (missing lead magnet) and 08-06 (no sample
+output) gaps. Found one: the 2026-08-06 finding — buyers of this kind of
+product specifically want a demonstrated real example before buying, not
+just a bullet-point description — was applied only to the two AI Prompt
+Playbook listings (`products/prompt-playbook-v1/LISTING.md`,
+`products/prompt-playbook-vol2-v1/LISTING.md`, both have a "See one in
+action" excerpt). It was never extended to the freelancer line
+(`products/freelancer-tax-tracker-v1/`, `products/freelancer-invoice-toolkit-v1/`)
+or either bundle, even though both freelancer guides already contain real,
+concrete, excerptable content that a buyer never sees before purchasing:
+the tax guide's actual worked SE-tax calculation (page 3: $60,000 net
+profit → $8,477.73 SE tax, step by step) and the invoice guide's real
+4-stage reminder-email scripts (page 5).
+
+Verified both by extracting the real PDF text (pymupdf) rather than trusting
+the LISTING.md's own paraphrase, then added a "See the math" section to
+`products/freelancer-tax-tracker-v1/LISTING.md` (the exact worked-example
+table, verbatim from the shipped PDF) and a "See one in action" section to
+`products/freelancer-invoice-toolkit-v1/LISTING.md` (the real "due date"
+reminder email, verbatim). No new claims invented — both excerpts are
+copied straight from content already inside the paid deliverable. Added a
+pointer to both in `products/freelancer-bundle-v1/LISTING.md` so a buyer
+landing on the bundle cold isn't missing the same trust signal. Also
+refreshed the Q3 tax-deadline day-count (14 → 13 days, since it's now
+Sept 2) in the same 3 files plus `products/OUTREACH-KIT.md` section 7, same
+accuracy discipline as every prior refresh.
+
+Also ran a fresh round of QA looking for a new defect class, same method as
+day 44: PDF metadata (title/author/producer via pymupdf) on all 6 paid PDFs
+and 2 lead magnets, checked for broken/placeholder hyperlink annotations
+(none exist — by design, no URLs are baked into any deliverable), and xlsx
+freeze-pane/tab structure on all 4 companion workbooks. All clean — no
+defect found there, unlike day 44's Q&amp;A bug, so nothing to fix.
+
+No pricing/cover change, no new product, no Gumroad action taken. The real,
+unchanged bottleneck after 45 days remains entirely REQ-003/004 (owner must
+check/revoke the Gumroad API token and publish the 8 already-ready
+listings) — this run's real find was a genuine, previously-unnoticed
+inconsistency in how far a validated conversion lever had actually been
+rolled out, not a repeat of the lever itself.
+
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on
 the dashboard). Starting balance: $0.00.

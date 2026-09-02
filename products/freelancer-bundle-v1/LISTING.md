@@ -10,12 +10,19 @@ products/MARKET-NOTES.md.)
 
 **Category:** Business & Money → Templates (or "Freelancing")
 
-**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-01):** the
+**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-02):** the
 tax-tracker half of this bundle is built around the real Q3 2026 estimated
-tax deadline — **September 15, 2026**, about 2 weeks (14 days) out as of
+tax deadline — **September 15, 2026**, 13 days out as of
 this update. Real deadline, not manufactured urgency; see
 products/freelancer-tax-tracker-v1/LISTING.md and products/MARKET-NOTES.md
 (2026-08-13) for the same note on the standalone tracker.
+
+**See it in action:** both component listings now show a real excerpt from
+their guide (see products/freelancer-tax-tracker-v1/LISTING.md's worked
+$60,000 SE-tax calculation and products/freelancer-invoice-toolkit-v1/LISTING.md's
+real reminder-email sample, added 2026-09-02) — worth pulling one or both
+into this bundle's Gumroad images/description too, since a buyer landing
+here cold gets the same trust signal.
 
 **Short blurb (for the card/thumbnail area):**
 > Everything a freelancer needs to handle their own money admin: know what you owe the IRS before the Sept 15 Q3 deadline, and get paid on time. Two guides, two spreadsheets, one price.

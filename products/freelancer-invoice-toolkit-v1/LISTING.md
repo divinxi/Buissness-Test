@@ -41,6 +41,23 @@ scrambling:
   how many invoices need which reminder stage today, and a fill-in-the-blank
   Invoice Template that calculates subtotal, tax, and total automatically.
 
+**See one in action** — the "due date" email from the guide's real 4-stage
+reminder sequence (page 5), copy-paste ready:
+
+> **Subject:** Invoice [INVOICE #] due today
+>
+> Hi [CLIENT NAME],
+> Invoice [INVOICE #] for [AMOUNT] is due today. If it's already been sent,
+> thank you — no action needed. If not, here's the invoice again:
+> [LINK/ATTACHMENT]. Let me know if anything's holding it up.
+>
+> Best,
+> [YOUR NAME]
+
+*(One of 4 stages included — friendly heads-up, due date, 7 days late, and
+final notice — every one written to sound like a real person, not a
+form-letter collections agency.)*
+
 **What this is NOT:** legal advice or collections software. Small claims
 limits and interest-rate rules vary by state/country — the guide flags this
 explicitly instead of guessing at your jurisdiction. It's the system so
