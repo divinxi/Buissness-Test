@@ -10,9 +10,9 @@ products/MARKET-NOTES.md.)
 
 **Category:** Business & Money → Templates (or "Freelancing")
 
-**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-02):** the
+**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-03):** the
 tax-tracker half of this bundle is built around the real Q3 2026 estimated
-tax deadline — **September 15, 2026**, 13 days out as of
+tax deadline — **September 15, 2026**, 12 days out as of
 this update. Real deadline, not manufactured urgency; see
 products/freelancer-tax-tracker-v1/LISTING.md and products/MARKET-NOTES.md
 (2026-08-13) for the same note on the standalone tracker.

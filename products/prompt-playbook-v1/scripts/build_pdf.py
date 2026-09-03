@@ -17,6 +17,7 @@ INK = HexColor("#1c1c1e")
 MUTED = HexColor("#5a5a60")
 ACCENT = HexColor("#2f5d50")
 BOX_BG = HexColor("#f2f1ec")
+WARN_BG = HexColor("#f7ecdb")
 
 styles = getSampleStyleSheet()
 styles.add(ParagraphStyle("CoverTitle", fontName="Helvetica-Bold", fontSize=28, leading=34,
@@ -37,6 +38,23 @@ styles.add(ParagraphStyle("TOCEntry", fontName="Helvetica", fontSize=11.5, leadi
                            textColor=INK))
 styles.add(ParagraphStyle("FootNote", fontName="Helvetica", fontSize=8.5, leading=12,
                            textColor=MUTED))
+styles.add(ParagraphStyle("WarnBody", fontName="Helvetica", fontSize=9.7, leading=14,
+                           textColor=INK))
+
+
+def warn_box(text, label="Watch out"):
+    p = Paragraph(f'<font color="#9a5b12"><b>{label}:</b></font> {text}', styles["WarnBody"])
+    t = Table([[p]], colWidths=[6.3 * inch])
+    t.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), WARN_BG),
+        ("BOX", (0, 0), (-1, -1), 0.6, HexColor("#e0c48f")),
+        ("LEFTPADDING", (0, 0), (-1, -1), 10),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+        ("TOPPADDING", (0, 0), (-1, -1), 8),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+    ]))
+    return t
+
 
 def prompt_block(idx, item):
     title = Paragraph(f"{idx}. {item['title']}", styles["PromptTitle"])
@@ -140,6 +158,13 @@ def build():
         "A ready-to-copy 4-stage reminder email sequence, how to choose payment terms and set an "
         "enforceable late fee, and a spreadsheet that auto-flags overdue invoices.",
         styles["PromptBody"]))
+    story.append(Spacer(1, 14))
+    story.append(warn_box(
+        "Get this playbook and Vol. 2: Systems &amp; Automation together as The AI Prompt "
+        "Playbook Bundle for $29 instead of $38 separately, if it's still available as a "
+        "bundle listing.",
+        label="Bundle tip",
+    ))
 
     doc.build(story)
     print(f"Wrote {OUT}")

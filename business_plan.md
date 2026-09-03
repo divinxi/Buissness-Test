@@ -1,6 +1,6 @@
 # Business Plan — Ledger & Loop Digital (working name, pending REQ-002 confirmation)
 
-Status date: 2026-08-20
+Status date: 2026-09-03
 
 ## Model
 Digital products studio. Build genuinely useful toolkits (guides + spreadsheet
@@ -815,6 +815,53 @@ check/revoke the Gumroad API token and publish the 8 already-ready
 listings) — this run's real find was a genuine, previously-unnoticed
 inconsistency in how far a validated conversion lever had actually been
 rolled out, not a repeat of the lever itself.
+
+## Day 46 check-in: AI Prompt Playbook cross-sell bundle gap closed (2026-09-03)
+46 days into REQ-003/004 being open with $0.00 in sales, no owner action
+recorded since REQ-001 on day 1 (verified via `git log` authorship again).
+Confirmed local `main` matched `origin/main` before reading anything else
+(fetched and fast-forwarded cleanly — no drift this run).
+
+Rather than repeat an already-pulled lever, re-read every shipped PDF's
+actual cross-sell page (via pymupdf text extraction, not just the source
+content.py) side-by-side across both product lines — the same
+asymmetry-hunting method that found the 08-11, 08-06, and day-45 gaps.
+Found one: both freelancer PDFs
+(`products/freelancer-tax-tracker-v1/`, `products/freelancer-invoice-toolkit-v1/`)
+have carried a "Bundle tip" callout box on their cross-sell page since they
+were built, pointing the reader at The Freelancer Money Bundle ($29 vs $38
+separately). The AI Prompt Playbook line
+(`products/prompt-playbook-v1/`, `products/prompt-playbook-vol2-v1/`) has
+had its own equivalent bundle (The AI Prompt Playbook Bundle, built
+2026-07-30) for over a month, but neither Vol. 1's nor Vol. 2's cross-sell
+page ever mentioned it — a real, confirmed-by-extraction gap, not a
+paraphrase error, and the same class of asymmetry as day 45's finding, just
+on the other product line and about bundling rather than proof-of-content.
+
+Fixed both: added a matching `warn_box`-style "Bundle tip" callout (ported
+the same helper function and visual style already used in the freelancer
+line's `build_pdf.py` files, which neither AI Prompt Playbook build script
+had) to the end of both cross-sell pages, each correctly pointing at the
+other volume plus the bundle price ($29 vs $38). Regenerated both PDFs,
+re-ran the pymupdf bounding-box overflow scan (zero issues, same as day 44)
+and the stray-entity scan for the day-44 `&`-artifact bug class (zero
+matches) — page counts unchanged at 14 each. No new claims invented; the
+bundle, its price, and its component products all already existed and are
+accurately described.
+
+Also refreshed the Q3 tax-deadline day-count (13 → 12 days, since it's now
+Sept 3) in `products/freelancer-tax-tracker-v1/LISTING.md`,
+`products/freelancer-bundle-v1/LISTING.md`, and
+`products/OUTREACH-KIT.md` section 7, same accuracy discipline as every
+prior refresh. Checked `GO-LIVE-CHECKLIST.md` for the same staleness risk —
+it doesn't restate the day-count, so nothing needed there.
+
+No pricing/cover change, no new product, no Gumroad action taken. The real,
+unchanged bottleneck after 46 days remains entirely REQ-003/004 (owner must
+check/revoke the Gumroad API token and publish the 8 already-ready
+listings) — this run's find, like day 45's, was a genuine inconsistency in
+how far an already-validated lever (bundling) had actually been rolled out
+across the catalog, not a repeat of the lever itself.
 
 ## Revenue tracking
 Balance and transaction history: `finances/ledger.json` (also rendered on

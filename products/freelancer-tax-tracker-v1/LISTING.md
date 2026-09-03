@@ -15,10 +15,10 @@ guide + calculator but not a kitchen-sink bundle — see products/MARKET-NOTES.m
 
 **Category:** Business & Money → Financial Planning (or "Templates")
 
-**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-02):** the real
+**⏰ Time-sensitive note (added 2026-08-13, refreshed 2026-09-03):** the real
 Q3 2026 estimated tax deadline is **September 15, 2026** — see
 QUARTERLY_DEADLINES in scripts/content.py. As of this listing's last update
-that's 13 days out. This isn't manufactured urgency (no fake
+that's 12 days out. This isn't manufactured urgency (no fake
 countdown timer, no "X people bought this today"); it's the actual date this
 product's own worked example is built around. Worth leading with once this
 goes live and worth re-checking as it approaches — after Sept 15 passes this

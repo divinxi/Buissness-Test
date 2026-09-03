@@ -259,8 +259,8 @@ const DATA = {
   meta: {
     name: "Ledger & Loop Digital",
     tagline: "Digital products studio — operating name, pending final decision (REQ-002)",
-    lastUpdated: "2 Sep 2026",
-    day: 45,
+    lastUpdated: "3 Sep 2026",
+    day: 46,
   },
   stats: {
     balance: 0.00,
@@ -368,6 +368,9 @@ const DATA = {
     },
   ],
   activity: [
+    { date: "3 Sep 2026", text: "Checked for owner action on all 5 open requests again — still none recorded since REQ-001 on day 1 (REQ-003/004 now open 46 days, ledger still $0.00). Confirmed local main was already fast-forwarded to origin/main before reading anything (no drift this run)." },
+    { date: "3 Sep 2026", text: "Found a real, previously-unnoticed asymmetry: the freelancer line's two paid PDFs have carried a \"Bundle tip\" callout on their cross-sell page since they were built, pointing readers at The Freelancer Money Bundle. The AI Prompt Playbook line's own bundle (built 2026-07-30) never got the same treatment — neither Vol. 1's nor Vol. 2's cross-sell page mentioned it, despite it existing for over a month." },
+    { date: "3 Sep 2026", text: "Fixed both: ported the same warn_box callout style already used in the freelancer PDFs into prompt-playbook-v1/scripts/build_pdf.py and prompt-playbook-vol2-v1/scripts/build_pdf.py, added a matching \"Bundle tip\" line to each cross-sell page. Regenerated both PDFs, re-ran the bounding-box overflow scan (zero issues) and the stray-entity scan for the day-44 &amp;-artifact bug class (zero matches) — page counts unchanged at 14 each. Also refreshed the Q3 tax-deadline day-count (13 → 12 days) across 3 files. No pricing/cover change, no new product, no Gumroad action taken. Full writeup: business_plan.md (2026-09-03)." },
     { date: "2 Sep 2026", text: "Checked for owner action on all 5 open requests again — still none recorded since REQ-001 on day 1 (REQ-003/004 now open 45 days, ledger still $0.00). Verified local main was already fast-forwarded to origin/main this time (no drift, unlike days 39/44) before reading anything." },
     { date: "2 Sep 2026", text: "Found a real, previously-unnoticed asymmetry: the 08-06 finding that buyers want a demonstrated real example before buying was only ever applied to the 2 AI Prompt Playbook listings (\"See one in action\"), never extended to the freelancer line even though both freelancer guides already contain real, concrete content that was never shown to a browsing buyer — the tax guide's actual worked SE-tax calculation ($60,000 net profit → $8,477.73 SE tax, page 3) and the invoice guide's real 4-stage reminder-email scripts (page 5)." },
     { date: "2 Sep 2026", text: "Verified both by extracting the real PDF text (pymupdf), then added a \"See the math\" excerpt (verbatim worked-example table) to freelancer-tax-tracker-v1/LISTING.md and a \"See one in action\" excerpt (verbatim reminder email) to freelancer-invoice-toolkit-v1/LISTING.md — no new claims, both copied straight from the shipped PDFs. Added a pointer to both in freelancer-bundle-v1/LISTING.md. Also refreshed the Q3 tax-deadline day-count (14 → 13 days) across those files and OUTREACH-KIT.md. Ran a fresh QA pass (PDF metadata, hyperlink annotations, xlsx freeze-pane structure on all files) — all clean, no defect found this time. No pricing/cover change, no new product, no Gumroad action taken. Full writeup: business_plan.md (2026-09-02)." },
